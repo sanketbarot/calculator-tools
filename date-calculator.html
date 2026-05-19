@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========== SEO META ========== -->
+    <title>Date Calculator - Date Difference & Add/Subtract Days Online | AI ToolCor</title>
+    <meta name="description" content="Free Date Calculator to find difference between two dates in years, months, days. Add or subtract days, weeks, months from any date instantly.">
+    <meta name="keywords" content="date calculator, date difference calculator, days between dates, add days to date, subtract days from date, working days calculator, date duration calculator">
+    <meta name="author" content="AI ToolCor">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="google-adsense-account" content="ca-pub-8473875587893208">
+
+    <link rel="canonical" href="https://calculator.aitoolcor.com/date-calculator.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI ToolCor Calculators">
+    <meta property="og:title" content="Date Calculator - Date Difference & Add/Subtract Days">
+    <meta property="og:description" content="Free Date Calculator for date difference and date manipulation.">
+    <meta property="og:url" content="https://calculator.aitoolcor.com/date-calculator.html">
+    <meta property="og:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Date Calculator - Date Difference">
+    <meta name="twitter:description" content="Free Date Calculator with multiple modes.">
+    <meta name="twitter:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%237c3aed'/><stop offset='100%25' stop-color='%230ea5e9'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><text x='50' y='42' text-anchor='middle' font-size='28' font-weight='800' fill='white' font-family='Arial'>CALC</text><text x='50' y='72' text-anchor='middle' font-size='16' font-weight='600' fill='rgba(255,255,255,0.85)' font-family='Arial'>ToolCor</text></svg>" type="image/svg+xml">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/ads.css">
+    <link rel="stylesheet" href="css/tool.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8473875587893208" crossorigin="anonymous"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://calculator.aitoolcor.com/date-calculator.html#webpage",
+          "url": "https://calculator.aitoolcor.com/date-calculator.html",
+          "name": "Date Calculator - Date Difference & Operations",
+          "description": "Free Date Calculator.",
+          "isPartOf": { "@id": "https://calculator.aitoolcor.com/#website" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculator.aitoolcor.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Daily Use", "item": "https://calculator.aitoolcor.com/#daily-use" },
+            { "@type": "ListItem", "position": 3, "name": "Date Calculator", "item": "https://calculator.aitoolcor.com/date-calculator.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "How to calculate days between two dates?", "acceptedAnswer": { "@type": "Answer", "text": "To calculate days between two dates, subtract the earlier date from the later date. Our Date Calculator gives you the exact difference in years, months, days, weeks, and hours." } },
+            { "@type": "Question", "name": "How to add days to a date?", "acceptedAnswer": { "@type": "Answer", "text": "Use our 'Add/Subtract Days' mode. Enter the starting date, select 'Add' operation, and enter the number of days/weeks/months/years to add. The new date will be calculated instantly." } },
+            { "@type": "Question", "name": "What are working days?", "acceptedAnswer": { "@type": "Answer", "text": "Working days are Monday to Friday, excluding weekends (Saturday and Sunday). Our calculator shows total working days between two dates, useful for project planning and HR." } }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <div class="nav-logo-icon"><i class="fas fa-calculator"></i></div>
+                <div>
+                    <span class="nav-logo-text">AI ToolCor</span>
+                    <span class="nav-logo-sub">Calculators</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#finance">Finance</a></li>
+                <li><a href="/#health">Health</a></li>
+                <li><a href="/#daily-use" class="active">Daily Use</a></li>
+                <li><a href="https://www.aitoolcor.com/" target="_blank" class="nav-cta"><i class="fas fa-external-link-alt"></i> Main Site</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Home</a>
+        <a href="/#finance">Finance</a>
+        <a href="/#health">Health</a>
+        <a href="/#daily-use">Daily Use</a>
+        <a href="https://www.aitoolcor.com/" target="_blank">🌐 Main Site</a>
+    </div>
+
+    <!-- ===== TOOL HERO ===== -->
+    <section class="tool-hero">
+        <div class="tool-breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="/#daily-use">Daily Use</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Date Calculator</span>
+        </div>
+
+        <div class="tool-hero-icon bg-daily">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+
+        <h1><span class="gradient-text">Date</span> Calculator</h1>
+        <p>Find difference between dates or add/subtract days, months & years instantly</p>
+    </section>
+
+    <!-- ===== AD BANNER (Top) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="3658236067"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== TOOL CONTAINER ===== -->
+    <section class="tool-container">
+        <div class="tool-grid">
+
+            <!-- ===== INPUT CARD ===== -->
+            <div class="tool-card-main">
+                <h2><i class="fas fa-sliders-h"></i> Choose Calculation</h2>
+
+                <!-- Mode Selector -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Calculation Mode</span>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="modeDiff" name="dateMode" value="difference" checked>
+                        <label for="modeDiff">Date Difference</label>
+                        <input type="radio" id="modeAddSub" name="dateMode" value="addsub">
+                        <label for="modeAddSub">Add / Subtract</label>
+                    </div>
+                </div>
+
+                <!-- ===== MODE 1: Date Difference ===== -->
+                <div id="diffMode">
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>📅 From Date</span>
+                        </div>
+                        <input type="date" id="fromDate" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>📅 To Date</span>
+                        </div>
+                        <input type="date" id="toDate" class="form-input">
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <button type="button" class="action-btn" onclick="setTodayFrom()" style="flex: 1;">
+                                <i class="fas fa-calendar-day"></i> From: Today
+                            </button>
+                            <button type="button" class="action-btn" onclick="setTodayTo()" style="flex: 1;">
+                                <i class="fas fa-calendar-day"></i> To: Today
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Include End Date -->
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 0.9rem; font-weight: 600;">
+                            <input type="checkbox" id="includeEndDate" style="width: 18px; height: 18px; cursor: pointer; accent-color: var(--primary);">
+                            <span>➕ Include End Date in count</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ===== MODE 2: Add / Subtract ===== -->
+                <div id="addSubMode" style="display: none;">
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>📅 Starting Date</span>
+                        </div>
+                        <input type="date" id="startDate" class="form-input">
+                        <button type="button" class="action-btn" onclick="setTodayStart()" style="margin-top: 10px; width: 100%;">
+                            <i class="fas fa-calendar-day"></i> Use Today
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Operation</span>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="addOp" name="operation" value="add" checked>
+                            <label for="addOp">➕ Add</label>
+                            <input type="radio" id="subOp" name="operation" value="subtract">
+                            <label for="subOp">➖ Subtract</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Duration</span>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 10px;">
+                            <div>
+                                <label style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 4px;">Years</label>
+                                <input type="number" id="addYears" class="form-input" value="0" min="0" max="100">
+                            </div>
+                            <div>
+                                <label style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 4px;">Months</label>
+                                <input type="number" id="addMonths" class="form-input" value="0" min="0" max="11">
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <div>
+                                <label style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 4px;">Weeks</label>
+                                <input type="number" id="addWeeks" class="form-input" value="0" min="0">
+                            </div>
+                            <div>
+                                <label style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 4px;">Days</label>
+                                <input type="number" id="addDays" class="form-input" value="30" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Add Buttons -->
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Quick Select</span>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;">
+                            <button type="button" class="quick-btn" onclick="quickSet(7, 'days')">7 Days</button>
+                            <button type="button" class="quick-btn" onclick="quickSet(30, 'days')">30 Days</button>
+                            <button type="button" class="quick-btn" onclick="quickSet(90, 'days')">90 Days</button>
+                            <button type="button" class="quick-btn" onclick="quickSet(1, 'years')">1 Year</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="btn-group" style="margin-top: 20px;">
+                    <button class="btn btn-primary" onclick="calculateDate()">
+                        <i class="fas fa-calculator"></i> Calculate
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetCalculator()">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- ===== RESULT CARD ===== -->
+            <div class="result-card">
+                <h2><i class="fas fa-chart-pie"></i> Result</h2>
+
+                <!-- Main Result Display -->
+                <div class="result-main">
+                    <div class="result-main-label" id="resultMainLabel">Difference</div>
+                    <div class="result-main-value" id="resultMain" style="font-size: 1.8rem;">5 Years</div>
+                    <div class="result-main-sub" id="resultMainSub">3 months & 15 days</div>
+                </div>
+
+                <!-- Breakdown -->
+                <div class="result-breakdown">
+                    <div class="result-item highlight">
+                        <div class="result-item-label">Years</div>
+                        <div class="result-item-value" id="diffYears">5</div>
+                    </div>
+                    <div class="result-item highlight">
+                        <div class="result-item-label">Months</div>
+                        <div class="result-item-value" id="diffMonths">3</div>
+                    </div>
+                </div>
+
+                <div class="result-breakdown">
+                    <div class="result-item">
+                        <div class="result-item-label">Weeks</div>
+                        <div class="result-item-value" id="diffWeeks">15</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-item-label">Days</div>
+                        <div class="result-item-value" id="diffDays">15</div>
+                    </div>
+                </div>
+
+                <!-- Total Breakdown -->
+                <div class="result-chart" style="background: var(--bg-primary); padding: 16px;">
+                    <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">
+                        📊 Total Breakdown
+                    </h4>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <div style="padding: 10px; background: rgba(124, 58, 237, 0.08); border-radius: var(--radius-sm); text-align: center;">
+                            <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Total Months</div>
+                            <div style="font-size: 1rem; font-weight: 800; color: var(--primary);" id="totalMonthsVal">63</div>
+                        </div>
+                        <div style="padding: 10px; background: rgba(14, 165, 233, 0.08); border-radius: var(--radius-sm); text-align: center;">
+                            <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Total Weeks</div>
+                            <div style="font-size: 1rem; font-weight: 800; color: var(--secondary);" id="totalWeeksVal">276</div>
+                        </div>
+                        <div style="padding: 10px; background: rgba(16, 185, 129, 0.08); border-radius: var(--radius-sm); text-align: center;">
+                            <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Total Days</div>
+                            <div style="font-size: 1rem; font-weight: 800; color: #10b981;" id="totalDaysVal">1,931</div>
+                        </div>
+                        <div style="padding: 10px; background: rgba(245, 158, 11, 0.08); border-radius: var(--radius-sm); text-align: center;">
+                            <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Working Days</div>
+                            <div style="font-size: 1rem; font-weight: 800; color: #f59e0b;" id="workingDaysVal">1,380</div>
+                        </div>
+                        <div style="padding: 10px; background: rgba(239, 68, 68, 0.08); border-radius: var(--radius-sm); text-align: center;">
+                            <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Weekend Days</div>
+                            <div style="font-size: 1rem; font-weight: 800; color: #ef4444;" id="weekendDaysVal">551</div>
+                        </div>
+                        <div style="padding: 10px; background: rgba(139, 92, 246, 0.08); border-radius: var(--radius-sm); text-align: center;">
+                            <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Total Hours</div>
+                            <div style="font-size: 1rem; font-weight: 800; color: #8b5cf6;" id="totalHoursVal">46.3K</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date Info -->
+                <div class="result-chart" style="background: var(--bg-primary); padding: 16px;">
+                    <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">
+                        📅 Date Info
+                    </h4>
+                    <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 0.85rem;">
+                        <span style="color: var(--text-secondary);" id="fromLabel">From Date:</span>
+                        <span style="font-weight: 700;" id="fromDateInfo">Jan 1, 2020 (Wed)</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.85rem;">
+                        <span style="color: var(--text-secondary);" id="toLabel">To Date:</span>
+                        <span style="font-weight: 700;" id="toDateInfo">Apr 15, 2025 (Tue)</span>
+                    </div>
+                </div>
+
+                <!-- Share Actions -->
+                <div class="result-actions">
+                    <button class="action-btn" onclick="copyResult()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <button class="action-btn" onclick="shareResult()">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button class="action-btn" onclick="printResult()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Middle) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="1677271683"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== INFO SECTION ===== -->
+    <section class="info-section">
+        <div class="info-card">
+            <h2>About <span class="gradient-text">Date Calculator</span></h2>
+            <p>Our Date Calculator is a powerful tool for any date-related calculation. Whether you need to find the difference between two dates, add days to a deadline, calculate working days for a project, or plan an event — this calculator handles it all with one click.</p>
+
+            <h3>🎯 Two Powerful Modes</h3>
+
+            <h4>1️⃣ Date Difference Mode</h4>
+            <p>Find the exact difference between any two dates in:</p>
+            <ul>
+                <li><strong>Years, Months, Days</strong> — Calendar breakdown</li>
+                <li><strong>Total Days</strong> — Exact day count</li>
+                <li><strong>Total Weeks</strong> — Week count</li>
+                <li><strong>Working Days</strong> — Business days (Mon-Fri)</li>
+                <li><strong>Weekend Days</strong> — Saturdays + Sundays</li>
+                <li><strong>Total Hours</strong> — Hour calculation</li>
+            </ul>
+
+            <h4>2️⃣ Add / Subtract Mode</h4>
+            <p>Calculate a new date by adding or subtracting from any starting date:</p>
+            <ul>
+                <li>Add/Subtract <strong>Years</strong></li>
+                <li>Add/Subtract <strong>Months</strong></li>
+                <li>Add/Subtract <strong>Weeks</strong></li>
+                <li>Add/Subtract <strong>Days</strong></li>
+                <li>Combine multiple units in single calculation</li>
+            </ul>
+
+            <h3>✅ How to Use This Calculator</h3>
+
+            <p><strong>For Date Difference:</strong></p>
+            <ol>
+                <li>Select <strong>Date Difference</strong> mode</li>
+                <li>Enter <strong>From Date</strong> and <strong>To Date</strong></li>
+                <li>Optionally check <strong>"Include End Date"</strong></li>
+                <li>Click Calculate to see complete breakdown</li>
+            </ol>
+
+            <p><strong>For Add/Subtract:</strong></p>
+            <ol>
+                <li>Select <strong>Add / Subtract</strong> mode</li>
+                <li>Enter <strong>Starting Date</strong></li>
+                <li>Choose <strong>Add</strong> or <strong>Subtract</strong></li>
+                <li>Enter years, months, weeks, days</li>
+                <li>Click Calculate to see resulting date</li>
+            </ol>
+
+            <h3>💡 Real-World Use Cases</h3>
+            <ul>
+                <li><strong>Project Planning:</strong> Calculate working days till deadline</li>
+                <li><strong>HR & Payroll:</strong> Compute employee tenure, leave days</li>
+                <li><strong>Pregnancy Tracking:</strong> Estimate due date (280 days from LMP)</li>
+                <li><strong>Travel Planning:</strong> Calculate trip duration</li>
+                <li><strong>Bill Payments:</strong> Find due dates, payment intervals</li>
+                <li><strong>Subscription Renewal:</strong> Plan renewal dates</li>
+                <li><strong>Anniversary Planning:</strong> Days till special events</li>
+                <li><strong>Loan Tenure:</strong> Calculate maturity dates</li>
+                <li><strong>Visa & Passport:</strong> Check expiry dates</li>
+                <li><strong>Construction:</strong> Project completion estimates</li>
+            </ul>
+
+            <h3>📊 Important Date Facts</h3>
+            <ul>
+                <li><strong>1 Year</strong> = 365 days (366 in leap years)</li>
+                <li><strong>1 Month</strong> = 28, 29, 30, or 31 days</li>
+                <li><strong>1 Week</strong> = 7 days</li>
+                <li><strong>1 Day</strong> = 24 hours = 1,440 minutes = 86,400 seconds</li>
+                <li><strong>Leap Year</strong> = Year divisible by 4 (except centuries not divisible by 400)</li>
+                <li><strong>Working Days in Year</strong> = ~260 days (excluding weekends)</li>
+                <li><strong>Weekend Days in Year</strong> = ~104-105 days</li>
+            </ul>
+
+            <h3>🗓️ Leap Year Rules</h3>
+            <ul>
+                <li>Year is divisible by 4 → <strong>Leap Year</strong></li>
+                <li>BUT year is divisible by 100 → NOT a Leap Year</li>
+                <li>UNLESS year is divisible by 400 → Leap Year (e.g., 2000)</li>
+            </ul>
+            <p><strong>Examples:</strong> 2020, 2024, 2028 are leap years. 1900 was NOT, but 2000 WAS.</p>
+
+            <h3>📐 How Date Calculations Work</h3>
+            <p>Our calculator uses JavaScript's Date object which accurately handles:</p>
+            <ul>
+                <li>Varying month lengths (28-31 days)</li>
+                <li>Leap years (Feb 29)</li>
+                <li>Daylight Saving Time transitions</li>
+                <li>Time zones (local browser time)</li>
+                <li>Calendar transitions</li>
+            </ul>
+
+            <h3>🌏 Calendar Systems</h3>
+            <p>Our calculator uses the <strong>Gregorian Calendar</strong>, the most widely used calendar system globally. Other calendars include:</p>
+            <ul>
+                <li><strong>Hindu/Vikram Samvat</strong> — Used in India for religious dates</li>
+                <li><strong>Islamic/Hijri</strong> — Used in Islamic countries</li>
+                <li><strong>Hebrew</strong> — Used by Jewish community</li>
+                <li><strong>Chinese Lunar</strong> — Used for Chinese New Year</li>
+                <li><strong>Buddhist</strong> — Used in Thailand, Cambodia</li>
+            </ul>
+
+            <h3>⚠️ Tips & Best Practices</h3>
+            <ul>
+                <li>Always double-check dates before important calculations</li>
+                <li>Consider time zones for international calculations</li>
+                <li>Account for public holidays in working day calculations</li>
+                <li>Use "Include End Date" option for inclusive counts</li>
+                <li>For pregnancy/medical use, consult professionals too</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section">
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How to calculate days between two dates?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>To calculate days between two dates, <strong>subtract the earlier date from the later date</strong>. Our Date Calculator gives you the exact difference in years, months, days, weeks, working days, and hours.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How to add days to a date?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Use our <strong>'Add/Subtract'</strong> mode. Enter the starting date, select 'Add' operation, and enter the number of days/weeks/months/years to add. The new date will be calculated instantly.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What are working days?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Working days are <strong>Monday to Friday</strong>, excluding weekends (Saturday and Sunday). Our calculator shows total working days between two dates, useful for project planning and HR. Note: It doesn't account for public holidays.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Does the calculator account for leap years?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes! Our calculator <strong>fully accounts for leap years</strong>. February 29 in leap years (2020, 2024, 2028) is correctly counted, ensuring accurate date difference calculations.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How to calculate due date for pregnancy?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>For pregnancy due date, use Add/Subtract mode. Enter your <strong>Last Menstrual Period (LMP)</strong> date and add <strong>280 days</strong> (40 weeks). However, always consult your doctor for medical advice.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Can I find date that was 90 days ago?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes! Use <strong>Add/Subtract</strong> mode, select <strong>'Subtract'</strong>, enter today's date, and put <strong>90 in Days field</strong>. The calculator will show the exact date 90 days ago.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is the difference between weekday and working day?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>They are the <strong>same thing</strong>. Weekdays = Working Days = Business Days = Monday to Friday (5 days/week). Weekends are Saturday and Sunday. Note: Some countries have different working days (e.g., Middle East has Fri-Sat weekend).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Bottom) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="5805658347"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="age-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-birthday-cake"></i></div>
+                <span class="related-card-text">Age Calculator</span>
+            </a>
+            <a href="percentage-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
+                <span class="related-card-text">Percentage Calculator</span>
+            </a>
+            <a href="bmi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-health"><i class="fas fa-weight"></i></div>
+                <span class="related-card-text">BMI Calculator</span>
+            </a>
+            <a href="bmr-calculator.html" class="related-card">
+                <div class="related-card-icon bg-health"><i class="fas fa-fire-alt"></i></div>
+                <span class="related-card-text">BMR Calculator</span>
+            </a>
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🧮 AI ToolCor <span class="gradient-text">Calculators</span></h3>
+                <p>Free online calculators for finance, health & daily use. Accurate, fast & no signup required.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/aitoolcor" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/aitoolcor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/aitoolcor" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/aitoolcor" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Finance</h4>
+                <ul>
+                    <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                    <li><a href="sip-calculator.html">SIP Calculator</a></li>
+                    <li><a href="gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="fd-calculator.html">FD Calculator</a></li>
+                    <li><a href="loan-calculator.html">Loan Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Health & Daily</h4>
+                <ul>
+                    <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                    <li><a href="bmr-calculator.html">BMR Calculator</a></li>
+                    <li><a href="age-calculator.html">Age Calculator</a></li>
+                    <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+                    <li><a href="date-calculator.html">Date Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
+                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
+                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
+                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
+                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
+                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- ===== INLINE STYLES (Quick Buttons) ===== -->
+    <style>
+        .quick-btn {
+            padding: 10px 8px;
+            background: var(--bg-primary);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+
+        .quick-btn:hover {
+            border-color: var(--primary-light);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/common.js"></script>
+    <script src="js/ads-loader.js"></script>
+
+    <script>
+        // ===== ELEMENTS =====
+        const fromDate = document.getElementById('fromDate');
+        const toDate = document.getElementById('toDate');
+        const startDate = document.getElementById('startDate');
+        const includeEndDate = document.getElementById('includeEndDate');
+
+        const addYears = document.getElementById('addYears');
+        const addMonths = document.getElementById('addMonths');
+        const addWeeks = document.getElementById('addWeeks');
+        const addDays = document.getElementById('addDays');
+
+        const modeRadios = document.querySelectorAll('input[name="dateMode"]');
+        const operationRadios = document.querySelectorAll('input[name="operation"]');
+        const diffMode = document.getElementById('diffMode');
+        const addSubMode = document.getElementById('addSubMode');
+
+        const days_of_week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const months_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        // ===== FORMAT FUNCTIONS =====
+        function fmtDate(date) {
+            return `${months_short[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()} (${days_of_week[date.getDay()]})`;
+        }
+
+        function formatNum(num) {
+            if (Math.abs(num) >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (Math.abs(num) >= 1000) return num.toLocaleString();
+            return num.toString();
+        }
+
+        // ===== MODE TOGGLE =====
+        modeRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const mode = document.querySelector('input[name="dateMode"]:checked').value;
+                if (mode === 'difference') {
+                    diffMode.style.display = 'block';
+                    addSubMode.style.display = 'none';
+                } else {
+                    diffMode.style.display = 'none';
+                    addSubMode.style.display = 'block';
+                }
+                calculateDate();
+            });
+        });
+
+        // ===== HELPER FUNCTIONS =====
+        function setTodayFrom() {
+            fromDate.value = new Date().toISOString().split('T')[0];
+            calculateDate();
+        }
+
+        function setTodayTo() {
+            toDate.value = new Date().toISOString().split('T')[0];
+            calculateDate();
+        }
+
+        function setTodayStart() {
+            startDate.value = new Date().toISOString().split('T')[0];
+            calculateDate();
+        }
+
+        function quickSet(value, unit) {
+            addYears.value = 0;
+            addMonths.value = 0;
+            addWeeks.value = 0;
+            addDays.value = 0;
+
+            if (unit === 'days') addDays.value = value;
+            else if (unit === 'years') addYears.value = value;
+
+            calculateDate();
+        }
+
+        // ===== CALCULATE WORKING DAYS =====
+        function calculateWorkingDays(start, end) {
+            let workingDays = 0;
+            let weekendDays = 0;
+            const current = new Date(start);
+            const endDate = new Date(end);
+
+            while (current <= endDate) {
+                const day = current.getDay();
+                if (day === 0 || day === 6) {
+                    weekendDays++;
+                } else {
+                    workingDays++;
+                }
+                current.setDate(current.getDate() + 1);
+            }
+            return { workingDays, weekendDays };
+        }
+
+        // ===== MAIN CALCULATION =====
+        function calculateDate() {
+            const mode = document.querySelector('input[name="dateMode"]:checked').value;
+
+            if (mode === 'difference') {
+                calculateDifference();
+            } else {
+                calculateAddSubtract();
+            }
+        }
+
+        // ===== DATE DIFFERENCE =====
+        function calculateDifference() {
+            if (!fromDate.value || !toDate.value) {
+                showToast('Please enter both dates!');
+                return;
+            }
+
+            let start = new Date(fromDate.value);
+            let end = new Date(toDate.value);
+
+            // Swap if needed
+            if (start > end) {
+                [start, end] = [end, start];
+            }
+
+            // Include end date
+            if (includeEndDate.checked) {
+                end = new Date(end);
+                end.setDate(end.getDate() + 1);
+            }
+
+            // Years, Months, Days
+            let years = end.getFullYear() - start.getFullYear();
+            let months = end.getMonth() - start.getMonth();
+            let days = end.getDate() - start.getDate();
+
+            if (days < 0) {
+                months--;
+                const prevMonth = new Date(end.getFullYear(), end.getMonth(), 0);
+                days += prevMonth.getDate();
+            }
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            // Totals
+            const diffMs = end - start;
+            const totalDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            const totalWeeks = Math.floor(totalDays / 7);
+            const totalMonths = years * 12 + months;
+            const totalHours = Math.floor(diffMs / (1000 * 60 * 60));
+
+            // Working days
+            const { workingDays, weekendDays } = calculateWorkingDays(
+                new Date(fromDate.value), 
+                includeEndDate.checked ? new Date(toDate.value) : new Date(toDate.value)
+            );
+
+            // Display
+            document.getElementById('resultMainLabel').textContent = 'Difference';
+            document.getElementById('resultMain').textContent = 
+                `${years} Year${years !== 1 ? 's' : ''}`;
+            document.getElementById('resultMainSub').textContent = 
+                `${months} month${months !== 1 ? 's' : ''} & ${days} day${days !== 1 ? 's' : ''}`;
+
+            document.getElementById('diffYears').textContent = years;
+            document.getElementById('diffMonths').textContent = months;
+            document.getElementById('diffWeeks').textContent = Math.floor(days / 7);
+            document.getElementById('diffDays').textContent = days % 7;
+
+            document.getElementById('totalMonthsVal').textContent = totalMonths.toLocaleString();
+            document.getElementById('totalWeeksVal').textContent = totalWeeks.toLocaleString();
+            document.getElementById('totalDaysVal').textContent = totalDays.toLocaleString();
+            document.getElementById('workingDaysVal').textContent = workingDays.toLocaleString();
+            document.getElementById('weekendDaysVal').textContent = weekendDays.toLocaleString();
+            document.getElementById('totalHoursVal').textContent = formatNum(totalHours);
+
+            // Date Info
+            document.getElementById('fromLabel').textContent = 'From Date:';
+            document.getElementById('toLabel').textContent = 'To Date:';
+            document.getElementById('fromDateInfo').textContent = fmtDate(new Date(fromDate.value));
+            document.getElementById('toDateInfo').textContent = fmtDate(new Date(toDate.value));
+        }
+
+        // ===== ADD / SUBTRACT =====
+        function calculateAddSubtract() {
+            if (!startDate.value) {
+                showToast('Please enter starting date!');
+                return;
+            }
+
+            const start = new Date(startDate.value);
+            const operation = document.querySelector('input[name="operation"]:checked').value;
+            const yrs = parseInt(addYears.value) || 0;
+            const mths = parseInt(addMonths.value) || 0;
+            const wks = parseInt(addWeeks.value) || 0;
+            const dys = parseInt(addDays.value) || 0;
+
+            const result = new Date(start);
+            const multiplier = operation === 'add' ? 1 : -1;
+
+            // Add/subtract years
+            result.setFullYear(result.getFullYear() + (yrs * multiplier));
+            // Add/subtract months
+            result.setMonth(result.getMonth() + (mths * multiplier));
+            // Add/subtract days (weeks * 7 + days)
+            result.setDate(result.getDate() + ((wks * 7 + dys) * multiplier));
+
+            const totalDays = (yrs * 365) + (mths * 30) + (wks * 7) + dys;
+            const actualDiffMs = Math.abs(result - start);
+            const actualDays = Math.floor(actualDiffMs / (1000 * 60 * 60 * 24));
+
+            // Display
+            document.getElementById('resultMainLabel').textContent = 
+                operation === 'add' ? 'New Date (After)' : 'New Date (Before)';
+            document.getElementById('resultMain').textContent = 
+                `${months_short[result.getMonth()]} ${result.getDate()}, ${result.getFullYear()}`;
+            document.getElementById('resultMainSub').textContent = 
+                `${days_of_week[result.getDay()]}day`;
+
+            document.getElementById('diffYears').textContent = yrs;
+            document.getElementById('diffMonths').textContent = mths;
+            document.getElementById('diffWeeks').textContent = wks;
+            document.getElementById('diffDays').textContent = dys;
+
+            const totalMonths = yrs * 12 + mths;
+            const totalWeeks = Math.floor(actualDays / 7);
+            const totalHours = actualDays * 24;
+            const { workingDays, weekendDays } = calculateWorkingDays(
+                operation === 'add' ? start : result,
+                operation === 'add' ? result : start
+            );
+
+            document.getElementById('totalMonthsVal').textContent = totalMonths.toLocaleString();
+            document.getElementById('totalWeeksVal').textContent = totalWeeks.toLocaleString();
+            document.getElementById('totalDaysVal').textContent = actualDays.toLocaleString();
+            document.getElementById('workingDaysVal').textContent = workingDays.toLocaleString();
+            document.getElementById('weekendDaysVal').textContent = weekendDays.toLocaleString();
+            document.getElementById('totalHoursVal').textContent = formatNum(totalHours);
+
+            // Date Info
+            document.getElementById('fromLabel').textContent = 'Starting Date:';
+            document.getElementById('toLabel').textContent = 'Result Date:';
+            document.getElementById('fromDateInfo').textContent = fmtDate(start);
+            document.getElementById('toDateInfo').textContent = fmtDate(result);
+        }
+
+        // ===== EVENT LISTENERS =====
+        fromDate.addEventListener('change', calculateDate);
+        toDate.addEventListener('change', calculateDate);
+        startDate.addEventListener('change', calculateDate);
+        includeEndDate.addEventListener('change', calculateDate);
+
+        operationRadios.forEach(r => r.addEventListener('change', calculateDate));
+        addYears.addEventListener('input', calculateDate);
+        addMonths.addEventListener('input', calculateDate);
+        addWeeks.addEventListener('input', calculateDate);
+        addDays.addEventListener('input', calculateDate);
+
+        // ===== RESET =====
+        function resetCalculator() {
+            const today = new Date();
+            const fiveYearsAgo = new Date(today.getFullYear() - 5, today.getMonth() - 3, today.getDate() - 15);
+
+            fromDate.value = fiveYearsAgo.toISOString().split('T')[0];
+            toDate.value = today.toISOString().split('T')[0];
+            startDate.value = today.toISOString().split('T')[0];
+            includeEndDate.checked = false;
+
+            addYears.value = 0;
+            addMonths.value = 0;
+            addWeeks.value = 0;
+            addDays.value = 30;
+
+            document.getElementById('modeDiff').checked = true;
+            document.getElementById('addOp').checked = true;
+            diffMode.style.display = 'block';
+            addSubMode.style.display = 'none';
+
+            calculateDate();
+            showToast('Calculator reset!');
+        }
+
+        // ===== COPY =====
+        function copyResult() {
+            const label = document.getElementById('resultMainLabel').textContent;
+            const result = document.getElementById('resultMain').textContent;
+            const sub = document.getElementById('resultMainSub').textContent;
+            const totalDays = document.getElementById('totalDaysVal').textContent;
+            const totalWeeks = document.getElementById('totalWeeksVal').textContent;
+            const fromInfo = document.getElementById('fromDateInfo').textContent;
+            const toInfo = document.getElementById('toDateInfo').textContent;
+
+            const text = `📅 Date Calculation Result\n\n` +
+                `${label}: ${result} ${sub}\n` +
+                `📌 From: ${fromInfo}\n` +
+                `📌 To: ${toInfo}\n` +
+                `📊 Total Days: ${totalDays}\n` +
+                `📊 Total Weeks: ${totalWeeks}\n\n` +
+                `Calculated on: https://calculator.aitoolcor.com/date-calculator.html`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Result copied to clipboard!');
+            }).catch(() => {
+                showToast('Failed to copy.');
+            });
+        }
+
+        // ===== SHARE =====
+        function shareResult() {
+            const label = document.getElementById('resultMainLabel').textContent;
+            const result = document.getElementById('resultMain').textContent;
+            const text = `${label}: ${result}. Calculate on AI ToolCor Date Calculator!`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Date Calculator Result',
+                    text: text,
+                    url: 'https://calculator.aitoolcor.com/date-calculator.html'
+                }).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(text + '\n\nhttps://calculator.aitoolcor.com/date-calculator.html');
+                showToast('Link copied! Share it anywhere.');
+            }
+        }
+
+        // ===== PRINT =====
+        function printResult() {
+            window.print();
+        }
+
+        // ===== TOAST =====
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        // ===== INIT =====
+        window.addEventListener('load', () => {
+            const today = new Date();
+            const fiveYearsAgo = new Date(today.getFullYear() - 5, today.getMonth() - 3, today.getDate() - 15);
+
+            fromDate.value = fiveYearsAgo.toISOString().split('T')[0];
+            toDate.value = today.toISOString().split('T')[0];
+            startDate.value = today.toISOString().split('T')[0];
+
+            calculateDate();
+        });
+    </script>
+</body>
+</html>

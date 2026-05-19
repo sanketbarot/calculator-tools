@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========== SEO META ========== -->
+    <title>FD Calculator - Fixed Deposit Maturity Calculator Online | AI ToolCor</title>
+    <meta name="description" content="Free FD Calculator to calculate fixed deposit maturity amount, interest earned & total returns. Supports quarterly, monthly, half-yearly & yearly compounding.">
+    <meta name="keywords" content="FD calculator, fixed deposit calculator, FD maturity calculator, bank FD calculator, SBI FD calculator, HDFC FD calculator, FD interest calculator, fixed deposit returns">
+    <meta name="author" content="AI ToolCor">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="google-adsense-account" content="ca-pub-8473875587893208">
+
+    <link rel="canonical" href="https://calculator.aitoolcor.com/fd-calculator.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI ToolCor Calculators">
+    <meta property="og:title" content="FD Calculator - Fixed Deposit Maturity Calculator">
+    <meta property="og:description" content="Free FD Calculator to calculate fixed deposit maturity amount & interest earned instantly.">
+    <meta property="og:url" content="https://calculator.aitoolcor.com/fd-calculator.html">
+    <meta property="og:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FD Calculator - Fixed Deposit Calculator">
+    <meta name="twitter:description" content="Free FD Calculator to calculate maturity & interest.">
+    <meta name="twitter:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%237c3aed'/><stop offset='100%25' stop-color='%230ea5e9'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><text x='50' y='42' text-anchor='middle' font-size='28' font-weight='800' fill='white' font-family='Arial'>CALC</text><text x='50' y='72' text-anchor='middle' font-size='16' font-weight='600' fill='rgba(255,255,255,0.85)' font-family='Arial'>ToolCor</text></svg>" type="image/svg+xml">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/ads.css">
+    <link rel="stylesheet" href="css/tool.css">
+
+ 
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8473875587893208" crossorigin="anonymous"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://calculator.aitoolcor.com/fd-calculator.html#webpage",
+          "url": "https://calculator.aitoolcor.com/fd-calculator.html",
+          "name": "FD Calculator - Fixed Deposit Maturity Calculator",
+          "description": "Free FD Calculator to calculate fixed deposit maturity amount, interest earned & returns.",
+          "isPartOf": { "@id": "https://calculator.aitoolcor.com/#website" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculator.aitoolcor.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Finance Calculators", "item": "https://calculator.aitoolcor.com/#finance" },
+            { "@type": "ListItem", "position": 3, "name": "FD Calculator", "item": "https://calculator.aitoolcor.com/fd-calculator.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What is FD (Fixed Deposit)?", "acceptedAnswer": { "@type": "Answer", "text": "A Fixed Deposit (FD) is a financial instrument provided by banks and NBFCs where you deposit a lump sum for a fixed period at a predetermined interest rate." } },
+            { "@type": "Question", "name": "How is FD interest calculated?", "acceptedAnswer": { "@type": "Answer", "text": "FD interest is calculated using compound interest formula: A = P × (1 + r/n)^(n×t), where P is principal, r is interest rate, n is compounding frequency, and t is time in years." } },
+            { "@type": "Question", "name": "What is the current FD interest rate in India?", "acceptedAnswer": { "@type": "Answer", "text": "FD interest rates in India typically range from 5% to 8% per year. Senior citizens get an additional 0.5% interest. Rates vary by bank and tenure." } }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <div class="nav-logo-icon"><i class="fas fa-calculator"></i></div>
+                <div>
+                    <span class="nav-logo-text">AI ToolCor</span>
+                    <span class="nav-logo-sub">Calculators</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#finance" class="active">Finance</a></li>
+                <li><a href="/#health">Health</a></li>
+                <li><a href="/#daily-use">Daily Use</a></li>
+                <li><a href="https://www.aitoolcor.com/" target="_blank" class="nav-cta"><i class="fas fa-external-link-alt"></i> Main Site</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Home</a>
+        <a href="/#finance">Finance</a>
+        <a href="/#health">Health</a>
+        <a href="/#daily-use">Daily Use</a>
+        <a href="https://www.aitoolcor.com/" target="_blank">🌐 Main Site</a>
+    </div>
+
+    <!-- ===== TOOL HERO ===== -->
+    <section class="tool-hero">
+        <div class="tool-breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="/#finance">Finance</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>FD Calculator</span>
+        </div>
+
+        <div class="tool-hero-icon bg-finance">
+            <i class="fas fa-piggy-bank"></i>
+        </div>
+
+        <h1><span class="gradient-text">FD</span> Calculator</h1>
+        <p>Calculate your Fixed Deposit maturity amount, interest earned & total returns instantly</p>
+    </section>
+
+    <!-- ===== AD BANNER (Top Banner) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="3658236067"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== TOOL CONTAINER ===== -->
+    <section class="tool-container">
+        <div class="tool-grid">
+
+            <!-- ===== INPUT CARD ===== -->
+            <div class="tool-card-main">
+                <h2><i class="fas fa-sliders-h"></i> FD Details</h2>
+
+                <!-- Principal Amount -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Principal Amount</span>
+                        <span class="label-value" id="principalDisplay">₹ 1,00,000</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <span class="form-input-prefix">₹</span>
+                        <input type="number" id="principal" class="form-input with-prefix" value="100000" min="1000" max="100000000">
+                    </div>
+                    <input type="range" id="principalRange" class="form-range" min="1000" max="10000000" step="1000" value="100000">
+                    <div class="range-labels">
+                        <span>₹1K</span>
+                        <span>₹1 Cr</span>
+                    </div>
+                </div>
+
+                <!-- Interest Rate -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Interest Rate (per year)</span>
+                        <span class="label-value" id="rateDisplay">7%</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <input type="number" id="interestRate" class="form-input with-suffix" value="7" min="0.1" max="20" step="0.1">
+                        <span class="form-input-suffix">% p.a.</span>
+                    </div>
+                    <input type="range" id="interestRateRange" class="form-range" min="1" max="15" step="0.1" value="7">
+                    <div class="range-labels">
+                        <span>1%</span>
+                        <span>15%</span>
+                    </div>
+                </div>
+
+                <!-- Tenure -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Tenure</span>
+                        <span class="label-value" id="tenureDisplay">5 Years</span>
+                    </div>
+
+                    <div class="radio-group" style="margin-bottom: 12px;">
+                        <input type="radio" id="tenureYears" name="tenureType" value="years" checked>
+                        <label for="tenureYears">Years</label>
+                        <input type="radio" id="tenureMonths" name="tenureType" value="months">
+                        <label for="tenureMonths">Months</label>
+                        <input type="radio" id="tenureDays" name="tenureType" value="days">
+                        <label for="tenureDays">Days</label>
+                    </div>
+
+                    <div class="form-input-wrapper">
+                        <input type="number" id="tenure" class="form-input with-suffix" value="5" min="1" max="20">
+                        <span class="form-input-suffix" id="tenureSuffix">Years</span>
+                    </div>
+                    <input type="range" id="tenureRange" class="form-range" min="1" max="20" step="1" value="5">
+                    <div class="range-labels">
+                        <span id="tenureMin">1 Yr</span>
+                        <span id="tenureMax">20 Yr</span>
+                    </div>
+                </div>
+
+                <!-- Compounding Frequency -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Compounding Frequency</span>
+                    </div>
+                    <select id="compounding" class="form-input" style="cursor: pointer;">
+                        <option value="4" selected>Quarterly (Most Common)</option>
+                        <option value="12">Monthly</option>
+                        <option value="2">Half-Yearly</option>
+                        <option value="1">Yearly</option>
+                    </select>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">
+                        💡 Most Indian banks compound FD interest quarterly
+                    </p>
+                </div>
+
+                <!-- Senior Citizen -->
+                <div class="form-group">
+                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 12px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 0.9rem; font-weight: 600;">
+                        <input type="checkbox" id="seniorCitizen" style="width: 18px; height: 18px; cursor: pointer; accent-color: var(--primary);">
+                        <span>👴 Senior Citizen (+0.5% extra interest)</span>
+                    </label>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="calculateFD()">
+                        <i class="fas fa-calculator"></i> Calculate
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetCalculator()">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- ===== RESULT CARD ===== -->
+            <div class="result-card">
+                <h2><i class="fas fa-chart-pie"></i> FD Maturity</h2>
+
+                <!-- Main Result Display -->
+                <div class="result-main">
+                    <div class="result-main-label">Maturity Amount</div>
+                    <div class="result-main-value" id="maturityAmount">₹ 1,41,478</div>
+                    <div class="result-main-sub" id="maturitySub">After 5 years @ 7% quarterly</div>
+                </div>
+
+                <!-- Breakdown -->
+                <div class="result-breakdown">
+                    <div class="result-item">
+                        <div class="result-item-label">Principal</div>
+                        <div class="result-item-value" id="principalAmount">₹ 1,00,000</div>
+                    </div>
+                    <div class="result-item success">
+                        <div class="result-item-label">Interest Earned</div>
+                        <div class="result-item-value" id="interestEarned">₹ 41,478</div>
+                    </div>
+                </div>
+
+                <div class="result-breakdown">
+                    <div class="result-item highlight">
+                        <div class="result-item-label">Effective Rate</div>
+                        <div class="result-item-value" id="effectiveRate">7.19%</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-item-label">Returns (%)</div>
+                        <div class="result-item-value" id="totalReturns">41.5%</div>
+                    </div>
+                </div>
+
+                <!-- Chart -->
+                <div class="result-chart">
+                    <div class="chart-bar">
+                        <div class="chart-bar-segment" id="principalBar" style="width: 71%; background: #0ea5e9;"></div>
+                        <div class="chart-bar-segment" id="interestBar" style="width: 29%; background: #10b981;"></div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #0ea5e9;"></span>
+                            <span>Principal (<span id="principalPercent">71%</span>)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #10b981;"></span>
+                            <span>Interest (<span id="interestPercent">29%</span>)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share Actions -->
+                <div class="result-actions">
+                    <button class="action-btn" onclick="copyResult()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <button class="action-btn" onclick="shareResult()">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button class="action-btn" onclick="printResult()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Middle) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="1677271683"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== INFO SECTION ===== -->
+    <section class="info-section">
+        <div class="info-card">
+            <h2>About <span class="gradient-text">FD Calculator</span></h2>
+            <p>A Fixed Deposit (FD) Calculator is a powerful tool that helps you calculate the maturity amount and interest earned on your fixed deposit investments. It works for all major banks like SBI, HDFC, ICICI, Axis, PNB, BOB, and more.</p>
+
+            <h3>📐 FD Calculation Formula</h3>
+            <p><strong>Compound Interest Formula:</strong></p>
+            <div class="info-formula">
+                A = P × (1 + r/n)^(n × t)
+            </div>
+
+            <p>Where:</p>
+            <ul>
+                <li><strong>A</strong> = Maturity Amount</li>
+                <li><strong>P</strong> = Principal (initial deposit)</li>
+                <li><strong>r</strong> = Annual interest rate (decimal)</li>
+                <li><strong>n</strong> = Number of times interest compounds per year</li>
+                <li><strong>t</strong> = Time period in years</li>
+            </ul>
+
+            <p><strong>Interest Earned = A - P</strong></p>
+
+            <h3>✅ How to Use This Calculator</h3>
+            <ol>
+                <li>Enter your <strong>Principal Amount</strong> (FD deposit amount)</li>
+                <li>Enter the bank's <strong>Interest Rate</strong> per year</li>
+                <li>Select <strong>Tenure</strong> in years, months or days</li>
+                <li>Choose <strong>Compounding Frequency</strong> (Quarterly is most common)</li>
+                <li>Tick <strong>Senior Citizen</strong> for +0.5% extra rate (if applicable)</li>
+                <li>Click Calculate to see maturity amount & interest earned</li>
+            </ol>
+
+            <h3>🏦 Current FD Interest Rates in India (Approx.)</h3>
+            <ul>
+                <li><strong>SBI FD:</strong> 6.5% - 7.5% (General), 7.0% - 8.0% (Senior)</li>
+                <li><strong>HDFC FD:</strong> 6.6% - 7.5% (General), 7.1% - 8.0% (Senior)</li>
+                <li><strong>ICICI FD:</strong> 6.7% - 7.5% (General), 7.2% - 8.0% (Senior)</li>
+                <li><strong>Axis Bank FD:</strong> 6.5% - 7.5% (General), 7.0% - 8.0% (Senior)</li>
+                <li><strong>Small Finance Banks:</strong> 7.5% - 9% (higher rates)</li>
+            </ul>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Note: Rates change frequently. Check bank website for latest rates.</p>
+
+            <h3>💡 Benefits of FD Investment</h3>
+            <ul>
+                <li><strong>Safe Investment</strong> — Insured up to ₹5 lakh by DICGC</li>
+                <li><strong>Guaranteed Returns</strong> — Fixed interest rate, no market risk</li>
+                <li><strong>Flexible Tenure</strong> — Choose from 7 days to 10 years</li>
+                <li><strong>Loan Against FD</strong> — Get 90% loan instantly</li>
+                <li><strong>Tax Saving FD</strong> — Section 80C deduction up to ₹1.5 lakh (5-year lock-in)</li>
+                <li><strong>Senior Citizen Benefits</strong> — Extra 0.5% interest rate</li>
+            </ul>
+
+            <h3>📊 Example Calculation</h3>
+            <p>If you deposit <strong>₹1,00,000</strong> at <strong>7%</strong> interest for <strong>5 years</strong> with quarterly compounding:</p>
+            <ul>
+                <li>Maturity Amount: <strong>₹1,41,478</strong></li>
+                <li>Interest Earned: <strong>₹41,478</strong></li>
+                <li>Effective Annual Yield: <strong>7.19%</strong></li>
+            </ul>
+
+            <h3>⚠️ Important Notes</h3>
+            <ul>
+                <li>TDS is deducted if interest exceeds ₹40,000/year (₹50,000 for seniors)</li>
+                <li>Form 15G/15H can be submitted to avoid TDS (if applicable)</li>
+                <li>Premature withdrawal attracts 0.5%-1% penalty</li>
+                <li>Tax-saving FDs have 5-year lock-in period</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section">
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is FD (Fixed Deposit)?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>A <strong>Fixed Deposit (FD)</strong> is a financial instrument provided by banks and NBFCs where you deposit a lump sum for a fixed period at a predetermined interest rate. FDs offer guaranteed returns with no market risk.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How is FD interest calculated?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>FD interest is calculated using compound interest formula: <strong>A = P × (1 + r/n)^(n × t)</strong>. Most Indian banks compound interest <strong>quarterly</strong>, which is more beneficial than annual compounding.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is the current FD interest rate in India?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>FD interest rates in India typically range from <strong>5% to 8%</strong> per year. Senior citizens get an additional <strong>0.5%</strong> interest. Small finance banks may offer up to <strong>9%</strong>. Rates vary by bank and tenure.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Which compounding frequency is best for FD?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>Monthly compounding</strong> gives the highest returns, followed by quarterly, half-yearly and yearly. However, most banks use <strong>quarterly compounding</strong> for FDs in India.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Is FD interest taxable?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, FD interest is fully taxable as per your income tax slab. <strong>TDS</strong> is deducted if interest exceeds ₹40,000/year (₹50,000 for seniors). You can submit Form 15G/15H to avoid TDS if your income is below taxable limit.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Can I withdraw FD before maturity?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, premature withdrawal is allowed but attracts a <strong>penalty of 0.5% to 1%</strong> on the interest rate. Tax-saving FDs (5-year lock-in) cannot be withdrawn early.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Is FD safer than mutual funds?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, FDs are <strong>safer</strong> than mutual funds because they offer guaranteed returns and are insured up to ₹5 lakh. However, mutual funds (especially equity) offer <strong>higher long-term returns</strong> (10-15%) compared to FDs (6-8%).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Bottom) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="5805658347"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="compound-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-percentage"></i></div>
+                <span class="related-card-text">Compound Interest</span>
+            </a>
+            <a href="simple-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-calculator"></i></div>
+                <span class="related-card-text">Simple Interest</span>
+            </a>
+            <a href="loan-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-hand-holding-usd"></i></div>
+                <span class="related-card-text">Loan Calculator</span>
+            </a>
+            <a href="gst-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-receipt"></i></div>
+                <span class="related-card-text">GST Calculator</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🧮 AI ToolCor <span class="gradient-text">Calculators</span></h3>
+                <p>Free online calculators for finance, health & daily use. Accurate, fast & no signup required.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/aitoolcor" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/aitoolcor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/aitoolcor" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/aitoolcor" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Finance</h4>
+                <ul>
+                    <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                    <li><a href="sip-calculator.html">SIP Calculator</a></li>
+                    <li><a href="gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="fd-calculator.html">FD Calculator</a></li>
+                    <li><a href="loan-calculator.html">Loan Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Health & Daily</h4>
+                <ul>
+                    <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                    <li><a href="bmr-calculator.html">BMR Calculator</a></li>
+                    <li><a href="age-calculator.html">Age Calculator</a></li>
+                    <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+                    <li><a href="date-calculator.html">Date Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
+                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
+                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
+                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
+                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
+                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/common.js"></script>
+    <script src="js/ads-loader.js"></script>
+
+    <script>
+        // ===== ELEMENTS =====
+        const principal = document.getElementById('principal');
+        const principalRange = document.getElementById('principalRange');
+        const principalDisplay = document.getElementById('principalDisplay');
+
+        const interestRate = document.getElementById('interestRate');
+        const interestRateRange = document.getElementById('interestRateRange');
+        const rateDisplay = document.getElementById('rateDisplay');
+
+        const tenure = document.getElementById('tenure');
+        const tenureRange = document.getElementById('tenureRange');
+        const tenureDisplay = document.getElementById('tenureDisplay');
+        const tenureSuffix = document.getElementById('tenureSuffix');
+        const tenureMin = document.getElementById('tenureMin');
+        const tenureMax = document.getElementById('tenureMax');
+
+        const tenureRadios = document.querySelectorAll('input[name="tenureType"]');
+        const compounding = document.getElementById('compounding');
+        const seniorCitizen = document.getElementById('seniorCitizen');
+
+        // ===== INDIAN NUMBER FORMAT =====
+        function formatIndian(num) {
+            return new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        // ===== FD CALCULATION =====
+        function calculateFD() {
+            const P = parseFloat(principal.value) || 0;
+            let r = parseFloat(interestRate.value) || 0;
+
+            // Add senior citizen bonus
+            if (seniorCitizen.checked) r += 0.5;
+
+            const n = parseInt(compounding.value); // Compounding frequency per year
+            const tenureType = document.querySelector('input[name="tenureType"]:checked').value;
+            let tenureValue = parseFloat(tenure.value) || 0;
+
+            // Convert tenure to years
+            let t = 0;
+            if (tenureType === 'years') t = tenureValue;
+            else if (tenureType === 'months') t = tenureValue / 12;
+            else if (tenureType === 'days') t = tenureValue / 365;
+
+            let maturityAmount = 0;
+            let interestEarned = 0;
+            let effectiveRate = 0;
+
+            if (P > 0 && r > 0 && t > 0) {
+                const rate = r / 100;
+                maturityAmount = P * Math.pow(1 + rate / n, n * t);
+                interestEarned = maturityAmount - P;
+                
+                // Effective annual yield
+                effectiveRate = (Math.pow(1 + rate / n, n) - 1) * 100;
+            } else if (P > 0) {
+                maturityAmount = P;
+            }
+
+            const totalReturns = P > 0 ? ((interestEarned / P) * 100) : 0;
+
+            // Display results
+            document.getElementById('maturityAmount').textContent = formatIndian(maturityAmount);
+            document.getElementById('principalAmount').textContent = formatIndian(P);
+            document.getElementById('interestEarned').textContent = formatIndian(interestEarned);
+            document.getElementById('effectiveRate').textContent = effectiveRate.toFixed(2) + '%';
+            document.getElementById('totalReturns').textContent = totalReturns.toFixed(2) + '%';
+
+            // Compounding text
+            const compText = {
+                '12': 'monthly',
+                '4': 'quarterly',
+                '2': 'half-yearly',
+                '1': 'yearly'
+            };
+            const tenureText = `${tenureValue} ${tenureType}`;
+            document.getElementById('maturitySub').textContent = 
+                `After ${tenureText} @ ${r}% ${compText[n]}`;
+
+            // Chart percentages
+            const principalPct = maturityAmount > 0 ? ((P / maturityAmount) * 100).toFixed(1) : 0;
+            const interestPct = maturityAmount > 0 ? ((interestEarned / maturityAmount) * 100).toFixed(1) : 0;
+
+            document.getElementById('principalBar').style.width = principalPct + '%';
+            document.getElementById('interestBar').style.width = interestPct + '%';
+            document.getElementById('principalPercent').textContent = principalPct + '%';
+            document.getElementById('interestPercent').textContent = interestPct + '%';
+
+            // Update displays
+            principalDisplay.textContent = formatIndian(P);
+            rateDisplay.textContent = parseFloat(interestRate.value).toFixed(1) + '%';
+        }
+
+        // ===== UPDATE TENURE DISPLAY =====
+        function updateTenureDisplay() {
+            const tenureType = document.querySelector('input[name="tenureType"]:checked').value;
+            const val = parseInt(tenure.value) || 0;
+            let label = '';
+            if (tenureType === 'years') label = val + ' Year' + (val !== 1 ? 's' : '');
+            else if (tenureType === 'months') label = val + ' Month' + (val !== 1 ? 's' : '');
+            else if (tenureType === 'days') label = val + ' Day' + (val !== 1 ? 's' : '');
+            tenureDisplay.textContent = label;
+        }
+
+        // ===== SYNC RANGE & INPUT =====
+        principal.addEventListener('input', () => {
+            const val = parseFloat(principal.value) || 0;
+            if (val >= parseInt(principalRange.min) && val <= parseInt(principalRange.max)) {
+                principalRange.value = val;
+            }
+            calculateFD();
+        });
+
+        principalRange.addEventListener('input', () => {
+            principal.value = principalRange.value;
+            calculateFD();
+        });
+
+        interestRate.addEventListener('input', () => {
+            const val = parseFloat(interestRate.value) || 0;
+            if (val >= parseFloat(interestRateRange.min) && val <= parseFloat(interestRateRange.max)) {
+                interestRateRange.value = val;
+            }
+            calculateFD();
+        });
+
+        interestRateRange.addEventListener('input', () => {
+            interestRate.value = interestRateRange.value;
+            calculateFD();
+        });
+
+        tenure.addEventListener('input', () => {
+            const val = parseInt(tenure.value) || 0;
+            if (val >= parseInt(tenureRange.min) && val <= parseInt(tenureRange.max)) {
+                tenureRange.value = val;
+            }
+            updateTenureDisplay();
+            calculateFD();
+        });
+
+        tenureRange.addEventListener('input', () => {
+            tenure.value = tenureRange.value;
+            updateTenureDisplay();
+            calculateFD();
+        });
+
+        // Tenure Type Toggle
+        tenureRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const tenureType = document.querySelector('input[name="tenureType"]:checked').value;
+
+                if (tenureType === 'years') {
+                    tenureRange.min = 1;
+                    tenureRange.max = 20;
+                    tenureRange.value = Math.min(20, Math.max(1, parseInt(tenure.value) || 5));
+                    tenure.value = tenureRange.value;
+                    tenure.min = 1;
+                    tenure.max = 20;
+                    tenureSuffix.textContent = 'Years';
+                    tenureMin.textContent = '1 Yr';
+                    tenureMax.textContent = '20 Yr';
+                } else if (tenureType === 'months') {
+                    tenureRange.min = 1;
+                    tenureRange.max = 240;
+                    tenureRange.value = Math.min(240, Math.max(1, parseInt(tenure.value) * 12 || 60));
+                    tenure.value = tenureRange.value;
+                    tenure.min = 1;
+                    tenure.max = 240;
+                    tenureSuffix.textContent = 'Months';
+                    tenureMin.textContent = '1 M';
+                    tenureMax.textContent = '240 M';
+                } else {
+                    tenureRange.min = 7;
+                    tenureRange.max = 3650;
+                    tenureRange.value = Math.min(3650, Math.max(7, parseInt(tenure.value) || 365));
+                    tenure.value = tenureRange.value;
+                    tenure.min = 7;
+                    tenure.max = 3650;
+                    tenureSuffix.textContent = 'Days';
+                    tenureMin.textContent = '7 D';
+                    tenureMax.textContent = '3650 D';
+                }
+
+                updateTenureDisplay();
+                calculateFD();
+            });
+        });
+
+        // Compounding change
+        compounding.addEventListener('change', calculateFD);
+
+        // Senior citizen toggle
+        seniorCitizen.addEventListener('change', calculateFD);
+
+        // ===== RESET =====
+        function resetCalculator() {
+            principal.value = 100000;
+            principalRange.value = 100000;
+            interestRate.value = 7;
+            interestRateRange.value = 7;
+            tenure.value = 5;
+            tenureRange.value = 5;
+            document.getElementById('tenureYears').checked = true;
+            compounding.value = '4';
+            seniorCitizen.checked = false;
+
+            tenureSuffix.textContent = 'Years';
+            tenureRange.min = 1;
+            tenureRange.max = 20;
+            tenure.min = 1;
+            tenure.max = 20;
+            tenureMin.textContent = '1 Yr';
+            tenureMax.textContent = '20 Yr';
+
+            updateTenureDisplay();
+            calculateFD();
+            showToast('Calculator reset successfully!');
+        }
+
+        // ===== COPY RESULT =====
+        function copyResult() {
+            const maturity = document.getElementById('maturityAmount').textContent;
+            const principal = document.getElementById('principalAmount').textContent;
+            const interest = document.getElementById('interestEarned').textContent;
+            const effective = document.getElementById('effectiveRate').textContent;
+            const returns = document.getElementById('totalReturns').textContent;
+
+            const text = `🏦 FD Calculation Result\n\n` +
+                `💰 Maturity Amount: ${maturity}\n` +
+                `📌 Principal: ${principal}\n` +
+                `💸 Interest Earned: ${interest}\n` +
+                `📊 Effective Rate: ${effective}\n` +
+                `📈 Total Returns: ${returns}\n\n` +
+                `Calculated on: https://calculator.aitoolcor.com/fd-calculator.html`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Result copied to clipboard!');
+            }).catch(() => {
+                showToast('Failed to copy. Please try again.');
+            });
+        }
+
+        // ===== SHARE RESULT =====
+        function shareResult() {
+            const maturity = document.getElementById('maturityAmount').textContent;
+            const interest = document.getElementById('interestEarned').textContent;
+            const text = `My FD maturity is ${maturity} with ${interest} interest! Calculate yours on AI ToolCor.`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'FD Calculator Result',
+                    text: text,
+                    url: 'https://calculator.aitoolcor.com/fd-calculator.html'
+                }).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(text + '\n\nhttps://calculator.aitoolcor.com/fd-calculator.html');
+                showToast('Link copied! Share it anywhere.');
+            }
+        }
+
+        // ===== PRINT =====
+        function printResult() {
+            window.print();
+        }
+
+        // ===== TOAST =====
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        // ===== INITIAL CALCULATION =====
+        window.addEventListener('load', () => {
+            updateTenureDisplay();
+            calculateFD();
+        });
+    </script>
+</body>
+</html>

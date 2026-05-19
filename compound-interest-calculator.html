@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========== SEO META ========== -->
+    <title>Compound Interest Calculator - Calculate CI Online | AI ToolCor</title>
+    <meta name="description" content="Free Compound Interest Calculator to calculate CI with daily, monthly, quarterly, half-yearly & yearly compounding. See investment growth instantly.">
+    <meta name="keywords" content="compound interest calculator, CI calculator, compound interest formula, daily compounding calculator, investment calculator, compounding calculator online">
+    <meta name="author" content="AI ToolCor">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="google-adsense-account" content="ca-pub-8473875587893208">
+
+    <link rel="canonical" href="https://calculator.aitoolcor.com/compound-interest-calculator.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI ToolCor Calculators">
+    <meta property="og:title" content="Compound Interest Calculator - Calculate CI Online">
+    <meta property="og:description" content="Free Compound Interest Calculator with all compounding frequencies. See investment growth instantly.">
+    <meta property="og:url" content="https://calculator.aitoolcor.com/compound-interest-calculator.html">
+    <meta property="og:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compound Interest Calculator">
+    <meta name="twitter:description" content="Free CI Calculator with all compounding frequencies.">
+    <meta name="twitter:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%237c3aed'/><stop offset='100%25' stop-color='%230ea5e9'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><text x='50' y='42' text-anchor='middle' font-size='28' font-weight='800' fill='white' font-family='Arial'>CALC</text><text x='50' y='72' text-anchor='middle' font-size='16' font-weight='600' fill='rgba(255,255,255,0.85)' font-family='Arial'>ToolCor</text></svg>" type="image/svg+xml">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/ads.css">
+    <link rel="stylesheet" href="css/tool.css">
+
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8473875587893208" crossorigin="anonymous"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://calculator.aitoolcor.com/compound-interest-calculator.html#webpage",
+          "url": "https://calculator.aitoolcor.com/compound-interest-calculator.html",
+          "name": "Compound Interest Calculator - Calculate CI Online",
+          "description": "Free Compound Interest Calculator with all compounding frequencies.",
+          "isPartOf": { "@id": "https://calculator.aitoolcor.com/#website" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculator.aitoolcor.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Finance Calculators", "item": "https://calculator.aitoolcor.com/#finance" },
+            { "@type": "ListItem", "position": 3, "name": "Compound Interest Calculator", "item": "https://calculator.aitoolcor.com/compound-interest-calculator.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What is compound interest?", "acceptedAnswer": { "@type": "Answer", "text": "Compound interest is interest calculated on the initial principal as well as accumulated interest from previous periods. It makes your money grow faster than simple interest." } },
+            { "@type": "Question", "name": "How is compound interest calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Compound Interest formula: A = P(1 + r/n)^(nt), where P is principal, r is annual rate, n is compounding frequency per year, and t is time in years." } },
+            { "@type": "Question", "name": "Which is better - simple or compound interest?", "acceptedAnswer": { "@type": "Answer", "text": "Compound interest is better for investments as it earns interest on interest. Simple interest is better for loans as you pay less total interest." } }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <div class="nav-logo-icon"><i class="fas fa-calculator"></i></div>
+                <div>
+                    <span class="nav-logo-text">AI ToolCor</span>
+                    <span class="nav-logo-sub">Calculators</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#finance" class="active">Finance</a></li>
+                <li><a href="/#health">Health</a></li>
+                <li><a href="/#daily-use">Daily Use</a></li>
+                <li><a href="https://www.aitoolcor.com/" target="_blank" class="nav-cta"><i class="fas fa-external-link-alt"></i> Main Site</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Home</a>
+        <a href="/#finance">Finance</a>
+        <a href="/#health">Health</a>
+        <a href="/#daily-use">Daily Use</a>
+        <a href="https://www.aitoolcor.com/" target="_blank">🌐 Main Site</a>
+    </div>
+
+    <!-- ===== TOOL HERO ===== -->
+    <section class="tool-hero">
+        <div class="tool-breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="/#finance">Finance</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Compound Interest Calculator</span>
+        </div>
+
+        <div class="tool-hero-icon bg-finance">
+            <i class="fas fa-percentage"></i>
+        </div>
+
+        <h1><span class="gradient-text">Compound Interest</span> Calculator</h1>
+        <p>Calculate compound interest with daily, monthly, quarterly, half-yearly & yearly compounding</p>
+    </section>
+
+    <!-- ===== AD BANNER (Top Banner) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="3658236067"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== TOOL CONTAINER ===== -->
+    <section class="tool-container">
+        <div class="tool-grid">
+
+            <!-- ===== INPUT CARD ===== -->
+            <div class="tool-card-main">
+                <h2><i class="fas fa-sliders-h"></i> Investment Details</h2>
+
+                <!-- Principal Amount -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Principal Amount</span>
+                        <span class="label-value" id="principalDisplay">₹ 1,00,000</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <span class="form-input-prefix">₹</span>
+                        <input type="number" id="principal" class="form-input with-prefix" value="100000" min="100" max="1000000000">
+                    </div>
+                    <input type="range" id="principalRange" class="form-range" min="1000" max="10000000" step="1000" value="100000">
+                    <div class="range-labels">
+                        <span>₹1K</span>
+                        <span>₹1 Cr</span>
+                    </div>
+                </div>
+
+                <!-- Interest Rate -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Annual Interest Rate</span>
+                        <span class="label-value" id="rateDisplay">10%</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <input type="number" id="interestRate" class="form-input with-suffix" value="10" min="0.1" max="50" step="0.1">
+                        <span class="form-input-suffix">% p.a.</span>
+                    </div>
+                    <input type="range" id="interestRateRange" class="form-range" min="1" max="30" step="0.1" value="10">
+                    <div class="range-labels">
+                        <span>1%</span>
+                        <span>30%</span>
+                    </div>
+                </div>
+
+                <!-- Time Period -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Time Period</span>
+                        <span class="label-value" id="timeDisplay">10 Years</span>
+                    </div>
+
+                    <div class="radio-group" style="margin-bottom: 12px;">
+                        <input type="radio" id="timeYears" name="timeType" value="years" checked>
+                        <label for="timeYears">Years</label>
+                        <input type="radio" id="timeMonths" name="timeType" value="months">
+                        <label for="timeMonths">Months</label>
+                    </div>
+
+                    <div class="form-input-wrapper">
+                        <input type="number" id="time" class="form-input with-suffix" value="10" min="1" max="50">
+                        <span class="form-input-suffix" id="timeSuffix">Years</span>
+                    </div>
+                    <input type="range" id="timeRange" class="form-range" min="1" max="50" step="1" value="10">
+                    <div class="range-labels">
+                        <span id="timeMin">1 Yr</span>
+                        <span id="timeMax">50 Yr</span>
+                    </div>
+                </div>
+
+                <!-- Compounding Frequency -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Compounding Frequency</span>
+                    </div>
+                    <select id="compounding" class="form-input" style="cursor: pointer;">
+                        <option value="1">Yearly (Annual)</option>
+                        <option value="2">Half-Yearly</option>
+                        <option value="4" selected>Quarterly</option>
+                        <option value="12">Monthly</option>
+                        <option value="365">Daily</option>
+                    </select>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="calculateCI()">
+                        <i class="fas fa-calculator"></i> Calculate
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetCalculator()">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- ===== RESULT CARD ===== -->
+            <div class="result-card">
+                <h2><i class="fas fa-chart-pie"></i> CI Result</h2>
+
+                <!-- Main Result Display -->
+                <div class="result-main">
+                    <div class="result-main-label">Final Amount</div>
+                    <div class="result-main-value" id="finalAmount">₹ 2,70,704</div>
+                    <div class="result-main-sub" id="finalSub">Principal + Compound Interest</div>
+                </div>
+
+                <!-- Breakdown -->
+                <div class="result-breakdown">
+                    <div class="result-item">
+                        <div class="result-item-label">Principal</div>
+                        <div class="result-item-value" id="principalAmount">₹ 1,00,000</div>
+                    </div>
+                    <div class="result-item success">
+                        <div class="result-item-label">Compound Interest</div>
+                        <div class="result-item-value" id="compoundInterest">₹ 1,70,704</div>
+                    </div>
+                </div>
+
+                <div class="result-breakdown">
+                    <div class="result-item highlight">
+                        <div class="result-item-label">Total Returns</div>
+                        <div class="result-item-value" id="totalReturns">170.7%</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-item-label">Money Multiplied</div>
+                        <div class="result-item-value" id="multiplier">2.71x</div>
+                    </div>
+                </div>
+
+                <!-- Comparison: Simple vs Compound -->
+                <div class="result-chart" style="background: var(--bg-primary); padding: 16px;">
+                    <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">
+                        📊 Simple vs Compound Interest
+                    </h4>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border);">
+                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Simple Interest:</span>
+                        <span style="font-weight: 700; color: var(--text-primary);" id="simpleInterestValue">₹ 1,00,000</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border);">
+                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Compound Interest:</span>
+                        <span style="font-weight: 700; color: #10b981;" id="compoundInterestValue">₹ 1,70,704</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0;">
+                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Extra Earned:</span>
+                        <span style="font-weight: 700; color: var(--primary);" id="extraEarned">₹ 70,704</span>
+                    </div>
+                </div>
+
+                <!-- Chart -->
+                <div class="result-chart">
+                    <div class="chart-bar">
+                        <div class="chart-bar-segment" id="principalBar" style="width: 37%; background: #0ea5e9;"></div>
+                        <div class="chart-bar-segment" id="interestBar" style="width: 63%; background: #10b981;"></div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #0ea5e9;"></span>
+                            <span>Principal (<span id="principalPercent">37%</span>)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #10b981;"></span>
+                            <span>Interest (<span id="interestPercent">63%</span>)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share Actions -->
+                <div class="result-actions">
+                    <button class="action-btn" onclick="copyResult()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <button class="action-btn" onclick="shareResult()">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button class="action-btn" onclick="printResult()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Middle) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="1677271683"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== INFO SECTION ===== -->
+    <section class="info-section">
+        <div class="info-card">
+            <h2>About <span class="gradient-text">Compound Interest Calculator</span></h2>
+            <p>Compound Interest is the <strong>8th wonder of the world</strong> as Albert Einstein famously said. It is the most powerful concept in finance that helps your money grow exponentially over time. Use this calculator to see how your investments can multiply with compounding.</p>
+
+            <h3>📐 Compound Interest Formula</h3>
+            <div class="info-formula">
+                A = P × (1 + r/n)^(n × t)
+            </div>
+
+            <p>Where:</p>
+            <ul>
+                <li><strong>A</strong> = Final Amount (Principal + Interest)</li>
+                <li><strong>P</strong> = Principal amount (initial investment)</li>
+                <li><strong>r</strong> = Annual interest rate (as decimal)</li>
+                <li><strong>n</strong> = Number of times interest compounds per year</li>
+                <li><strong>t</strong> = Time period in years</li>
+            </ul>
+
+            <p><strong>Compound Interest = A − P</strong></p>
+
+            <h3>🎯 What is Compound Interest?</h3>
+            <p>Compound interest is calculated on both the <strong>initial principal</strong> AND the <strong>accumulated interest</strong> from previous periods. Unlike simple interest, your interest earns more interest over time, creating exponential growth.</p>
+
+            <h3>✅ How to Use This Calculator</h3>
+            <ol>
+                <li>Enter your <strong>Principal Amount</strong> (initial investment)</li>
+                <li>Enter the <strong>Annual Interest Rate</strong> (%)</li>
+                <li>Select <strong>Time Period</strong> in years or months</li>
+                <li>Choose <strong>Compounding Frequency</strong> (more frequent = more returns)</li>
+                <li>Click Calculate to see final amount & interest earned</li>
+            </ol>
+
+            <h3>💡 Power of Compounding (Examples)</h3>
+            <p>Let's see how ₹1,00,000 grows at 10% annual interest with different time periods:</p>
+            <ul>
+                <li>After <strong>5 years:</strong> ₹1,63,862 (Interest: ₹63,862)</li>
+                <li>After <strong>10 years:</strong> ₹2,70,704 (Interest: ₹1,70,704)</li>
+                <li>After <strong>15 years:</strong> ₹4,47,200 (Interest: ₹3,47,200)</li>
+                <li>After <strong>20 years:</strong> ₹7,38,873 (Interest: ₹6,38,873)</li>
+                <li>After <strong>30 years:</strong> ₹20,12,963 (Interest: ₹19,12,963)</li>
+            </ul>
+            <p><strong>Lesson:</strong> Longer the time, more powerful the compounding! Start early.</p>
+
+            <h3>📊 Compounding Frequency Impact</h3>
+            <p>For ₹1,00,000 @ 10% for 10 years:</p>
+            <ul>
+                <li><strong>Yearly:</strong> ₹2,59,374</li>
+                <li><strong>Half-Yearly:</strong> ₹2,65,330</li>
+                <li><strong>Quarterly:</strong> ₹2,68,506</li>
+                <li><strong>Monthly:</strong> ₹2,70,704</li>
+                <li><strong>Daily:</strong> ₹2,71,791</li>
+            </ul>
+            <p>More frequent compounding = Higher returns!</p>
+
+            <h3>🚀 Where Compound Interest Applies</h3>
+            <ul>
+                <li><strong>Savings Accounts</strong> — Daily/Quarterly compounding</li>
+                <li><strong>Fixed Deposits</strong> — Quarterly compounding</li>
+                <li><strong>Mutual Funds</strong> — Daily NAV growth</li>
+                <li><strong>Stock Market</strong> — Annual returns reinvested</li>
+                <li><strong>PPF (Public Provident Fund)</strong> — Yearly compounding</li>
+                <li><strong>Bonds & Debentures</strong> — Semi-annual compounding</li>
+                <li><strong>Credit Cards</strong> — Monthly compounding (negative side!)</li>
+            </ul>
+
+            <h3>⚠️ Simple vs Compound Interest</h3>
+            <p>If you invest ₹1,00,000 @ 10% for 10 years:</p>
+            <ul>
+                <li><strong>Simple Interest:</strong> Earn ₹1,00,000 (Total: ₹2,00,000)</li>
+                <li><strong>Compound Interest:</strong> Earn ₹1,70,704 (Total: ₹2,70,704)</li>
+            </ul>
+            <p>Compound interest gives you <strong>₹70,704 extra</strong> in 10 years!</p>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section">
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is compound interest?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>Compound interest</strong> is interest calculated on the initial principal as well as accumulated interest from previous periods. It makes your money grow exponentially because you earn "interest on interest".</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How is compound interest calculated?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Compound Interest formula: <strong>A = P(1 + r/n)^(nt)</strong>, where P is principal, r is annual rate, n is compounding frequency per year, and t is time in years. Then CI = A − P.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Which is better — simple or compound interest?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>Compound interest</strong> is better for <strong>investments</strong> as you earn more over time. <strong>Simple interest</strong> is better for <strong>loans</strong> as you pay less total interest. Always check which one applies before signing!</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Which compounding frequency gives highest returns?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>Daily compounding</strong> gives the highest returns, followed by monthly, quarterly, half-yearly, and yearly. However, the difference is small for short tenures. Continuous compounding gives slightly more than daily.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is the "Rule of 72"?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>The <strong>Rule of 72</strong> tells you how many years it takes to double your money with compound interest. Formula: <strong>72 ÷ interest rate</strong>. Example: At 8% interest, money doubles in 72/8 = 9 years.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Does PPF use compound interest?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, <strong>PPF (Public Provident Fund)</strong> uses <strong>annual compounding</strong>. Current PPF rate is around 7.1% per year. PPF is one of the best tax-free compound interest investments in India.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Why did Einstein call compound interest "8th wonder"?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Albert Einstein reportedly said: <em>"Compound interest is the 8th wonder of the world. He who understands it, earns it. He who doesn't, pays it."</em> Because money grows <strong>exponentially</strong> over time, creating massive wealth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Bottom) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="5805658347"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="simple-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-calculator"></i></div>
+                <span class="related-card-text">Simple Interest</span>
+            </a>
+            <a href="fd-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-piggy-bank"></i></div>
+                <span class="related-card-text">FD Calculator</span>
+            </a>
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="loan-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-hand-holding-usd"></i></div>
+                <span class="related-card-text">Loan Calculator</span>
+            </a>
+            <a href="percentage-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
+                <span class="related-card-text">Percentage Calculator</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🧮 AI ToolCor <span class="gradient-text">Calculators</span></h3>
+                <p>Free online calculators for finance, health & daily use. Accurate, fast & no signup required.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/aitoolcor" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/aitoolcor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/aitoolcor" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/aitoolcor" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Finance</h4>
+                <ul>
+                    <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                    <li><a href="sip-calculator.html">SIP Calculator</a></li>
+                    <li><a href="gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="fd-calculator.html">FD Calculator</a></li>
+                    <li><a href="loan-calculator.html">Loan Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Health & Daily</h4>
+                <ul>
+                    <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                    <li><a href="bmr-calculator.html">BMR Calculator</a></li>
+                    <li><a href="age-calculator.html">Age Calculator</a></li>
+                    <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+                    <li><a href="date-calculator.html">Date Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
+                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
+                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
+                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
+                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
+                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/common.js"></script>
+    <script src="js/ads-loader.js"></script>
+
+    <script>
+        // ===== ELEMENTS =====
+        const principal = document.getElementById('principal');
+        const principalRange = document.getElementById('principalRange');
+        const principalDisplay = document.getElementById('principalDisplay');
+
+        const interestRate = document.getElementById('interestRate');
+        const interestRateRange = document.getElementById('interestRateRange');
+        const rateDisplay = document.getElementById('rateDisplay');
+
+        const time = document.getElementById('time');
+        const timeRange = document.getElementById('timeRange');
+        const timeDisplay = document.getElementById('timeDisplay');
+        const timeSuffix = document.getElementById('timeSuffix');
+        const timeMin = document.getElementById('timeMin');
+        const timeMax = document.getElementById('timeMax');
+
+        const timeRadios = document.querySelectorAll('input[name="timeType"]');
+        const compounding = document.getElementById('compounding');
+
+        // ===== INDIAN NUMBER FORMAT =====
+        function formatIndian(num) {
+            return new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        // ===== COMPOUND INTEREST CALCULATION =====
+        function calculateCI() {
+            const P = parseFloat(principal.value) || 0;
+            const r = parseFloat(interestRate.value) || 0;
+            const n = parseInt(compounding.value); // Compounding frequency
+            const timeType = document.querySelector('input[name="timeType"]:checked').value;
+            let timeValue = parseFloat(time.value) || 0;
+
+            // Convert time to years
+            let t = timeType === 'years' ? timeValue : timeValue / 12;
+
+            let finalAmount = 0;
+            let compoundInterest = 0;
+            let simpleInterest = 0;
+
+            if (P > 0 && r > 0 && t > 0) {
+                const rate = r / 100;
+                finalAmount = P * Math.pow(1 + rate / n, n * t);
+                compoundInterest = finalAmount - P;
+                simpleInterest = (P * r * t) / 100;
+            } else if (P > 0) {
+                finalAmount = P;
+            }
+
+            const totalReturns = P > 0 ? ((compoundInterest / P) * 100) : 0;
+            const multiplier = P > 0 ? (finalAmount / P) : 0;
+            const extraEarned = compoundInterest - simpleInterest;
+
+            // Compounding text
+            const compText = {
+                '365': 'daily',
+                '12': 'monthly',
+                '4': 'quarterly',
+                '2': 'half-yearly',
+                '1': 'yearly'
+            };
+
+            // Display results
+            document.getElementById('finalAmount').textContent = formatIndian(finalAmount);
+            document.getElementById('principalAmount').textContent = formatIndian(P);
+            document.getElementById('compoundInterest').textContent = formatIndian(compoundInterest);
+            document.getElementById('totalReturns').textContent = totalReturns.toFixed(1) + '%';
+            document.getElementById('multiplier').textContent = multiplier.toFixed(2) + 'x';
+            document.getElementById('finalSub').textContent = 
+                `@ ${r}% for ${timeValue} ${timeType} (${compText[n]})`;
+
+            // Comparison
+            document.getElementById('simpleInterestValue').textContent = formatIndian(simpleInterest);
+            document.getElementById('compoundInterestValue').textContent = formatIndian(compoundInterest);
+            document.getElementById('extraEarned').textContent = formatIndian(extraEarned);
+
+            // Chart percentages
+            const principalPct = finalAmount > 0 ? ((P / finalAmount) * 100).toFixed(1) : 0;
+            const interestPct = finalAmount > 0 ? ((compoundInterest / finalAmount) * 100).toFixed(1) : 0;
+
+            document.getElementById('principalBar').style.width = principalPct + '%';
+            document.getElementById('interestBar').style.width = interestPct + '%';
+            document.getElementById('principalPercent').textContent = principalPct + '%';
+            document.getElementById('interestPercent').textContent = interestPct + '%';
+
+            // Update displays
+            principalDisplay.textContent = formatIndian(P);
+            rateDisplay.textContent = r.toFixed(1) + '%';
+        }
+
+        // ===== UPDATE TIME DISPLAY =====
+        function updateTimeDisplay() {
+            const timeType = document.querySelector('input[name="timeType"]:checked').value;
+            const val = parseInt(time.value) || 0;
+            const label = timeType === 'years' 
+                ? val + ' Year' + (val !== 1 ? 's' : '')
+                : val + ' Month' + (val !== 1 ? 's' : '');
+            timeDisplay.textContent = label;
+        }
+
+        // ===== SYNC RANGE & INPUT =====
+        principal.addEventListener('input', () => {
+            const val = parseFloat(principal.value) || 0;
+            if (val >= parseInt(principalRange.min) && val <= parseInt(principalRange.max)) {
+                principalRange.value = val;
+            }
+            calculateCI();
+        });
+
+        principalRange.addEventListener('input', () => {
+            principal.value = principalRange.value;
+            calculateCI();
+        });
+
+        interestRate.addEventListener('input', () => {
+            const val = parseFloat(interestRate.value) || 0;
+            if (val >= parseFloat(interestRateRange.min) && val <= parseFloat(interestRateRange.max)) {
+                interestRateRange.value = val;
+            }
+            calculateCI();
+        });
+
+        interestRateRange.addEventListener('input', () => {
+            interestRate.value = interestRateRange.value;
+            calculateCI();
+        });
+
+        time.addEventListener('input', () => {
+            const val = parseInt(time.value) || 0;
+            if (val >= parseInt(timeRange.min) && val <= parseInt(timeRange.max)) {
+                timeRange.value = val;
+            }
+            updateTimeDisplay();
+            calculateCI();
+        });
+
+        timeRange.addEventListener('input', () => {
+            time.value = timeRange.value;
+            updateTimeDisplay();
+            calculateCI();
+        });
+
+        // Time Type Toggle
+        timeRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const timeType = document.querySelector('input[name="timeType"]:checked').value;
+
+                if (timeType === 'years') {
+                    timeRange.min = 1;
+                    timeRange.max = 50;
+                    timeRange.value = Math.min(50, Math.max(1, Math.round(time.value / 12) || 10));
+                    time.value = timeRange.value;
+                    time.min = 1;
+                    time.max = 50;
+                    timeSuffix.textContent = 'Years';
+                    timeMin.textContent = '1 Yr';
+                    timeMax.textContent = '50 Yr';
+                } else {
+                    timeRange.min = 1;
+                    timeRange.max = 600;
+                    timeRange.value = Math.min(600, Math.max(1, time.value * 12 || 120));
+                    time.value = timeRange.value;
+                    time.min = 1;
+                    time.max = 600;
+                    timeSuffix.textContent = 'Months';
+                    timeMin.textContent = '1 M';
+                    timeMax.textContent = '600 M';
+                }
+
+                updateTimeDisplay();
+                calculateCI();
+            });
+        });
+
+        // Compounding change
+        compounding.addEventListener('change', calculateCI);
+
+        // ===== RESET =====
+        function resetCalculator() {
+            principal.value = 100000;
+            principalRange.value = 100000;
+            interestRate.value = 10;
+            interestRateRange.value = 10;
+            time.value = 10;
+            timeRange.value = 10;
+            document.getElementById('timeYears').checked = true;
+            compounding.value = '4';
+
+            timeSuffix.textContent = 'Years';
+            timeRange.min = 1;
+            timeRange.max = 50;
+            time.min = 1;
+            time.max = 50;
+            timeMin.textContent = '1 Yr';
+            timeMax.textContent = '50 Yr';
+
+            updateTimeDisplay();
+            calculateCI();
+            showToast('Calculator reset successfully!');
+        }
+
+        // ===== COPY RESULT =====
+        function copyResult() {
+            const final = document.getElementById('finalAmount').textContent;
+            const principal = document.getElementById('principalAmount').textContent;
+            const interest = document.getElementById('compoundInterest').textContent;
+            const returns = document.getElementById('totalReturns').textContent;
+            const mult = document.getElementById('multiplier').textContent;
+
+            const text = `📊 Compound Interest Result\n\n` +
+                `💰 Final Amount: ${final}\n` +
+                `📌 Principal: ${principal}\n` +
+                `💸 Compound Interest: ${interest}\n` +
+                `📈 Total Returns: ${returns}\n` +
+                `🚀 Money Multiplied: ${mult}\n\n` +
+                `Calculated on: https://calculator.aitoolcor.com/compound-interest-calculator.html`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Result copied to clipboard!');
+            }).catch(() => {
+                showToast('Failed to copy. Please try again.');
+            });
+        }
+
+        // ===== SHARE RESULT =====
+        function shareResult() {
+            const final = document.getElementById('finalAmount').textContent;
+            const mult = document.getElementById('multiplier').textContent;
+            const text = `My money grew to ${final} (${mult}) with compound interest! Calculate yours on AI ToolCor.`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Compound Interest Result',
+                    text: text,
+                    url: 'https://calculator.aitoolcor.com/compound-interest-calculator.html'
+                }).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(text + '\n\nhttps://calculator.aitoolcor.com/compound-interest-calculator.html');
+                showToast('Link copied! Share it anywhere.');
+            }
+        }
+
+        // ===== PRINT =====
+        function printResult() {
+            window.print();
+        }
+
+        // ===== TOAST =====
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        // ===== INITIAL CALCULATION =====
+        window.addEventListener('load', () => {
+            updateTimeDisplay();
+            calculateCI();
+        });
+    </script>
+</body>
+</html>

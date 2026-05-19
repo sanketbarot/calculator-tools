@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========== SEO META ========== -->
+    <title>SIP Calculator - Calculate Mutual Fund SIP Returns Online | AI ToolCor</title>
+    <meta name="description" content="Free SIP Calculator to calculate mutual fund SIP returns, future value, total investment & wealth gained. Plan your monthly SIP investment instantly.">
+    <meta name="keywords" content="SIP calculator, mutual fund SIP calculator, SIP return calculator, monthly SIP, SIP investment calculator, lumpsum vs SIP, SIP planner online">
+    <meta name="author" content="AI ToolCor">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="google-adsense-account" content="ca-pub-8473875587893208">
+
+    <link rel="canonical" href="https://calculator.aitoolcor.com/sip-calculator.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI ToolCor Calculators">
+    <meta property="og:title" content="SIP Calculator - Calculate Mutual Fund SIP Returns Online">
+    <meta property="og:description" content="Free SIP Calculator to calculate mutual fund returns, future value & wealth gained instantly.">
+    <meta property="og:url" content="https://calculator.aitoolcor.com/sip-calculator.html">
+    <meta property="og:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SIP Calculator - Mutual Fund Returns">
+    <meta name="twitter:description" content="Free SIP Calculator to plan your mutual fund investments.">
+    <meta name="twitter:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%237c3aed'/><stop offset='100%25' stop-color='%230ea5e9'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><text x='50' y='42' text-anchor='middle' font-size='28' font-weight='800' fill='white' font-family='Arial'>CALC</text><text x='50' y='72' text-anchor='middle' font-size='16' font-weight='600' fill='rgba(255,255,255,0.85)' font-family='Arial'>ToolCor</text></svg>" type="image/svg+xml">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/ads.css">
+    <link rel="stylesheet" href="css/tool.css">
+
+ 
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8473875587893208" crossorigin="anonymous"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://calculator.aitoolcor.com/sip-calculator.html#webpage",
+          "url": "https://calculator.aitoolcor.com/sip-calculator.html",
+          "name": "SIP Calculator - Calculate Mutual Fund SIP Returns Online",
+          "description": "Free SIP Calculator to calculate mutual fund SIP returns, future value & wealth gained instantly.",
+          "isPartOf": { "@id": "https://calculator.aitoolcor.com/#website" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculator.aitoolcor.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Finance Calculators", "item": "https://calculator.aitoolcor.com/#finance" },
+            { "@type": "ListItem", "position": 3, "name": "SIP Calculator", "item": "https://calculator.aitoolcor.com/sip-calculator.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What is SIP?", "acceptedAnswer": { "@type": "Answer", "text": "SIP stands for Systematic Investment Plan. It is a method of investing a fixed amount in mutual funds at regular intervals, usually monthly." } },
+            { "@type": "Question", "name": "How is SIP return calculated?", "acceptedAnswer": { "@type": "Answer", "text": "SIP returns are calculated using the formula: FV = P × ({[(1+r)^n - 1] / r}) × (1+r), where P is monthly investment, r is monthly rate, and n is number of months." } },
+            { "@type": "Question", "name": "What is a good SIP return?", "acceptedAnswer": { "@type": "Answer", "text": "Equity mutual funds typically deliver 10-15% annualized returns over the long term, while debt funds give 6-8% returns." } }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <div class="nav-logo-icon"><i class="fas fa-calculator"></i></div>
+                <div>
+                    <span class="nav-logo-text">AI ToolCor</span>
+                    <span class="nav-logo-sub">Calculators</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#finance" class="active">Finance</a></li>
+                <li><a href="/#health">Health</a></li>
+                <li><a href="/#daily-use">Daily Use</a></li>
+                <li><a href="https://www.aitoolcor.com/" target="_blank" class="nav-cta"><i class="fas fa-external-link-alt"></i> Main Site</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Home</a>
+        <a href="/#finance">Finance</a>
+        <a href="/#health">Health</a>
+        <a href="/#daily-use">Daily Use</a>
+        <a href="https://www.aitoolcor.com/" target="_blank">🌐 Main Site</a>
+    </div>
+
+    <!-- ===== TOOL HERO ===== -->
+    <section class="tool-hero">
+        <div class="tool-breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="/#finance">Finance</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>SIP Calculator</span>
+        </div>
+
+        <div class="tool-hero-icon bg-finance">
+            <i class="fas fa-chart-line"></i>
+        </div>
+
+        <h1><span class="gradient-text">SIP</span> Calculator</h1>
+        <p>Calculate your mutual fund SIP returns, future value & wealth gained instantly</p>
+    </section>
+
+    <!-- ===== AD BANNER (Top Banner) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="3658236067"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== TOOL CONTAINER ===== -->
+    <section class="tool-container">
+        <div class="tool-grid">
+
+            <!-- ===== INPUT CARD ===== -->
+            <div class="tool-card-main">
+                <h2><i class="fas fa-sliders-h"></i> SIP Details</h2>
+
+                <!-- SIP Type Toggle -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Investment Type</span>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="sipType" name="investType" value="sip" checked>
+                        <label for="sipType">SIP (Monthly)</label>
+                        <input type="radio" id="lumpsumType" name="investType" value="lumpsum">
+                        <label for="lumpsumType">Lumpsum</label>
+                    </div>
+                </div>
+
+                <!-- Monthly Investment / Lumpsum Amount -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span id="amountLabel">Monthly Investment</span>
+                        <span class="label-value" id="amountDisplay">₹ 5,000</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <span class="form-input-prefix">₹</span>
+                        <input type="number" id="monthlyAmount" class="form-input with-prefix" value="5000" min="100" max="10000000">
+                    </div>
+                    <input type="range" id="monthlyAmountRange" class="form-range" min="500" max="100000" step="500" value="5000">
+                    <div class="range-labels">
+                        <span>₹500</span>
+                        <span>₹1L</span>
+                    </div>
+                </div>
+
+                <!-- Expected Return Rate -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Expected Return Rate (per year)</span>
+                        <span class="label-value" id="returnRateDisplay">12%</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <input type="number" id="returnRate" class="form-input with-suffix" value="12" min="1" max="50" step="0.5">
+                        <span class="form-input-suffix">% p.a.</span>
+                    </div>
+                    <input type="range" id="returnRateRange" class="form-range" min="1" max="30" step="0.5" value="12">
+                    <div class="range-labels">
+                        <span>1%</span>
+                        <span>30%</span>
+                    </div>
+                </div>
+
+                <!-- Investment Period -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Time Period (Years)</span>
+                        <span class="label-value" id="periodDisplay">10 Years</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <input type="number" id="investmentPeriod" class="form-input with-suffix" value="10" min="1" max="50">
+                        <span class="form-input-suffix">Years</span>
+                    </div>
+                    <input type="range" id="investmentPeriodRange" class="form-range" min="1" max="40" step="1" value="10">
+                    <div class="range-labels">
+                        <span>1 Yr</span>
+                        <span>40 Yr</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="calculateSIP()">
+                        <i class="fas fa-calculator"></i> Calculate
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetCalculator()">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- ===== RESULT CARD ===== -->
+            <div class="result-card">
+                <h2><i class="fas fa-chart-pie"></i> SIP Returns</h2>
+
+                <!-- Main Result Display -->
+                <div class="result-main">
+                    <div class="result-main-label">Future Value</div>
+                    <div class="result-main-value" id="futureValue">₹ 11,61,695</div>
+                    <div class="result-main-sub">Total wealth at maturity</div>
+                </div>
+
+                <!-- Breakdown -->
+                <div class="result-breakdown">
+                    <div class="result-item">
+                        <div class="result-item-label">Invested Amount</div>
+                        <div class="result-item-value" id="investedAmount">₹ 6,00,000</div>
+                    </div>
+                    <div class="result-item success">
+                        <div class="result-item-label">Wealth Gained</div>
+                        <div class="result-item-value" id="wealthGained">₹ 5,61,695</div>
+                    </div>
+                </div>
+
+                <div class="result-breakdown">
+                    <div class="result-item highlight">
+                        <div class="result-item-label">Returns (%)</div>
+                        <div class="result-item-value" id="returnsPercent">93.6%</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-item-label">Total Months</div>
+                        <div class="result-item-value" id="totalMonths">120</div>
+                    </div>
+                </div>
+
+                <!-- Chart -->
+                <div class="result-chart">
+                    <div class="chart-bar">
+                        <div class="chart-bar-segment" id="investedBar" style="width: 52%; background: #0ea5e9;"></div>
+                        <div class="chart-bar-segment" id="gainedBar" style="width: 48%; background: #10b981;"></div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #0ea5e9;"></span>
+                            <span>Invested (<span id="investedPercent">52%</span>)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #10b981;"></span>
+                            <span>Gained (<span id="gainedPercent">48%</span>)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share Actions -->
+                <div class="result-actions">
+                    <button class="action-btn" onclick="copyResult()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <button class="action-btn" onclick="shareResult()">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button class="action-btn" onclick="printResult()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Middle) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="1677271683"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== INFO SECTION ===== -->
+    <section class="info-section">
+        <div class="info-card">
+            <h2>About <span class="gradient-text">SIP Calculator</span></h2>
+            <p>A SIP (Systematic Investment Plan) Calculator helps you estimate the future value of your monthly mutual fund investments. Whether you're a beginner or experienced investor, this tool helps you plan your wealth-building journey effectively.</p>
+
+            <h3>📐 SIP Formula</h3>
+            <div class="info-formula">
+                FV = P × ({[(1 + r)^n - 1] / r}) × (1 + r)
+            </div>
+
+            <p>Where:</p>
+            <ul>
+                <li><strong>FV</strong> = Future Value (maturity amount)</li>
+                <li><strong>P</strong> = Monthly investment amount</li>
+                <li><strong>r</strong> = Monthly interest rate (Annual rate ÷ 12 ÷ 100)</li>
+                <li><strong>n</strong> = Number of months (Years × 12)</li>
+            </ul>
+
+            <h3>✅ How to Use This Calculator</h3>
+            <ol>
+                <li>Choose between <strong>SIP (Monthly)</strong> or <strong>Lumpsum</strong> investment</li>
+                <li>Enter your <strong>Monthly Investment Amount</strong></li>
+                <li>Enter the <strong>Expected Annual Return Rate</strong> (typically 12-15% for equity)</li>
+                <li>Enter the <strong>Investment Period</strong> in years</li>
+                <li>See your future value, total invested & wealth gained instantly</li>
+            </ol>
+
+            <h3>💡 Benefits of SIP Investment</h3>
+            <ul>
+                <li><strong>Rupee Cost Averaging</strong> — buy more units when prices are low</li>
+                <li><strong>Power of Compounding</strong> — earn returns on returns</li>
+                <li><strong>Disciplined Investing</strong> — auto-debit ensures regular savings</li>
+                <li><strong>Affordable</strong> — start with as little as ₹500/month</li>
+                <li><strong>Flexible</strong> — increase, pause or stop anytime</li>
+            </ul>
+
+            <h3>📊 Example Calculation</h3>
+            <p>If you invest <strong>₹5,000/month</strong> for <strong>10 years</strong> at <strong>12%</strong> expected return:</p>
+            <ul>
+                <li>Total Invested: <strong>₹6,00,000</strong></li>
+                <li>Future Value: <strong>₹11,61,695</strong></li>
+                <li>Wealth Gained: <strong>₹5,61,695</strong></li>
+            </ul>
+
+            <h3>🎯 SIP vs Lumpsum: Which is Better?</h3>
+            <p><strong>SIP</strong> is better for salaried individuals as it spreads risk over time and doesn't require large capital upfront. <strong>Lumpsum</strong> works well when markets are low or you have a large amount to invest. Try both options in this calculator!</p>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section">
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is SIP?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>SIP</strong> stands for Systematic Investment Plan. It is a method of investing a fixed amount in mutual funds at regular intervals (usually monthly). SIP helps build wealth over time through disciplined investing.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How is SIP return calculated?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>SIP returns are calculated using the formula: <strong>FV = P × ({[(1+r)^n - 1] / r}) × (1+r)</strong>, where P is monthly investment, r is monthly rate, and n is total months. The calculator does this instantly for you.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is a good SIP return?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Equity mutual funds typically deliver <strong>10-15% annualized returns</strong> over the long term (10+ years). Debt funds give 6-8% returns. Past performance doesn't guarantee future results.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Can I increase my SIP amount later?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes! Most mutual fund houses allow you to <strong>increase SIP amount</strong> anytime via Top-up SIP or step-up SIP option. You can also start additional SIPs in different funds.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Which is better — SIP or Lumpsum?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>SIP</strong> is better for salaried investors as it averages out market volatility. <strong>Lumpsum</strong> can give higher returns when markets are at lows. SIP is generally safer and more disciplined.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Is SIP safe for long-term investment?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, SIP is one of the <strong>safest ways to invest in mutual funds</strong> long-term. It reduces market timing risk and benefits from compounding. However, all mutual fund investments are subject to market risks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Bottom) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="5805658347"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="fd-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-piggy-bank"></i></div>
+                <span class="related-card-text">FD Calculator</span>
+            </a>
+            <a href="compound-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-percentage"></i></div>
+                <span class="related-card-text">Compound Interest</span>
+            </a>
+            <a href="simple-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-calculator"></i></div>
+                <span class="related-card-text">Simple Interest</span>
+            </a>
+            <a href="loan-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-hand-holding-usd"></i></div>
+                <span class="related-card-text">Loan Calculator</span>
+            </a>
+            <a href="gst-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-receipt"></i></div>
+                <span class="related-card-text">GST Calculator</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🧮 AI ToolCor <span class="gradient-text">Calculators</span></h3>
+                <p>Free online calculators for finance, health & daily use. Accurate, fast & no signup required.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/aitoolcor" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/aitoolcor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/aitoolcor" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/aitoolcor" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Finance</h4>
+                <ul>
+                    <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                    <li><a href="sip-calculator.html">SIP Calculator</a></li>
+                    <li><a href="gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="fd-calculator.html">FD Calculator</a></li>
+                    <li><a href="loan-calculator.html">Loan Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Health & Daily</h4>
+                <ul>
+                    <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                    <li><a href="bmr-calculator.html">BMR Calculator</a></li>
+                    <li><a href="age-calculator.html">Age Calculator</a></li>
+                    <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+                    <li><a href="date-calculator.html">Date Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
+                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
+                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
+                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
+                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
+                <a href="sitemap.xml" target="_blank">Sitemap</a>
+                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/common.js"></script>
+    <script src="js/ads-loader.js"></script>
+
+    <script>
+        // ===== ELEMENTS =====
+        const monthlyAmount = document.getElementById('monthlyAmount');
+        const monthlyAmountRange = document.getElementById('monthlyAmountRange');
+        const amountDisplay = document.getElementById('amountDisplay');
+        const amountLabel = document.getElementById('amountLabel');
+
+        const returnRate = document.getElementById('returnRate');
+        const returnRateRange = document.getElementById('returnRateRange');
+        const returnRateDisplay = document.getElementById('returnRateDisplay');
+
+        const investmentPeriod = document.getElementById('investmentPeriod');
+        const investmentPeriodRange = document.getElementById('investmentPeriodRange');
+        const periodDisplay = document.getElementById('periodDisplay');
+
+        const investTypeRadios = document.querySelectorAll('input[name="investType"]');
+
+        // ===== INDIAN NUMBER FORMAT =====
+        function formatIndian(num) {
+            return new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        // ===== SIP CALCULATION =====
+        function calculateSIP() {
+            const P = parseFloat(monthlyAmount.value) || 0;
+            const annualRate = parseFloat(returnRate.value) || 0;
+            const years = parseFloat(investmentPeriod.value) || 0;
+            const investType = document.querySelector('input[name="investType"]:checked').value;
+
+            const n = years * 12; // Total months
+            const r = (annualRate / 12) / 100; // Monthly rate
+            const annualR = annualRate / 100;
+
+            let futureValue = 0;
+            let invested = 0;
+            let gained = 0;
+
+            if (investType === 'sip') {
+                // SIP Formula: FV = P × ({[(1+r)^n - 1] / r}) × (1+r)
+                if (P > 0 && r > 0 && n > 0) {
+                    futureValue = P * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
+                    invested = P * n;
+                } else if (P > 0 && r === 0 && n > 0) {
+                    futureValue = P * n;
+                    invested = P * n;
+                }
+            } else {
+                // Lumpsum Formula: FV = P × (1+r)^t
+                if (P > 0 && annualR >= 0 && years > 0) {
+                    futureValue = P * Math.pow(1 + annualR, years);
+                    invested = P;
+                }
+            }
+
+            gained = futureValue - invested;
+            const returnsPercent = invested > 0 ? ((gained / invested) * 100).toFixed(1) : 0;
+
+            // Display results
+            document.getElementById('futureValue').textContent = formatIndian(futureValue);
+            document.getElementById('investedAmount').textContent = formatIndian(invested);
+            document.getElementById('wealthGained').textContent = formatIndian(gained);
+            document.getElementById('returnsPercent').textContent = returnsPercent + '%';
+            document.getElementById('totalMonths').textContent = n;
+
+            // Chart percentages
+            const investedPct = futureValue > 0 ? ((invested / futureValue) * 100).toFixed(1) : 0;
+            const gainedPct = futureValue > 0 ? ((gained / futureValue) * 100).toFixed(1) : 0;
+
+            document.getElementById('investedBar').style.width = investedPct + '%';
+            document.getElementById('gainedBar').style.width = gainedPct + '%';
+            document.getElementById('investedPercent').textContent = investedPct + '%';
+            document.getElementById('gainedPercent').textContent = gainedPct + '%';
+        }
+
+        // ===== UPDATE DISPLAYS =====
+        function updateAmountDisplay() {
+            amountDisplay.textContent = formatIndian(parseFloat(monthlyAmount.value) || 0);
+        }
+
+        function updateReturnRateDisplay() {
+            returnRateDisplay.textContent = (parseFloat(returnRate.value) || 0) + '%';
+        }
+
+        function updatePeriodDisplay() {
+            periodDisplay.textContent = (parseInt(investmentPeriod.value) || 0) + ' Years';
+        }
+
+        // ===== SYNC RANGE & INPUT =====
+        monthlyAmount.addEventListener('input', () => {
+            const val = parseFloat(monthlyAmount.value) || 0;
+            if (val >= parseInt(monthlyAmountRange.min) && val <= parseInt(monthlyAmountRange.max)) {
+                monthlyAmountRange.value = val;
+            }
+            updateAmountDisplay();
+            calculateSIP();
+        });
+
+        monthlyAmountRange.addEventListener('input', () => {
+            monthlyAmount.value = monthlyAmountRange.value;
+            updateAmountDisplay();
+            calculateSIP();
+        });
+
+        returnRate.addEventListener('input', () => {
+            const val = parseFloat(returnRate.value) || 0;
+            if (val >= parseFloat(returnRateRange.min) && val <= parseFloat(returnRateRange.max)) {
+                returnRateRange.value = val;
+            }
+            updateReturnRateDisplay();
+            calculateSIP();
+        });
+
+        returnRateRange.addEventListener('input', () => {
+            returnRate.value = returnRateRange.value;
+            updateReturnRateDisplay();
+            calculateSIP();
+        });
+
+        investmentPeriod.addEventListener('input', () => {
+            const val = parseInt(investmentPeriod.value) || 0;
+            if (val >= parseInt(investmentPeriodRange.min) && val <= parseInt(investmentPeriodRange.max)) {
+                investmentPeriodRange.value = val;
+            }
+            updatePeriodDisplay();
+            calculateSIP();
+        });
+
+        investmentPeriodRange.addEventListener('input', () => {
+            investmentPeriod.value = investmentPeriodRange.value;
+            updatePeriodDisplay();
+            calculateSIP();
+        });
+
+        // Investment Type Toggle
+        investTypeRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const investType = document.querySelector('input[name="investType"]:checked').value;
+
+                if (investType === 'sip') {
+                    amountLabel.textContent = 'Monthly Investment';
+                    monthlyAmount.value = 5000;
+                    monthlyAmountRange.value = 5000;
+                    monthlyAmountRange.max = 100000;
+                    monthlyAmountRange.step = 500;
+                } else {
+                    amountLabel.textContent = 'Lumpsum Amount';
+                    monthlyAmount.value = 100000;
+                    monthlyAmountRange.value = 100000;
+                    monthlyAmountRange.max = 10000000;
+                    monthlyAmountRange.step = 1000;
+                }
+
+                updateAmountDisplay();
+                calculateSIP();
+            });
+        });
+
+        // ===== RESET =====
+        function resetCalculator() {
+            monthlyAmount.value = 5000;
+            monthlyAmountRange.value = 5000;
+            returnRate.value = 12;
+            returnRateRange.value = 12;
+            investmentPeriod.value = 10;
+            investmentPeriodRange.value = 10;
+            document.getElementById('sipType').checked = true;
+            amountLabel.textContent = 'Monthly Investment';
+            monthlyAmountRange.max = 100000;
+
+            updateAmountDisplay();
+            updateReturnRateDisplay();
+            updatePeriodDisplay();
+            calculateSIP();
+
+            showToast('Calculator reset successfully!');
+        }
+
+        // ===== COPY RESULT =====
+        function copyResult() {
+            const fv = document.getElementById('futureValue').textContent;
+            const invested = document.getElementById('investedAmount').textContent;
+            const gained = document.getElementById('wealthGained').textContent;
+            const returns = document.getElementById('returnsPercent').textContent;
+
+            const text = `📊 SIP Calculation Result\n\n` +
+                `🎯 Future Value: ${fv}\n` +
+                `💰 Invested: ${invested}\n` +
+                `📈 Wealth Gained: ${gained}\n` +
+                `📊 Returns: ${returns}\n\n` +
+                `Calculated on: https://calculator.aitoolcor.com/sip-calculator.html`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Result copied to clipboard!');
+            }).catch(() => {
+                showToast('Failed to copy. Please try again.');
+            });
+        }
+
+        // ===== SHARE RESULT =====
+        function shareResult() {
+            const fv = document.getElementById('futureValue').textContent;
+            const gained = document.getElementById('wealthGained').textContent;
+            const text = `My SIP future value is ${fv} with ${gained} gained! Calculate yours on AI ToolCor.`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'SIP Calculator Result',
+                    text: text,
+                    url: 'https://calculator.aitoolcor.com/sip-calculator.html'
+                }).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(text + '\n\nhttps://calculator.aitoolcor.com/sip-calculator.html');
+                showToast('Link copied! Share it anywhere.');
+            }
+        }
+
+        // ===== PRINT =====
+        function printResult() {
+            window.print();
+        }
+
+        // ===== TOAST =====
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        // ===== INITIAL CALCULATION =====
+        window.addEventListener('load', () => {
+            updateAmountDisplay();
+            updateReturnRateDisplay();
+            updatePeriodDisplay();
+            calculateSIP();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========== SEO META ========== -->
+    <title>Simple Interest Calculator - Calculate SI Online | AI ToolCor</title>
+    <meta name="description" content="Free Simple Interest Calculator to calculate interest using Principal, Rate & Time. Quick & accurate SI calculation for loans, deposits & investments.">
+    <meta name="keywords" content="simple interest calculator, SI calculator, simple interest formula, P R T calculator, interest calculator online, simple interest India">
+    <meta name="author" content="AI ToolCor">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="google-adsense-account" content="ca-pub-8473875587893208">
+
+    <link rel="canonical" href="https://calculator.aitoolcor.com/simple-interest-calculator.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI ToolCor Calculators">
+    <meta property="og:title" content="Simple Interest Calculator - Calculate SI Online">
+    <meta property="og:description" content="Free Simple Interest Calculator with P, R, T formula. Instant accurate results.">
+    <meta property="og:url" content="https://calculator.aitoolcor.com/simple-interest-calculator.html">
+    <meta property="og:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simple Interest Calculator">
+    <meta name="twitter:description" content="Free SI Calculator with P, R, T formula.">
+    <meta name="twitter:image" content="https://calculator.aitoolcor.com/images/og-calculator.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%237c3aed'/><stop offset='100%25' stop-color='%230ea5e9'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><text x='50' y='42' text-anchor='middle' font-size='28' font-weight='800' fill='white' font-family='Arial'>CALC</text><text x='50' y='72' text-anchor='middle' font-size='16' font-weight='600' fill='rgba(255,255,255,0.85)' font-family='Arial'>ToolCor</text></svg>" type="image/svg+xml">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/ads.css">
+    <link rel="stylesheet" href="css/tool.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFKTFQF4T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QVFKTFQF4T');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8473875587893208" crossorigin="anonymous"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://calculator.aitoolcor.com/simple-interest-calculator.html#webpage",
+          "url": "https://calculator.aitoolcor.com/simple-interest-calculator.html",
+          "name": "Simple Interest Calculator - Calculate SI Online",
+          "description": "Free Simple Interest Calculator using P, R, T formula.",
+          "isPartOf": { "@id": "https://calculator.aitoolcor.com/#website" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculator.aitoolcor.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Finance Calculators", "item": "https://calculator.aitoolcor.com/#finance" },
+            { "@type": "ListItem", "position": 3, "name": "Simple Interest Calculator", "item": "https://calculator.aitoolcor.com/simple-interest-calculator.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What is simple interest?", "acceptedAnswer": { "@type": "Answer", "text": "Simple Interest (SI) is the interest calculated only on the original principal amount, not on accumulated interest. Formula: SI = (P × R × T) / 100." } },
+            { "@type": "Question", "name": "How is simple interest calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Simple Interest formula: SI = (P × R × T) / 100, where P is principal, R is rate per year, and T is time in years." } },
+            { "@type": "Question", "name": "Where is simple interest used?", "acceptedAnswer": { "@type": "Answer", "text": "Simple interest is used in personal loans, car loans, short-term loans, and treasury bills. Most banks use compound interest for FDs and savings." } }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <div class="nav-logo-icon"><i class="fas fa-calculator"></i></div>
+                <div>
+                    <span class="nav-logo-text">AI ToolCor</span>
+                    <span class="nav-logo-sub">Calculators</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#finance" class="active">Finance</a></li>
+                <li><a href="/#health">Health</a></li>
+                <li><a href="/#daily-use">Daily Use</a></li>
+                <li><a href="https://www.aitoolcor.com/" target="_blank" class="nav-cta"><i class="fas fa-external-link-alt"></i> Main Site</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Home</a>
+        <a href="/#finance">Finance</a>
+        <a href="/#health">Health</a>
+        <a href="/#daily-use">Daily Use</a>
+        <a href="https://www.aitoolcor.com/" target="_blank">🌐 Main Site</a>
+    </div>
+
+    <!-- ===== TOOL HERO ===== -->
+    <section class="tool-hero">
+        <div class="tool-breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="/#finance">Finance</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Simple Interest Calculator</span>
+        </div>
+
+        <div class="tool-hero-icon bg-finance">
+            <i class="fas fa-calculator"></i>
+        </div>
+
+        <h1><span class="gradient-text">Simple Interest</span> Calculator</h1>
+        <p>Calculate interest using Principal × Rate × Time / 100 — quick & accurate</p>
+    </section>
+
+    <!-- ===== AD BANNER (Top Banner) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="3658236067"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== TOOL CONTAINER ===== -->
+    <section class="tool-container">
+        <div class="tool-grid">
+
+            <!-- ===== INPUT CARD ===== -->
+            <div class="tool-card-main">
+                <h2><i class="fas fa-sliders-h"></i> Interest Details</h2>
+
+                <!-- Principal Amount -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Principal Amount (P)</span>
+                        <span class="label-value" id="principalDisplay">₹ 50,000</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <span class="form-input-prefix">₹</span>
+                        <input type="number" id="principal" class="form-input with-prefix" value="50000" min="100" max="1000000000">
+                    </div>
+                    <input type="range" id="principalRange" class="form-range" min="1000" max="5000000" step="1000" value="50000">
+                    <div class="range-labels">
+                        <span>₹1K</span>
+                        <span>₹50L</span>
+                    </div>
+                </div>
+
+                <!-- Interest Rate -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Rate of Interest (R)</span>
+                        <span class="label-value" id="rateDisplay">8%</span>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <input type="number" id="interestRate" class="form-input with-suffix" value="8" min="0.1" max="50" step="0.1">
+                        <span class="form-input-suffix">% p.a.</span>
+                    </div>
+                    <input type="range" id="interestRateRange" class="form-range" min="1" max="30" step="0.1" value="8">
+                    <div class="range-labels">
+                        <span>1%</span>
+                        <span>30%</span>
+                    </div>
+                </div>
+
+                <!-- Time Period -->
+                <div class="form-group">
+                    <div class="form-label">
+                        <span>Time Period (T)</span>
+                        <span class="label-value" id="timeDisplay">5 Years</span>
+                    </div>
+
+                    <div class="radio-group" style="margin-bottom: 12px;">
+                        <input type="radio" id="timeYears" name="timeType" value="years" checked>
+                        <label for="timeYears">Years</label>
+                        <input type="radio" id="timeMonths" name="timeType" value="months">
+                        <label for="timeMonths">Months</label>
+                        <input type="radio" id="timeDays" name="timeType" value="days">
+                        <label for="timeDays">Days</label>
+                    </div>
+
+                    <div class="form-input-wrapper">
+                        <input type="number" id="time" class="form-input with-suffix" value="5" min="1" max="50">
+                        <span class="form-input-suffix" id="timeSuffix">Years</span>
+                    </div>
+                    <input type="range" id="timeRange" class="form-range" min="1" max="50" step="1" value="5">
+                    <div class="range-labels">
+                        <span id="timeMin">1 Yr</span>
+                        <span id="timeMax">50 Yr</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="btn-group">
+                    <button class="btn btn-primary" onclick="calculateSI()">
+                        <i class="fas fa-calculator"></i> Calculate
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetCalculator()">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- ===== RESULT CARD ===== -->
+            <div class="result-card">
+                <h2><i class="fas fa-chart-pie"></i> SI Result</h2>
+
+                <!-- Main Result Display -->
+                <div class="result-main">
+                    <div class="result-main-label">Total Amount (A)</div>
+                    <div class="result-main-value" id="totalAmount">₹ 70,000</div>
+                    <div class="result-main-sub" id="totalSub">Principal + Simple Interest</div>
+                </div>
+
+                <!-- Breakdown -->
+                <div class="result-breakdown">
+                    <div class="result-item">
+                        <div class="result-item-label">Principal</div>
+                        <div class="result-item-value" id="principalAmount">₹ 50,000</div>
+                    </div>
+                    <div class="result-item success">
+                        <div class="result-item-label">Simple Interest</div>
+                        <div class="result-item-value" id="simpleInterest">₹ 20,000</div>
+                    </div>
+                </div>
+
+                <div class="result-breakdown">
+                    <div class="result-item highlight">
+                        <div class="result-item-label">Per Year Interest</div>
+                        <div class="result-item-value" id="perYearInterest">₹ 4,000</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-item-label">Per Month Interest</div>
+                        <div class="result-item-value" id="perMonthInterest">₹ 333</div>
+                    </div>
+                </div>
+
+                <!-- Formula Display -->
+                <div class="result-chart" style="background: var(--bg-primary); padding: 16px;">
+                    <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">
+                        🧮 Calculation Used
+                    </h4>
+                    <div style="font-family: 'Courier New', monospace; font-size: 0.9rem; color: var(--text-secondary); padding: 8px 0;">
+                        <div style="margin-bottom: 6px;">
+                            SI = (P × R × T) / 100
+                        </div>
+                        <div style="color: var(--primary); font-weight: 700;" id="formulaDisplay">
+                            SI = (50,000 × 8 × 5) / 100 = ₹ 20,000
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart -->
+                <div class="result-chart">
+                    <div class="chart-bar">
+                        <div class="chart-bar-segment" id="principalBar" style="width: 71%; background: #0ea5e9;"></div>
+                        <div class="chart-bar-segment" id="interestBar" style="width: 29%; background: #10b981;"></div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #0ea5e9;"></span>
+                            <span>Principal (<span id="principalPercent">71%</span>)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #10b981;"></span>
+                            <span>Interest (<span id="interestPercent">29%</span>)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share Actions -->
+                <div class="result-actions">
+                    <button class="action-btn" onclick="copyResult()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                    <button class="action-btn" onclick="shareResult()">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button class="action-btn" onclick="printResult()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Middle) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="1677271683"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== INFO SECTION ===== -->
+    <section class="info-section">
+        <div class="info-card">
+            <h2>About <span class="gradient-text">Simple Interest Calculator</span></h2>
+            <p>Simple Interest (SI) is the most basic way to calculate interest on a loan or investment. It is calculated only on the original principal amount throughout the entire period, without considering accumulated interest. Our calculator helps students, borrowers, and lenders quickly calculate SI using the standard P × R × T formula.</p>
+
+            <h3>📐 Simple Interest Formula</h3>
+            <div class="info-formula">
+                SI = (P × R × T) / 100
+            </div>
+
+            <p>Where:</p>
+            <ul>
+                <li><strong>SI</strong> = Simple Interest</li>
+                <li><strong>P</strong> = Principal (initial loan or investment)</li>
+                <li><strong>R</strong> = Rate of Interest per year (%)</li>
+                <li><strong>T</strong> = Time period in years</li>
+            </ul>
+
+            <p><strong>Total Amount (A) = P + SI</strong></p>
+
+            <h3>🎯 What is Simple Interest?</h3>
+            <p>Simple Interest is the interest calculated only on the <strong>original principal</strong>, not on the accumulated interest. Unlike compound interest, the interest amount remains the same every year. SI is straight-line interest with no compounding effect.</p>
+
+            <h3>✅ How to Use This Calculator</h3>
+            <ol>
+                <li>Enter the <strong>Principal Amount (P)</strong> in rupees</li>
+                <li>Enter the <strong>Rate of Interest (R)</strong> per year as percentage</li>
+                <li>Select <strong>Time (T)</strong> in years, months or days</li>
+                <li>Click Calculate to see Simple Interest, Total Amount & breakdown</li>
+                <li>View per-year and per-month interest for easy planning</li>
+            </ol>
+
+            <h3>💡 Example Calculations</h3>
+            <p><strong>Example 1:</strong> Principal = ₹50,000, Rate = 8%, Time = 5 years</p>
+            <ul>
+                <li>SI = (50,000 × 8 × 5) / 100 = <strong>₹20,000</strong></li>
+                <li>Total Amount = 50,000 + 20,000 = <strong>₹70,000</strong></li>
+            </ul>
+
+            <p><strong>Example 2:</strong> Principal = ₹1,00,000, Rate = 10%, Time = 3 years</p>
+            <ul>
+                <li>SI = (1,00,000 × 10 × 3) / 100 = <strong>₹30,000</strong></li>
+                <li>Total Amount = 1,00,000 + 30,000 = <strong>₹1,30,000</strong></li>
+            </ul>
+
+            <h3>🏦 Where Simple Interest Applies</h3>
+            <ul>
+                <li><strong>Personal Loans</strong> — Many lenders calculate interest on a flat (simple) basis</li>
+                <li><strong>Car Loans</strong> — Some auto loans use simple interest</li>
+                <li><strong>Short-Term Loans</strong> — Bridge loans, payday loans</li>
+                <li><strong>Treasury Bills</strong> — Government short-term securities</li>
+                <li><strong>Bonds</strong> — Some bonds pay simple interest periodically</li>
+                <li><strong>Education Loans</strong> — Interest during study period</li>
+                <li><strong>Money Lending</strong> — Informal loans between individuals</li>
+            </ul>
+
+            <h3>⚠️ Simple vs Compound Interest</h3>
+            <p>If you invest ₹1,00,000 @ 10% for 5 years:</p>
+            <ul>
+                <li><strong>Simple Interest:</strong> ₹50,000 (Total: ₹1,50,000)</li>
+                <li><strong>Compound Interest:</strong> ₹61,051 (Total: ₹1,61,051)</li>
+            </ul>
+            <p>Difference: <strong>₹11,051 extra</strong> with compound interest. Higher the duration, bigger the difference!</p>
+
+            <h3>📌 Key Points to Remember</h3>
+            <ul>
+                <li>Simple interest stays <strong>constant</strong> every year</li>
+                <li>Best for <strong>borrowers</strong> (less interest to pay)</li>
+                <li>Not ideal for <strong>long-term investments</strong> (no compounding)</li>
+                <li>Time can be in <strong>years, months, or days</strong></li>
+                <li>Convert: 1 month = 1/12 year, 1 day = 1/365 year</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section">
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is simple interest?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>Simple Interest (SI)</strong> is the interest calculated only on the original principal amount, not on accumulated interest. Formula: <strong>SI = (P × R × T) / 100</strong>. The interest amount stays the same throughout the period.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How is simple interest calculated?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Simple Interest formula: <strong>SI = (P × R × T) / 100</strong>, where P is principal, R is rate per year, and T is time in years. Example: ₹10,000 at 10% for 2 years = (10000 × 10 × 2)/100 = <strong>₹2,000</strong>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Where is simple interest used?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Simple interest is used in <strong>personal loans, car loans, short-term loans, treasury bills, bonds, and education loans</strong>. Most banks use compound interest for FDs and savings accounts.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What is the difference between simple and compound interest?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p><strong>Simple interest</strong> is calculated only on principal. <strong>Compound interest</strong> is calculated on principal + accumulated interest. Compound interest grows faster over time, making it better for investments but worse for loans.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How to calculate simple interest for months?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Convert months to years by dividing by 12. Example: 6 months = 0.5 years. Or use formula: <strong>SI = (P × R × Months) / (100 × 12)</strong>. Our calculator does this automatically.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Is simple interest good for loans?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, simple interest is <strong>better for borrowers</strong> because you pay less total interest compared to compound interest. Always check whether your loan uses simple or compound/reducing balance method.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Can I calculate simple interest for days?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes! Convert days to years (Days/365). Example: 90 days at 10% on ₹10,000 = (10000 × 10 × 90)/(100 × 365) = <strong>₹246.58</strong>. Our calculator supports years, months, and days directly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD BANNER (Bottom) ===== -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <span class="ad-banner-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8473875587893208"
+                 data-ad-slot="5805658347"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="compound-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-percentage"></i></div>
+                <span class="related-card-text">Compound Interest</span>
+            </a>
+            <a href="fd-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-piggy-bank"></i></div>
+                <span class="related-card-text">FD Calculator</span>
+            </a>
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
+            <a href="loan-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-hand-holding-usd"></i></div>
+                <span class="related-card-text">Loan Calculator</span>
+            </a>
+            <a href="percentage-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
+                <span class="related-card-text">Percentage Calculator</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🧮 AI ToolCor <span class="gradient-text">Calculators</span></h3>
+                <p>Free online calculators for finance, health & daily use. Accurate, fast & no signup required.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/aitoolcor" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/aitoolcor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/aitoolcor" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/aitoolcor" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Finance</h4>
+                <ul>
+                    <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                    <li><a href="sip-calculator.html">SIP Calculator</a></li>
+                    <li><a href="gst-calculator.html">GST Calculator</a></li>
+                    <li><a href="fd-calculator.html">FD Calculator</a></li>
+                    <li><a href="loan-calculator.html">Loan Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Health & Daily</h4>
+                <ul>
+                    <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                    <li><a href="bmr-calculator.html">BMR Calculator</a></li>
+                    <li><a href="age-calculator.html">Age Calculator</a></li>
+                    <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+                    <li><a href="date-calculator.html">Date Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
+                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
+                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
+                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
+                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
+                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/common.js"></script>
+    <script src="js/ads-loader.js"></script>
+
+    <script>
+        // ===== ELEMENTS =====
+        const principal = document.getElementById('principal');
+        const principalRange = document.getElementById('principalRange');
+        const principalDisplay = document.getElementById('principalDisplay');
+
+        const interestRate = document.getElementById('interestRate');
+        const interestRateRange = document.getElementById('interestRateRange');
+        const rateDisplay = document.getElementById('rateDisplay');
+
+        const time = document.getElementById('time');
+        const timeRange = document.getElementById('timeRange');
+        const timeDisplay = document.getElementById('timeDisplay');
+        const timeSuffix = document.getElementById('timeSuffix');
+        const timeMin = document.getElementById('timeMin');
+        const timeMax = document.getElementById('timeMax');
+
+        const timeRadios = document.querySelectorAll('input[name="timeType"]');
+
+        // ===== INDIAN NUMBER FORMAT =====
+        function formatIndian(num) {
+            return new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('en-IN').format(Math.round(num));
+        }
+
+        // ===== SIMPLE INTEREST CALCULATION =====
+        function calculateSI() {
+            const P = parseFloat(principal.value) || 0;
+            const R = parseFloat(interestRate.value) || 0;
+            const timeType = document.querySelector('input[name="timeType"]:checked').value;
+            let timeValue = parseFloat(time.value) || 0;
+
+            // Convert time to years
+            let T = 0;
+            if (timeType === 'years') T = timeValue;
+            else if (timeType === 'months') T = timeValue / 12;
+            else if (timeType === 'days') T = timeValue / 365;
+
+            const simpleInterest = (P * R * T) / 100;
+            const totalAmount = P + simpleInterest;
+
+            // Per year & per month
+            const perYearInterest = (P * R) / 100;
+            const perMonthInterest = perYearInterest / 12;
+
+            // Display results
+            document.getElementById('totalAmount').textContent = formatIndian(totalAmount);
+            document.getElementById('principalAmount').textContent = formatIndian(P);
+            document.getElementById('simpleInterest').textContent = formatIndian(simpleInterest);
+            document.getElementById('perYearInterest').textContent = formatIndian(perYearInterest);
+            document.getElementById('perMonthInterest').textContent = formatIndian(perMonthInterest);
+
+            // Sub label
+            document.getElementById('totalSub').textContent = 
+                `Principal + Simple Interest @ ${R}% for ${timeValue} ${timeType}`;
+
+            // Formula display
+            const formulaText = timeType === 'years' 
+                ? `SI = (${formatNumber(P)} × ${R} × ${timeValue}) / 100 = ${formatIndian(simpleInterest)}`
+                : timeType === 'months'
+                    ? `SI = (${formatNumber(P)} × ${R} × ${timeValue}) / (100 × 12) = ${formatIndian(simpleInterest)}`
+                    : `SI = (${formatNumber(P)} × ${R} × ${timeValue}) / (100 × 365) = ${formatIndian(simpleInterest)}`;
+            document.getElementById('formulaDisplay').textContent = formulaText;
+
+            // Chart percentages
+            const principalPct = totalAmount > 0 ? ((P / totalAmount) * 100).toFixed(1) : 0;
+            const interestPct = totalAmount > 0 ? ((simpleInterest / totalAmount) * 100).toFixed(1) : 0;
+
+            document.getElementById('principalBar').style.width = principalPct + '%';
+            document.getElementById('interestBar').style.width = interestPct + '%';
+            document.getElementById('principalPercent').textContent = principalPct + '%';
+            document.getElementById('interestPercent').textContent = interestPct + '%';
+
+            // Update displays
+            principalDisplay.textContent = formatIndian(P);
+            rateDisplay.textContent = R.toFixed(1) + '%';
+        }
+
+        // ===== UPDATE TIME DISPLAY =====
+        function updateTimeDisplay() {
+            const timeType = document.querySelector('input[name="timeType"]:checked').value;
+            const val = parseInt(time.value) || 0;
+            let label = '';
+            if (timeType === 'years') label = val + ' Year' + (val !== 1 ? 's' : '');
+            else if (timeType === 'months') label = val + ' Month' + (val !== 1 ? 's' : '');
+            else if (timeType === 'days') label = val + ' Day' + (val !== 1 ? 's' : '');
+            timeDisplay.textContent = label;
+        }
+
+        // ===== SYNC RANGE & INPUT =====
+        principal.addEventListener('input', () => {
+            const val = parseFloat(principal.value) || 0;
+            if (val >= parseInt(principalRange.min) && val <= parseInt(principalRange.max)) {
+                principalRange.value = val;
+            }
+            calculateSI();
+        });
+
+        principalRange.addEventListener('input', () => {
+            principal.value = principalRange.value;
+            calculateSI();
+        });
+
+        interestRate.addEventListener('input', () => {
+            const val = parseFloat(interestRate.value) || 0;
+            if (val >= parseFloat(interestRateRange.min) && val <= parseFloat(interestRateRange.max)) {
+                interestRateRange.value = val;
+            }
+            calculateSI();
+        });
+
+        interestRateRange.addEventListener('input', () => {
+            interestRate.value = interestRateRange.value;
+            calculateSI();
+        });
+
+        time.addEventListener('input', () => {
+            const val = parseInt(time.value) || 0;
+            if (val >= parseInt(timeRange.min) && val <= parseInt(timeRange.max)) {
+                timeRange.value = val;
+            }
+            updateTimeDisplay();
+            calculateSI();
+        });
+
+        timeRange.addEventListener('input', () => {
+            time.value = timeRange.value;
+            updateTimeDisplay();
+            calculateSI();
+        });
+
+        // Time Type Toggle
+        timeRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const timeType = document.querySelector('input[name="timeType"]:checked').value;
+
+                if (timeType === 'years') {
+                    timeRange.min = 1;
+                    timeRange.max = 50;
+                    timeRange.value = Math.min(50, Math.max(1, parseInt(time.value) || 5));
+                    time.value = timeRange.value;
+                    time.min = 1;
+                    time.max = 50;
+                    timeSuffix.textContent = 'Years';
+                    timeMin.textContent = '1 Yr';
+                    timeMax.textContent = '50 Yr';
+                } else if (timeType === 'months') {
+                    timeRange.min = 1;
+                    timeRange.max = 600;
+                    timeRange.value = Math.min(600, Math.max(1, parseInt(time.value) * 12 || 60));
+                    time.value = timeRange.value;
+                    time.min = 1;
+                    time.max = 600;
+                    timeSuffix.textContent = 'Months';
+                    timeMin.textContent = '1 M';
+                    timeMax.textContent = '600 M';
+                } else {
+                    timeRange.min = 1;
+                    timeRange.max = 3650;
+                    timeRange.value = Math.min(3650, Math.max(1, parseInt(time.value) || 365));
+                    time.value = timeRange.value;
+                    time.min = 1;
+                    time.max = 3650;
+                    timeSuffix.textContent = 'Days';
+                    timeMin.textContent = '1 D';
+                    timeMax.textContent = '3650 D';
+                }
+
+                updateTimeDisplay();
+                calculateSI();
+            });
+        });
+
+        // ===== RESET =====
+        function resetCalculator() {
+            principal.value = 50000;
+            principalRange.value = 50000;
+            interestRate.value = 8;
+            interestRateRange.value = 8;
+            time.value = 5;
+            timeRange.value = 5;
+            document.getElementById('timeYears').checked = true;
+
+            timeSuffix.textContent = 'Years';
+            timeRange.min = 1;
+            timeRange.max = 50;
+            time.min = 1;
+            time.max = 50;
+            timeMin.textContent = '1 Yr';
+            timeMax.textContent = '50 Yr';
+
+            updateTimeDisplay();
+            calculateSI();
+            showToast('Calculator reset successfully!');
+        }
+
+        // ===== COPY RESULT =====
+        function copyResult() {
+            const total = document.getElementById('totalAmount').textContent;
+            const principal = document.getElementById('principalAmount').textContent;
+            const interest = document.getElementById('simpleInterest').textContent;
+            const perYear = document.getElementById('perYearInterest').textContent;
+            const perMonth = document.getElementById('perMonthInterest').textContent;
+
+            const text = `📊 Simple Interest Result\n\n` +
+                `💰 Total Amount: ${total}\n` +
+                `📌 Principal: ${principal}\n` +
+                `💸 Simple Interest: ${interest}\n` +
+                `📅 Per Year: ${perYear}\n` +
+                `📆 Per Month: ${perMonth}\n\n` +
+                `Calculated on: https://calculator.aitoolcor.com/simple-interest-calculator.html`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Result copied to clipboard!');
+            }).catch(() => {
+                showToast('Failed to copy. Please try again.');
+            });
+        }
+
+        // ===== SHARE RESULT =====
+        function shareResult() {
+            const total = document.getElementById('totalAmount').textContent;
+            const interest = document.getElementById('simpleInterest').textContent;
+            const text = `Simple Interest calculation: Total ${total} with ${interest} interest. Calculate yours on AI ToolCor!`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Simple Interest Result',
+                    text: text,
+                    url: 'https://calculator.aitoolcor.com/simple-interest-calculator.html'
+                }).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(text + '\n\nhttps://calculator.aitoolcor.com/simple-interest-calculator.html');
+                showToast('Link copied! Share it anywhere.');
+            }
+        }
+
+        // ===== PRINT =====
+        function printResult() {
+            window.print();
+        }
+
+        // ===== TOAST =====
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        // ===== INITIAL CALCULATION =====
+        window.addEventListener('load', () => {
+            updateTimeDisplay();
+            calculateSI();
+        });
+    </script>
+</body>
+</html>
