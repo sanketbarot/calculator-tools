@@ -1,0 +1,105 @@
+/* ============================================
+   SMART ADSENSE STYLING
+   Empty ads hide thai jashe automatically
+   ============================================ */
+
+/* Ad Container - Default Hidden */
+.ad-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    text-align: center;
+    display: none; /* Default hidden */
+}
+
+/* Show only when ad is loaded */
+.ad-container.ad-loaded {
+    display: block;
+    animation: fadeInAd 0.5s ease-in;
+}
+
+@keyframes fadeInAd {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ad Banner Wrapper */
+.ad-banner {
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0;
+    min-height: auto;
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Show label only when ad loaded */
+.ad-container.ad-loaded .ad-banner {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.ad-banner-label {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.ad-container.ad-loaded .ad-banner-label {
+    display: block;
+}
+
+/* AdSense ins element */
+.adsbygoogle {
+    display: block;
+    min-height: 1px; /* Smallest possible */
+    overflow: hidden;
+}
+
+/* Ads with sufficient height (after loaded) */
+.adsbygoogle[data-ad-status="filled"] {
+    min-height: 90px;
+}
+
+/* Hide ads with no fill */
+.adsbygoogle[data-ad-status="unfilled"] {
+    display: none !important;
+}
+
+/* Hide parent if ad unfilled */
+.ad-container:has(.adsbygoogle[data-ad-status="unfilled"]) {
+    display: none !important;
+}
+
+/* Loading state (optional skeleton) */
+.ad-container.ad-loading .ad-banner {
+    background: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 50%, #f1f5f9 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    min-height: 90px;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .ad-container {
+        padding: 12px 16px;
+    }
+}
