@@ -1,61 +1,71 @@
 /* ============================================
-   SMART ADSENSE LOADER
-   Ad container show kare jab ad load thay
+   AI TOOLCOR — SMART ADSENSE LOADER
+   ads-loader.js · v3.0
+   MutationObserver-based — no fixed delays
    ============================================ */
 
-(function() {
+(function () {
     'use strict';
 
-    // Wait for window fully loaded (not just DOM)
-    window.addEventListener('load', function() {
-        // Delay 1 second to give AdSense time to inject
-        setTimeout(initSmartAds, 1000);
-    });
-
     function initSmartAds() {
-        const adContainers = document.querySelectorAll('.ad-container');
-
-        adContainers.forEach((container) => {
-            const adElement = container.querySelector('.adsbygoogle');
-            if (!adElement) return;
-
-            checkAdStatus(container, adElement);
+        document.querySelectorAll('.ad-container').forEach(container => {
+            const ins = container.querySelector('.adsbygoogle');
+            if (!ins) return;
+            watchAd(container, ins);
         });
     }
 
-    function checkAdStatus(container, adElement) {
-        let attempts = 0;
-        const maxAttempts = 30; // 15 seconds total
-        const checkInterval = 500;
+    function watchAd(container, ins) {
+        /* Check immediately in case AdSense already resolved */
+        if (applyStatus(container, ins)) return;
 
-        const interval = setInterval(() => {
-            attempts++;
+        /* MutationObserver: react the moment data-ad-status changes */
+        const mo = new MutationObserver(() => {
+            if (applyStatus(container, ins)) mo.disconnect();
+        });
 
-            const adStatus = adElement.getAttribute('data-ad-status');
-            const adHeight = adElement.offsetHeight;
-            const hasIframe = adElement.querySelector('iframe');
+        mo.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
 
-            // Ad loaded successfully
-            if (adStatus === 'filled' || (hasIframe && adHeight > 50)) {
-                container.classList.add('ad-loaded');
-                clearInterval(interval);
-                return;
-            }
+        /* Hard timeout — 12 s — hide container if still nothing */
+        const timeout = setTimeout(() => {
+            mo.disconnect();
+            const hasContent = ins.querySelector('iframe') && ins.offsetHeight > 30;
+            if (!hasContent) container.style.display = 'none';
+        }, 12000);
 
-            // Ad failed to load (unfilled)
-            if (adStatus === 'unfilled') {
-                container.style.display = 'none';
-                clearInterval(interval);
-                return;
-            }
+        /* Clean up timeout if observer resolves first */
+        ins._adTimeout = timeout;
+    }
 
-            // Max attempts reached
-            if (attempts >= maxAttempts) {
-                if (!hasIframe || adHeight < 50) {
-                    container.style.display = 'none';
-                }
-                clearInterval(interval);
-            }
-        }, checkInterval);
+    /**
+     * Reads data-ad-status and updates the container class.
+     * Returns true when a terminal state is reached (filled or unfilled).
+     */
+    function applyStatus(container, ins) {
+        const status  = ins.getAttribute('data-ad-status');
+        const hasFrame = !!ins.querySelector('iframe') && ins.offsetHeight > 30;
+
+        if (status === 'filled' || hasFrame) {
+            container.classList.remove('ad-loading');
+            container.classList.add('ad-loaded');
+            container.removeAttribute('aria-hidden');
+            clearTimeout(ins._adTimeout);
+            return true;
+        }
+
+        if (status === 'unfilled') {
+            container.style.display = 'none';
+            clearTimeout(ins._adTimeout);
+            return true;
+        }
+
+        return false;
+    }
+
+    /* Run after window load so AdSense scripts have had time to execute */
+    if (document.readyState === 'complete') {
+        initSmartAds();
+    } else {
+        window.addEventListener('load', initSmartAds, { once: true });
     }
 })();

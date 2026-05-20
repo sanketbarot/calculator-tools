@@ -1,122 +1,105 @@
 /* ============================================
-   SMART ADSENSE STYLING
-   Empty ads hide thai jashe automatically
+   SMART ADSENSE STYLING — v2.0
+   Empty ads auto-collapse
    ============================================ */
 
-/* Ad Container - Default Hidden */
+/* ── Base container — hidden until loaded ── */
 .ad-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 16px 24px;
-    text-align: center;
-    /* FIX: Don't use display:none — use visibility instead */
-    min-height: 1px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-/* When ad NOT loaded - shrink but keep width */
-.ad-container:not(.ad-loaded) {
-    max-height: 0;
     padding: 0 24px;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
     opacity: 0;
-    margin: 0 auto;
     visibility: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
-/* Show only when ad is loaded */
+/* ── Visible when ad loaded ── */
 .ad-container.ad-loaded {
-    max-height: 500px;
+    max-height: 320px;
     padding: 16px 24px;
     opacity: 1;
     visibility: visible;
-    animation: fadeInAd 0.5s ease-in;
+    animation: adFadeIn 0.5s ease-out;
 }
 
-@keyframes fadeInAd {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+@keyframes adFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Ad Banner Wrapper */
+/* ── Banner wrapper ── */
 .ad-banner {
     background: transparent;
     border: none;
-    border-radius: var(--radius-md);
-    padding: 0;
+    border-radius: 12px;
     min-height: 90px;
     display: block;
-    color: var(--text-muted);
-    font-size: 0.8rem;
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-/* Show label only when ad loaded */
 .ad-container.ad-loaded .ad-banner {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    padding: 16px;
-    box-shadow: var(--shadow-sm);
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
+/* ── "Advertisement" label ── */
 .ad-banner-label {
     display: none;
     position: absolute;
-    top: 4px;
-    right: 8px;
-    font-size: 0.65rem;
-    color: var(--text-muted);
+    top: 5px;
+    right: 10px;
+    font-size: 0.6rem;
+    color: #94a3b8;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.5;
+    letter-spacing: 0.8px;
+    font-weight: 500;
     z-index: 1;
+    pointer-events: none;
+    font-family: inherit;
 }
+.ad-container.ad-loaded .ad-banner-label { display: block; }
 
-.ad-container.ad-loaded .ad-banner-label {
-    display: block;
-}
-
-/* AdSense ins element - MUST have width */
+/* ── AdSense ins ── */
 .adsbygoogle {
     display: block !important;
     width: 100% !important;
     min-width: 250px;
-    min-height: 90px;
 }
 
-/* Ads with sufficient height (after loaded) */
-.adsbygoogle[data-ad-status="filled"] {
-    min-height: 90px;
-}
+/* Hide unfilled ads and collapse parent */
+.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
 
-/* Hide ads with no fill */
-.adsbygoogle[data-ad-status="unfilled"] {
-    display: none !important;
-}
-
-/* Hide parent if ad unfilled */
 .ad-container:has(.adsbygoogle[data-ad-status="unfilled"]) {
     display: none !important;
 }
 
-/* Loading state (optional skeleton) */
+/* Loading skeleton (optional) */
 .ad-container.ad-loading .ad-banner {
-    background: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 50%, #f1f5f9 100%);
+    background: linear-gradient(90deg, #f1f5f9 0%, #e9eef5 50%, #f1f5f9 100%);
     background-size: 200% 100%;
-    animation: shimmer 1.5s infinite;
+    animation: shimmer 1.8s infinite;
     min-height: 90px;
+    border-radius: 12px;
 }
 
 @keyframes shimmer {
-    0% { background-position: 200% 0; }
+    0%   { background-position: 200% 0; }
     100% { background-position: -200% 0; }
 }
 
-/* Mobile responsive */
+/* ── Responsive ── */
 @media (max-width: 768px) {
-    .ad-container.ad-loaded {
-        padding: 12px 16px;
-    }
+    .ad-container.ad-loaded { padding: 12px 16px; }
+}
+
+@media (max-width: 480px) {
+    .ad-container.ad-loaded { padding: 10px 12px; }
+    .adsbygoogle { min-width: 200px; }
 }
