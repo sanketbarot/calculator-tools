@@ -8,7 +8,7 @@
     <!-- ========== HOMEPAGE ========== -->
     <url>
         <loc>https://calculator.aitoolcor.com/</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -21,56 +21,49 @@
     <!-- ========== FINANCE CALCULATORS ========== -->
     <url>
         <loc>https://calculator.aitoolcor.com/emi-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/sip-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/gst-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/fd-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/compound-interest-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/simple-interest-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/loan-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/discount-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -78,14 +71,13 @@
     <!-- ========== HEALTH CALCULATORS ========== -->
     <url>
         <loc>https://calculator.aitoolcor.com/bmi-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/bmr-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -93,21 +85,19 @@
     <!-- ========== DAILY USE CALCULATORS ========== -->
     <url>
         <loc>https://calculator.aitoolcor.com/age-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/percentage-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://calculator.aitoolcor.com/date-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -115,16 +105,41 @@
     <!-- ========== BUSINESS CALCULATORS ========== -->
     <url>
         <loc>https://calculator.aitoolcor.com/profit-margin-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://calculator.aitoolcor.com/salary-calculator.html</loc>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
+    <!-- ========== LEGAL & INFO PAGES ========== -->
     <url>
-        <loc>https://calculator.aitoolcor.com/salary-calculator.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <loc>https://calculator.aitoolcor.com/about.html</loc>
+        <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://calculator.aitoolcor.com/contact.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://calculator.aitoolcor.com/privacy.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://calculator.aitoolcor.com/terms.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
     </url>
 
 </urlset>

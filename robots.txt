@@ -1,19 +1,21 @@
 # ============================================
 # AI ToolCor Calculators - Robots.txt
-# https://calculator.aitoolcor.com/
+# Subdomain: calculator.aitoolcor.com
+# Last Updated: 2026-01-15
 # ============================================
 
-# Allow all search engines
+# ===== DEFAULT: ALLOW ALL =====
 User-agent: *
 Allow: /
 
-# Disallow unnecessary paths
+# Block sensitive/unnecessary directories
 Disallow: /css/
 Disallow: /js/
 Disallow: /images/temp/
-Disallow: /*.json$
 Disallow: /admin/
 Disallow: /private/
+Disallow: /.well-known/
+Disallow: /*.json$
 Disallow: /*?*
 
 # Allow important file types
@@ -27,8 +29,56 @@ Allow: /*.gif$
 Allow: /*.svg$
 Allow: /*.webp$
 Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
 
-# Block AI scrapers (optional - remove if you want AI to index)
+# ===== GOOGLE BOTS (IMPORTANT) =====
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Google AdSense bot - MUST ALLOW (for ads)
+User-agent: Mediapartners-Google
+Allow: /
+
+# Google AdsBot - MUST ALLOW (for ad quality)
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# ===== OTHER SEARCH ENGINES =====
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+User-agent: Applebot
+Allow: /
+
+# ===== BLOCK AI SCRAPERS (Optional - Remove if you want AI to index) =====
 User-agent: GPTBot
 Disallow: /
 
@@ -44,29 +94,25 @@ Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
-# Allow Google AdSense bot (IMPORTANT for ads)
-User-agent: Mediapartners-Google
-Allow: /
+User-agent: Google-Extended
+Disallow: /
 
-# Allow Google AdsBot
-User-agent: AdsBot-Google
-Allow: /
+User-agent: PerplexityBot
+Disallow: /
 
-# Allow Google Image bot
-User-agent: Googlebot-Image
-Allow: /
+User-agent: Bytespider
+Disallow: /
 
-# Allow Bing
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
+User-agent: Omgilibot
+Disallow: /
 
-# Allow Yandex
-User-agent: Yandex
-Allow: /
-Crawl-delay: 2
+User-agent: FacebookBot
+Disallow: /
 
-# Block bad bots
+User-agent: ImagesiftBot
+Disallow: /
+
+# ===== BLOCK BAD/SPAM BOTS =====
 User-agent: AhrefsBot
 Disallow: /
 
@@ -82,8 +128,45 @@ Disallow: /
 User-agent: PetalBot
 Disallow: /
 
-# Sitemap location
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: SerpstatBot
+Disallow: /
+
+# ===== SOCIAL MEDIA BOTS (Allow for sharing previews) =====
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
+# ===== SITEMAP LOCATION =====
 Sitemap: https://calculator.aitoolcor.com/sitemap.xml
 
-# Host
+# ===== HOST PREFERENCE =====
 Host: https://calculator.aitoolcor.com
