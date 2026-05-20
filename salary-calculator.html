@@ -498,135 +498,34 @@
         </div>
     </div>
 
-    <!-- ===== INFO SECTION ===== -->
-    <section class="info-section">
-        <div class="info-card">
-            <h2>About <span class="gradient-text">Salary Calculator</span></h2>
-            <p>Confused why your in-hand salary is much less than your CTC? Our Salary Calculator breaks down your CTC into Gross Salary, deductions (PF, tax, professional tax), and final Take-Home Pay. It supports both Old and New tax regimes, perfect for Indian employees and HR professionals.</p>
-
-            <h3>📐 Salary Calculation Formula</h3>
-            <div class="info-formula">
-                Gross Salary = CTC − (Employer PF + Gratuity + Bonus)<br>
-                Net Salary = Gross Salary − (Employee PF + Tax + PT)
-            </div>
-
-            <h3>💰 Common Salary Components</h3>
-
-            <p><strong>Earnings (What You Get):</strong></p>
-            <ul>
-                <li><strong>Basic Salary:</strong> 40-50% of CTC (fully taxable)</li>
-                <li><strong>HRA (House Rent Allowance):</strong> 40% (non-metro) or 50% (metro) of Basic</li>
-                <li><strong>Special Allowance:</strong> Remaining after Basic + HRA</li>
-                <li><strong>DA (Dearness Allowance):</strong> Common in government jobs</li>
-                <li><strong>LTA (Leave Travel Allowance):</strong> Travel expense exemption</li>
-                <li><strong>Medical Allowance:</strong> Up to ₹15,000/year</li>
-                <li><strong>Conveyance Allowance:</strong> Up to ₹1,600/month</li>
-                <li><strong>Performance Bonus:</strong> Variable based on performance</li>
-            </ul>
-
-            <p><strong>Deductions (What's Cut):</strong></p>
-            <ul>
-                <li><strong>Employee PF:</strong> 12% of Basic salary</li>
-                <li><strong>Professional Tax:</strong> ₹150-200/month (varies by state)</li>
-                <li><strong>Income Tax (TDS):</strong> As per tax slab</li>
-                <li><strong>Insurance:</strong> Health, life premiums</li>
-                <li><strong>Loan EMI:</strong> If salary advance taken</li>
-            </ul>
-
-            <h3>📊 New Tax Regime (FY 2024-25)</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem;">
-                <thead>
-                    <tr style="background: var(--bg-primary);">
-                        <th style="padding: 10px; text-align: left; border: 1px solid var(--border);">Income Slab</th>
-                        <th style="padding: 10px; text-align: center; border: 1px solid var(--border);">Tax Rate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Up to ₹3,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Nil</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">₹3,00,001 - ₹7,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">5%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">₹7,00,001 - ₹10,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">10%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">₹10,00,001 - ₹12,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">15%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">₹12,00,001 - ₹15,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">20%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Above ₹15,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">30%</td></tr>
-                </tbody>
-            </table>
-            <p>+ <strong>Section 87A Rebate:</strong> Income up to ₹7 lakh → Zero tax</p>
-            <p>+ <strong>Standard Deduction:</strong> ₹75,000 for salaried</p>
-
-            <h3>📊 Old Tax Regime (FY 2024-25)</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem;">
-                <thead>
-                    <tr style="background: var(--bg-primary);">
-                        <th style="padding: 10px; text-align: left; border: 1px solid var(--border);">Income Slab</th>
-                        <th style="padding: 10px; text-align: center; border: 1px solid var(--border);">Tax Rate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Up to ₹2,50,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Nil</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">₹2,50,001 - ₹5,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">5%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">₹5,00,001 - ₹10,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">20%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Above ₹10,00,000</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">30%</td></tr>
-                </tbody>
-            </table>
-            <p>+ Plus <strong>HRA, 80C (₹1.5L), 80D (Health Insurance)</strong>, etc. deductions available</p>
-
-            <h3>✅ How to Use This Calculator</h3>
-
-            <p><strong>CTC to In-Hand Mode:</strong></p>
-            <ol>
-                <li>Enter your <strong>Annual CTC</strong></li>
-                <li>Set <strong>Basic %</strong> (usually 40-50%)</li>
-                <li>Add <strong>Bonus</strong> if applicable</li>
-                <li>Select <strong>City type</strong> (Metro/Non-Metro)</li>
-                <li>Choose <strong>Tax Regime</strong> (New/Old)</li>
-                <li>See monthly in-hand salary & full breakdown</li>
-            </ol>
-
-            <p><strong>Convert Salary Mode:</strong></p>
-            <ol>
-                <li>Enter <strong>Amount</strong></li>
-                <li>Select what type it is (hourly/daily/monthly/yearly)</li>
-                <li>Adjust working hours/days if needed</li>
-                <li>Get all time period conversions</li>
-            </ol>
-
-            <h3>💡 Tips to Increase Take-Home Salary</h3>
-            <ul>
-                <li><strong>Use Section 80C deductions</strong> — PPF, ELSS, LIC (₹1.5L limit)</li>
-                <li><strong>Health Insurance (80D)</strong> — Save up to ₹25,000-50,000</li>
-                <li><strong>HRA exemption</strong> — Submit rent receipts</li>
-                <li><strong>NPS contribution (80CCD)</strong> — Extra ₹50,000 deduction</li>
-                <li><strong>LTA claims</strong> — Travel exemption</li>
-                <li><strong>Home loan interest</strong> — Up to ₹2L deduction</li>
-                <li><strong>Education loan interest</strong> — Full deduction</li>
-                <li><strong>Choose right regime</strong> — Compare both, pick lower tax</li>
-            </ul>
-
-            <h3>🆚 Old vs New Regime: Which to Choose?</h3>
-            <ul>
-                <li><strong>Choose New Regime if:</strong> Few deductions, salary 5-15 LPA, want simplicity</li>
-                <li><strong>Choose Old Regime if:</strong> Heavy deductions (80C, HRA, home loan), salary above 15 LPA</li>
-                <li><strong>Calculate both</strong> to see which saves more tax</li>
-            </ul>
-
-            <h3>⚠️ Common Misconceptions</h3>
-            <ul>
-                <li><strong>CTC ≠ In-Hand Salary</strong> — Difference can be 20-30%</li>
-                <li><strong>Employer PF contribution is part of CTC</strong> but doesn't reach you</li>
-                <li><strong>Gratuity is part of CTC</strong> but paid only on 5+ years tenure</li>
-                <li><strong>Bonus is variable</strong> — Don't assume guaranteed</li>
-                <li><strong>Stock options (ESOPs)</strong> — Future value, not immediate</li>
-            </ul>
-
-            <h3>🏙️ State-wise Professional Tax</h3>
-            <ul>
-                <li><strong>Maharashtra:</strong> ₹200/month (max ₹2,500/year)</li>
-                <li><strong>Karnataka:</strong> ₹200/month</li>
-                <li><strong>West Bengal:</strong> ₹110-200/month</li>
-                <li><strong>Andhra Pradesh:</strong> ₹150-200/month</li>
-                <li><strong>Tamil Nadu:</strong> ₹208/month</li>
-                <li><strong>Delhi, UP, Haryana:</strong> No professional tax</li>
-            </ul>
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
+            <a href="profit-margin-calculator.html" class="related-card">
+                <div class="related-card-icon bg-business"><i class="fas fa-chart-pie"></i></div>
+                <span class="related-card-text">Profit Margin</span>
+            </a>
+            <a href="gst-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-receipt"></i></div>
+                <span class="related-card-text">GST Calculator</span>
+            </a>
+            <a href="percentage-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
+                <span class="related-card-text">Percentage Calculator</span>
+            </a>
+            <a href="fd-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-piggy-bank"></i></div>
+                <span class="related-card-text">FD Calculator</span>
+            </a>
         </div>
     </section>
 
@@ -719,36 +618,7 @@
         </div>
     </div>
 
-    <!-- ===== RELATED TOOLS ===== -->
-    <section class="related-tools">
-        <h2>Related <span class="gradient-text">Calculators</span></h2>
-        <div class="related-grid">
-            <a href="emi-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
-                <span class="related-card-text">EMI Calculator</span>
-            </a>
-            <a href="sip-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
-                <span class="related-card-text">SIP Calculator</span>
-            </a>
-            <a href="profit-margin-calculator.html" class="related-card">
-                <div class="related-card-icon bg-business"><i class="fas fa-chart-pie"></i></div>
-                <span class="related-card-text">Profit Margin</span>
-            </a>
-            <a href="gst-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-receipt"></i></div>
-                <span class="related-card-text">GST Calculator</span>
-            </a>
-            <a href="percentage-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
-                <span class="related-card-text">Percentage Calculator</span>
-            </a>
-            <a href="fd-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-piggy-bank"></i></div>
-                <span class="related-card-text">FD Calculator</span>
-            </a>
-        </div>
-    </section>
+   
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -789,11 +659,11 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
-                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
-                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
-                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -801,9 +671,10 @@
         <div class="footer-bottom">
             <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
             <div class="footer-bottom-links">
-                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
-                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
-                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitemap.xml">Sitemap</a>
             </div>
         </div>
     </footer>

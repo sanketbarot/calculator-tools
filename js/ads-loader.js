@@ -1,32 +1,31 @@
 /* ============================================
    SMART ADSENSE LOADER
-   Ad container hide kare jo ad load na thay
+   Ad container show kare jab ad load thay
    ============================================ */
 
 (function() {
     'use strict';
 
-    // Wait for DOM ready
-    document.addEventListener('DOMContentLoaded', function() {
-        initSmartAds();
+    // Wait for window fully loaded (not just DOM)
+    window.addEventListener('load', function() {
+        // Delay 1 second to give AdSense time to inject
+        setTimeout(initSmartAds, 1000);
     });
 
     function initSmartAds() {
-        // Get all ad containers
         const adContainers = document.querySelectorAll('.ad-container');
 
         adContainers.forEach((container) => {
             const adElement = container.querySelector('.adsbygoogle');
             if (!adElement) return;
 
-            // Check ad status periodically
             checkAdStatus(container, adElement);
         });
     }
 
     function checkAdStatus(container, adElement) {
         let attempts = 0;
-        const maxAttempts = 20; // Max 10 seconds (500ms × 20)
+        const maxAttempts = 30; // 15 seconds total
         const checkInterval = 500;
 
         const interval = setInterval(() => {
@@ -37,9 +36,8 @@
             const hasIframe = adElement.querySelector('iframe');
 
             // Ad loaded successfully
-            if (adStatus === 'filled' || (hasIframe && adHeight > 30)) {
+            if (adStatus === 'filled' || (hasIframe && adHeight > 50)) {
                 container.classList.add('ad-loaded');
-                container.classList.remove('ad-loading');
                 clearInterval(interval);
                 return;
             }
@@ -51,31 +49,13 @@
                 return;
             }
 
-            // Max attempts reached - hide
+            // Max attempts reached
             if (attempts >= maxAttempts) {
-                if (!hasIframe || adHeight < 30) {
+                if (!hasIframe || adHeight < 50) {
                     container.style.display = 'none';
                 }
                 clearInterval(interval);
             }
         }, checkInterval);
-    }
-
-    // Re-check on window resize
-    window.addEventListener('resize', debounce(() => {
-        const adContainers = document.querySelectorAll('.ad-container:not(.ad-loaded)');
-        adContainers.forEach((container) => {
-            const adElement = container.querySelector('.adsbygoogle');
-            if (adElement) checkAdStatus(container, adElement);
-        });
-    }, 300));
-
-    // Debounce helper
-    function debounce(func, wait) {
-        let timeout;
-        return function() {
-            clearTimeout(timeout);
-            timeout = setTimeout(func, wait);
-        };
     }
 })();

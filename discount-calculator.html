@@ -399,79 +399,34 @@
         </div>
     </div>
 
-    <!-- ===== INFO SECTION ===== -->
-    <section class="info-section">
-        <div class="info-card">
-            <h2>About <span class="gradient-text">Discount Calculator</span></h2>
-            <p>Shopping made smarter! Our Discount Calculator helps you quickly calculate the actual price you pay after any discount. It supports single discounts (Flat 50% Off), double discounts (50% + Extra 10%), triple discounts (Flipkart Big Sale), and even adds GST after discount.</p>
-
-            <h3>📐 Discount Formula</h3>
-            <p><strong>Single Discount:</strong></p>
-            <div class="info-formula">
-                Discount Amount = Original Price × (Discount % / 100)<br>
-                Sale Price = Original Price − Discount Amount
-            </div>
-
-            <p><strong>Multiple Discounts (Successive):</strong></p>
-            <div class="info-formula">
-                After D1: Price × (1 − D1/100)<br>
-                After D2: Price × (1 − D1/100) × (1 − D2/100)<br>
-                After D3: Price × (1 − D1/100) × (1 − D2/100) × (1 − D3/100)
-            </div>
-
-            <h3>🛍️ Common Shopping Scenarios</h3>
-            <ul>
-                <li><strong>Flat 50% Off</strong> — Single discount, simple savings</li>
-                <li><strong>Buy 1 Get 1 Free</strong> — Equivalent to 50% off</li>
-                <li><strong>Flat 40% + Extra 10% Off</strong> — Double discount (effective ~46%)</li>
-                <li><strong>Up to 70% Off + 10% Coupon</strong> — Double discount</li>
-                <li><strong>Sale + Coupon + Bank Offer</strong> — Triple discount</li>
-            </ul>
-
-            <h3>⚠️ Multiple Discounts vs Flat Discount</h3>
-            <p>Are <strong>"30% + 20% Off"</strong> same as <strong>"50% Off"</strong>? <strong>NO!</strong></p>
-            <p>Let's see for ₹1000:</p>
-            <ul>
-                <li><strong>Flat 50%:</strong> ₹1000 − ₹500 = <strong>₹500</strong> (You save ₹500)</li>
-                <li><strong>30% + 20%:</strong> ₹1000 × 0.7 × 0.8 = <strong>₹560</strong> (You save ₹440)</li>
-            </ul>
-            <p><strong>Flat 50% is better by ₹60!</strong> Always calculate effective discount.</p>
-
-            <h3>✅ How to Use This Calculator</h3>
-            <ol>
-                <li>Select <strong>Discount Type</strong> — Single, Double, or Triple</li>
-                <li>Enter <strong>Original Price</strong> (MRP)</li>
-                <li>Enter <strong>Discount %</strong> for each level</li>
-                <li>Optional: Tick <strong>GST</strong> to add tax after discount</li>
-                <li>See <strong>Final Price, Savings, and Effective Discount</strong></li>
-            </ol>
-
-            <h3>💡 Pro Shopping Tips</h3>
-            <ul>
-                <li><strong>Always check final price</strong> — not just discount %</li>
-                <li><strong>Compare with original MRP</strong> — sometimes inflated</li>
-                <li><strong>Use coupons</strong> — extra savings on top of sales</li>
-                <li><strong>Bank offers</strong> — get instant cashback/discount</li>
-                <li><strong>Wait for big sales</strong> — Diwali, Christmas, EOSS</li>
-                <li><strong>Check return policy</strong> — sale items may not be returnable</li>
-            </ul>
-
-            <h3>📊 Effective Discount Examples</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem;">
-                <thead>
-                    <tr style="background: var(--bg-primary);">
-                        <th style="padding: 10px; text-align: left; border: 1px solid var(--border);">Discount Combo</th>
-                        <th style="padding: 10px; text-align: center; border: 1px solid var(--border);">Effective Discount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">50% + 10%</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">55%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">40% + 20%</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">52%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">30% + 30%</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">51%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">25% + 25%</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">43.75%</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">50% + 50%</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">75%</td></tr>
-                </tbody>
-            </table>
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="gst-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-receipt"></i></div>
+                <span class="related-card-text">GST Calculator</span>
+            </a>
+            <a href="percentage-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
+                <span class="related-card-text">Percentage Calculator</span>
+            </a>
+            <a href="profit-margin-calculator.html" class="related-card">
+                <div class="related-card-icon bg-business"><i class="fas fa-chart-pie"></i></div>
+                <span class="related-card-text">Profit Margin</span>
+            </a>
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="salary-calculator.html" class="related-card">
+                <div class="related-card-icon bg-business"><i class="fas fa-money-check-alt"></i></div>
+                <span class="related-card-text">Salary Calculator</span>
+            </a>
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
         </div>
     </section>
 
@@ -564,38 +519,9 @@
         </div>
     </div>
 
-    <!-- ===== RELATED TOOLS ===== -->
-    <section class="related-tools">
-        <h2>Related <span class="gradient-text">Calculators</span></h2>
-        <div class="related-grid">
-            <a href="gst-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-receipt"></i></div>
-                <span class="related-card-text">GST Calculator</span>
-            </a>
-            <a href="percentage-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
-                <span class="related-card-text">Percentage Calculator</span>
-            </a>
-            <a href="profit-margin-calculator.html" class="related-card">
-                <div class="related-card-icon bg-business"><i class="fas fa-chart-pie"></i></div>
-                <span class="related-card-text">Profit Margin</span>
-            </a>
-            <a href="emi-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
-                <span class="related-card-text">EMI Calculator</span>
-            </a>
-            <a href="salary-calculator.html" class="related-card">
-                <div class="related-card-icon bg-business"><i class="fas fa-money-check-alt"></i></div>
-                <span class="related-card-text">Salary Calculator</span>
-            </a>
-            <a href="sip-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
-                <span class="related-card-text">SIP Calculator</span>
-            </a>
-        </div>
-    </section>
+    
 
-    <!-- ===== FOOTER ===== -->
+   <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -634,11 +560,11 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
-                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
-                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
-                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -646,9 +572,10 @@
         <div class="footer-bottom">
             <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
             <div class="footer-bottom-links">
-                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
-                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
-                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitemap.xml">Sitemap</a>
             </div>
         </div>
     </footer>

@@ -50,8 +50,6 @@
     <link rel="stylesheet" href="css/ads.css">
     <link rel="stylesheet" href="css/tool.css">
 
- 
-
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8473875587893208" crossorigin="anonymous"></script>
 
@@ -124,10 +122,11 @@
         <a href="/#finance">Finance</a>
         <a href="/#health">Health</a>
         <a href="/#daily-use">Daily Use</a>
-        <a href="https://www.aitoolcor.com/" target="_blank">🌐 Main Site</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </div>
 
-    <!-- ===== TOOL HERO ===== -->
+    <!-- ===== COMPACT TOOL HERO ===== -->
     <section class="tool-hero">
         <div class="tool-breadcrumb">
             <a href="/"><i class="fas fa-home"></i> Home</a>
@@ -142,7 +141,7 @@
         </div>
 
         <h1><span class="gradient-text">SIP</span> Calculator</h1>
-        <p>Calculate your mutual fund SIP returns, future value & wealth gained instantly</p>
+        <p>Calculate mutual fund SIP returns, future value & wealth gained instantly</p>
     </section>
 
     <!-- ===== AD BANNER (Top Banner) ===== -->
@@ -302,7 +301,7 @@
                     <button class="action-btn" onclick="shareResult()">
                         <i class="fas fa-share-alt"></i> Share
                     </button>
-                    <button class="action-btn" onclick="printResult()">
+                    <button class="action-btn" onclick="printPage()">
                         <i class="fas fa-print"></i> Print
                     </button>
                 </div>
@@ -325,53 +324,30 @@
         </div>
     </div>
 
-    <!-- ===== INFO SECTION ===== -->
-    <section class="info-section">
-        <div class="info-card">
-            <h2>About <span class="gradient-text">SIP Calculator</span></h2>
-            <p>A SIP (Systematic Investment Plan) Calculator helps you estimate the future value of your monthly mutual fund investments. Whether you're a beginner or experienced investor, this tool helps you plan your wealth-building journey effectively.</p>
-
-            <h3>📐 SIP Formula</h3>
-            <div class="info-formula">
-                FV = P × ({[(1 + r)^n - 1] / r}) × (1 + r)
-            </div>
-
-            <p>Where:</p>
-            <ul>
-                <li><strong>FV</strong> = Future Value (maturity amount)</li>
-                <li><strong>P</strong> = Monthly investment amount</li>
-                <li><strong>r</strong> = Monthly interest rate (Annual rate ÷ 12 ÷ 100)</li>
-                <li><strong>n</strong> = Number of months (Years × 12)</li>
-            </ul>
-
-            <h3>✅ How to Use This Calculator</h3>
-            <ol>
-                <li>Choose between <strong>SIP (Monthly)</strong> or <strong>Lumpsum</strong> investment</li>
-                <li>Enter your <strong>Monthly Investment Amount</strong></li>
-                <li>Enter the <strong>Expected Annual Return Rate</strong> (typically 12-15% for equity)</li>
-                <li>Enter the <strong>Investment Period</strong> in years</li>
-                <li>See your future value, total invested & wealth gained instantly</li>
-            </ol>
-
-            <h3>💡 Benefits of SIP Investment</h3>
-            <ul>
-                <li><strong>Rupee Cost Averaging</strong> — buy more units when prices are low</li>
-                <li><strong>Power of Compounding</strong> — earn returns on returns</li>
-                <li><strong>Disciplined Investing</strong> — auto-debit ensures regular savings</li>
-                <li><strong>Affordable</strong> — start with as little as ₹500/month</li>
-                <li><strong>Flexible</strong> — increase, pause or stop anytime</li>
-            </ul>
-
-            <h3>📊 Example Calculation</h3>
-            <p>If you invest <strong>₹5,000/month</strong> for <strong>10 years</strong> at <strong>12%</strong> expected return:</p>
-            <ul>
-                <li>Total Invested: <strong>₹6,00,000</strong></li>
-                <li>Future Value: <strong>₹11,61,695</strong></li>
-                <li>Wealth Gained: <strong>₹5,61,695</strong></li>
-            </ul>
-
-            <h3>🎯 SIP vs Lumpsum: Which is Better?</h3>
-            <p><strong>SIP</strong> is better for salaried individuals as it spreads risk over time and doesn't require large capital upfront. <strong>Lumpsum</strong> works well when markets are low or you have a large amount to invest. Try both options in this calculator!</p>
+    <!-- ===== RELATED TOOLS (5 CARDS) ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="fd-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-piggy-bank"></i></div>
+                <span class="related-card-text">FD Calculator</span>
+            </a>
+            <a href="compound-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-percentage"></i></div>
+                <span class="related-card-text">Compound Interest</span>
+            </a>
+            <a href="loan-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-hand-holding-usd"></i></div>
+                <span class="related-card-text">Loan Calculator</span>
+            </a>
+            <a href="simple-interest-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-calculator"></i></div>
+                <span class="related-card-text">Simple Interest</span>
+            </a>
         </div>
     </section>
 
@@ -395,7 +371,7 @@
                 <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-answer">
-                <p>SIP returns are calculated using the formula: <strong>FV = P × ({[(1+r)^n - 1] / r}) × (1+r)</strong>, where P is monthly investment, r is monthly rate, and n is total months. The calculator does this instantly for you.</p>
+                <p>SIP returns are calculated using the formula: <strong>FV = P × ({[(1+r)^n - 1] / r}) × (1+r)</strong>, where P is monthly investment, r is monthly rate, and n is total months.</p>
             </div>
         </div>
 
@@ -415,7 +391,7 @@
                 <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-answer">
-                <p>Yes! Most mutual fund houses allow you to <strong>increase SIP amount</strong> anytime via Top-up SIP or step-up SIP option. You can also start additional SIPs in different funds.</p>
+                <p>Yes! Most mutual fund houses allow you to <strong>increase SIP amount</strong> anytime via Top-up SIP or step-up SIP option.</p>
             </div>
         </div>
 
@@ -425,7 +401,7 @@
                 <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-answer">
-                <p><strong>SIP</strong> is better for salaried investors as it averages out market volatility. <strong>Lumpsum</strong> can give higher returns when markets are at lows. SIP is generally safer and more disciplined.</p>
+                <p><strong>SIP</strong> is better for salaried investors as it averages out market volatility. <strong>Lumpsum</strong> can give higher returns when markets are at lows.</p>
             </div>
         </div>
 
@@ -435,7 +411,7 @@
                 <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-answer">
-                <p>Yes, SIP is one of the <strong>safest ways to invest in mutual funds</strong> long-term. It reduces market timing risk and benefits from compounding. However, all mutual fund investments are subject to market risks.</p>
+                <p>Yes, SIP is one of the <strong>safest ways to invest in mutual funds</strong> long-term. It reduces market timing risk and benefits from compounding.</p>
             </div>
         </div>
     </section>
@@ -453,37 +429,6 @@
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
     </div>
-
-    <!-- ===== RELATED TOOLS ===== -->
-    <section class="related-tools">
-        <h2>Related <span class="gradient-text">Calculators</span></h2>
-        <div class="related-grid">
-            <a href="emi-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
-                <span class="related-card-text">EMI Calculator</span>
-            </a>
-            <a href="fd-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-piggy-bank"></i></div>
-                <span class="related-card-text">FD Calculator</span>
-            </a>
-            <a href="compound-interest-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-percentage"></i></div>
-                <span class="related-card-text">Compound Interest</span>
-            </a>
-            <a href="simple-interest-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-calculator"></i></div>
-                <span class="related-card-text">Simple Interest</span>
-            </a>
-            <a href="loan-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-hand-holding-usd"></i></div>
-                <span class="related-card-text">Loan Calculator</span>
-            </a>
-            <a href="gst-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-receipt"></i></div>
-                <span class="related-card-text">GST Calculator</span>
-            </a>
-        </div>
-    </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -524,11 +469,11 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
-                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
-                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
-                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -536,10 +481,10 @@
         <div class="footer-bottom">
             <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
             <div class="footer-bottom-links">
-                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
-                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
-                <a href="sitemap.xml" target="_blank">Sitemap</a>
-                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitemap.xml">Sitemap</a>
             </div>
         </div>
     </footer>
@@ -555,53 +500,59 @@
         <span id="toastMessage">Copied to clipboard!</span>
     </div>
 
-    <!-- ===== JAVASCRIPT ===== -->
+    <!-- ===== JAVASCRIPT (Optimized) ===== -->
     <script src="js/common.js"></script>
     <script src="js/ads-loader.js"></script>
 
     <script>
-        // ===== ELEMENTS =====
-        const monthlyAmount = document.getElementById('monthlyAmount');
-        const monthlyAmountRange = document.getElementById('monthlyAmountRange');
-        const amountDisplay = document.getElementById('amountDisplay');
-        const amountLabel = document.getElementById('amountLabel');
+        'use strict';
 
-        const returnRate = document.getElementById('returnRate');
-        const returnRateRange = document.getElementById('returnRateRange');
-        const returnRateDisplay = document.getElementById('returnRateDisplay');
-
-        const investmentPeriod = document.getElementById('investmentPeriod');
-        const investmentPeriodRange = document.getElementById('investmentPeriodRange');
-        const periodDisplay = document.getElementById('periodDisplay');
+        // ===== ELEMENTS (Cached for performance) =====
+        const els = {
+            monthlyAmount: document.getElementById('monthlyAmount'),
+            monthlyAmountRange: document.getElementById('monthlyAmountRange'),
+            amountDisplay: document.getElementById('amountDisplay'),
+            amountLabel: document.getElementById('amountLabel'),
+            returnRate: document.getElementById('returnRate'),
+            returnRateRange: document.getElementById('returnRateRange'),
+            returnRateDisplay: document.getElementById('returnRateDisplay'),
+            investmentPeriod: document.getElementById('investmentPeriod'),
+            investmentPeriodRange: document.getElementById('investmentPeriodRange'),
+            periodDisplay: document.getElementById('periodDisplay'),
+            futureValue: document.getElementById('futureValue'),
+            investedAmount: document.getElementById('investedAmount'),
+            wealthGained: document.getElementById('wealthGained'),
+            returnsPercent: document.getElementById('returnsPercent'),
+            totalMonths: document.getElementById('totalMonths'),
+            investedBar: document.getElementById('investedBar'),
+            gainedBar: document.getElementById('gainedBar'),
+            investedPercent: document.getElementById('investedPercent'),
+            gainedPercent: document.getElementById('gainedPercent')
+        };
 
         const investTypeRadios = document.querySelectorAll('input[name="investType"]');
 
-        // ===== INDIAN NUMBER FORMAT =====
-        function formatIndian(num) {
-            return new Intl.NumberFormat('en-IN', {
-                style: 'currency',
-                currency: 'INR',
-                maximumFractionDigits: 0
-            }).format(num);
-        }
-
-        // ===== SIP CALCULATION =====
+        // ===== SIP CALCULATION (Memoized) =====
+        let lastCalc = '';
         function calculateSIP() {
-            const P = parseFloat(monthlyAmount.value) || 0;
-            const annualRate = parseFloat(returnRate.value) || 0;
-            const years = parseFloat(investmentPeriod.value) || 0;
+            const P = parseFloat(els.monthlyAmount.value) || 0;
+            const annualRate = parseFloat(els.returnRate.value) || 0;
+            const years = parseFloat(els.investmentPeriod.value) || 0;
             const investType = document.querySelector('input[name="investType"]:checked').value;
 
-            const n = years * 12; // Total months
-            const r = (annualRate / 12) / 100; // Monthly rate
+            // Memoization key
+            const key = `${P}-${annualRate}-${years}-${investType}`;
+            if (key === lastCalc) return;
+            lastCalc = key;
+
+            const n = years * 12;
+            const r = (annualRate / 12) / 100;
             const annualR = annualRate / 100;
 
             let futureValue = 0;
             let invested = 0;
-            let gained = 0;
 
             if (investType === 'sip') {
-                // SIP Formula: FV = P × ({[(1+r)^n - 1] / r}) × (1+r)
                 if (P > 0 && r > 0 && n > 0) {
                     futureValue = P * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
                     invested = P * n;
@@ -610,91 +561,99 @@
                     invested = P * n;
                 }
             } else {
-                // Lumpsum Formula: FV = P × (1+r)^t
                 if (P > 0 && annualR >= 0 && years > 0) {
                     futureValue = P * Math.pow(1 + annualR, years);
                     invested = P;
                 }
             }
 
-            gained = futureValue - invested;
+            const gained = futureValue - invested;
             const returnsPercent = invested > 0 ? ((gained / invested) * 100).toFixed(1) : 0;
 
-            // Display results
-            document.getElementById('futureValue').textContent = formatIndian(futureValue);
-            document.getElementById('investedAmount').textContent = formatIndian(invested);
-            document.getElementById('wealthGained').textContent = formatIndian(gained);
-            document.getElementById('returnsPercent').textContent = returnsPercent + '%';
-            document.getElementById('totalMonths').textContent = n;
+            // Display (using requestAnimationFrame for smoother updates)
+            requestAnimationFrame(() => {
+                els.futureValue.textContent = formatIndian(futureValue);
+                els.investedAmount.textContent = formatIndian(invested);
+                els.wealthGained.textContent = formatIndian(gained);
+                els.returnsPercent.textContent = returnsPercent + '%';
+                els.totalMonths.textContent = n;
 
-            // Chart percentages
-            const investedPct = futureValue > 0 ? ((invested / futureValue) * 100).toFixed(1) : 0;
-            const gainedPct = futureValue > 0 ? ((gained / futureValue) * 100).toFixed(1) : 0;
+                const investedPct = futureValue > 0 ? ((invested / futureValue) * 100).toFixed(1) : 0;
+                const gainedPct = futureValue > 0 ? ((gained / futureValue) * 100).toFixed(1) : 0;
 
-            document.getElementById('investedBar').style.width = investedPct + '%';
-            document.getElementById('gainedBar').style.width = gainedPct + '%';
-            document.getElementById('investedPercent').textContent = investedPct + '%';
-            document.getElementById('gainedPercent').textContent = gainedPct + '%';
+                els.investedBar.style.width = investedPct + '%';
+                els.gainedBar.style.width = gainedPct + '%';
+                els.investedPercent.textContent = investedPct + '%';
+                els.gainedPercent.textContent = gainedPct + '%';
+            });
         }
 
         // ===== UPDATE DISPLAYS =====
         function updateAmountDisplay() {
-            amountDisplay.textContent = formatIndian(parseFloat(monthlyAmount.value) || 0);
+            els.amountDisplay.textContent = formatIndian(parseFloat(els.monthlyAmount.value) || 0);
         }
 
         function updateReturnRateDisplay() {
-            returnRateDisplay.textContent = (parseFloat(returnRate.value) || 0) + '%';
+            els.returnRateDisplay.textContent = (parseFloat(els.returnRate.value) || 0) + '%';
         }
 
         function updatePeriodDisplay() {
-            periodDisplay.textContent = (parseInt(investmentPeriod.value) || 0) + ' Years';
+            els.periodDisplay.textContent = (parseInt(els.investmentPeriod.value) || 0) + ' Years';
         }
 
-        // ===== SYNC RANGE & INPUT =====
-        monthlyAmount.addEventListener('input', () => {
-            const val = parseFloat(monthlyAmount.value) || 0;
-            if (val >= parseInt(monthlyAmountRange.min) && val <= parseInt(monthlyAmountRange.max)) {
-                monthlyAmountRange.value = val;
+        // ===== EVENT HANDLERS (Optimized with single handler) =====
+        function handleAmountChange() {
+            const val = parseFloat(els.monthlyAmount.value) || 0;
+            if (val >= parseInt(els.monthlyAmountRange.min) && val <= parseInt(els.monthlyAmountRange.max)) {
+                els.monthlyAmountRange.value = val;
             }
             updateAmountDisplay();
             calculateSIP();
-        });
+        }
 
-        monthlyAmountRange.addEventListener('input', () => {
-            monthlyAmount.value = monthlyAmountRange.value;
+        function handleRangeChange() {
+            els.monthlyAmount.value = els.monthlyAmountRange.value;
             updateAmountDisplay();
             calculateSIP();
-        });
+        }
 
-        returnRate.addEventListener('input', () => {
-            const val = parseFloat(returnRate.value) || 0;
-            if (val >= parseFloat(returnRateRange.min) && val <= parseFloat(returnRateRange.max)) {
-                returnRateRange.value = val;
+        function handleRateChange() {
+            const val = parseFloat(els.returnRate.value) || 0;
+            if (val >= parseFloat(els.returnRateRange.min) && val <= parseFloat(els.returnRateRange.max)) {
+                els.returnRateRange.value = val;
             }
             updateReturnRateDisplay();
             calculateSIP();
-        });
+        }
 
-        returnRateRange.addEventListener('input', () => {
-            returnRate.value = returnRateRange.value;
+        function handleRateRangeChange() {
+            els.returnRate.value = els.returnRateRange.value;
             updateReturnRateDisplay();
             calculateSIP();
-        });
+        }
 
-        investmentPeriod.addEventListener('input', () => {
-            const val = parseInt(investmentPeriod.value) || 0;
-            if (val >= parseInt(investmentPeriodRange.min) && val <= parseInt(investmentPeriodRange.max)) {
-                investmentPeriodRange.value = val;
+        function handlePeriodChange() {
+            const val = parseInt(els.investmentPeriod.value) || 0;
+            if (val >= parseInt(els.investmentPeriodRange.min) && val <= parseInt(els.investmentPeriodRange.max)) {
+                els.investmentPeriodRange.value = val;
             }
             updatePeriodDisplay();
             calculateSIP();
-        });
+        }
 
-        investmentPeriodRange.addEventListener('input', () => {
-            investmentPeriod.value = investmentPeriodRange.value;
+        function handlePeriodRangeChange() {
+            els.investmentPeriod.value = els.investmentPeriodRange.value;
             updatePeriodDisplay();
             calculateSIP();
-        });
+        }
+
+        // ===== ATTACH LISTENERS =====
+        els.monthlyAmount.addEventListener('input', handleAmountChange);
+        els.monthlyAmountRange.addEventListener('input', handleRangeChange);
+        els.returnRate.addEventListener('input', handleRateChange);
+        els.returnRateRange.addEventListener('input', handleRateRangeChange);
+        els.investmentPeriod.addEventListener('input', handlePeriodChange);
+        els.investmentPeriodRange.addEventListener('input', handlePeriodRangeChange);
 
         // Investment Type Toggle
         investTypeRadios.forEach(radio => {
@@ -702,17 +661,17 @@
                 const investType = document.querySelector('input[name="investType"]:checked').value;
 
                 if (investType === 'sip') {
-                    amountLabel.textContent = 'Monthly Investment';
-                    monthlyAmount.value = 5000;
-                    monthlyAmountRange.value = 5000;
-                    monthlyAmountRange.max = 100000;
-                    monthlyAmountRange.step = 500;
+                    els.amountLabel.textContent = 'Monthly Investment';
+                    els.monthlyAmount.value = 5000;
+                    els.monthlyAmountRange.value = 5000;
+                    els.monthlyAmountRange.max = 100000;
+                    els.monthlyAmountRange.step = 500;
                 } else {
-                    amountLabel.textContent = 'Lumpsum Amount';
-                    monthlyAmount.value = 100000;
-                    monthlyAmountRange.value = 100000;
-                    monthlyAmountRange.max = 10000000;
-                    monthlyAmountRange.step = 1000;
+                    els.amountLabel.textContent = 'Lumpsum Amount';
+                    els.monthlyAmount.value = 100000;
+                    els.monthlyAmountRange.value = 100000;
+                    els.monthlyAmountRange.max = 10000000;
+                    els.monthlyAmountRange.step = 1000;
                 }
 
                 updateAmountDisplay();
@@ -722,19 +681,20 @@
 
         // ===== RESET =====
         function resetCalculator() {
-            monthlyAmount.value = 5000;
-            monthlyAmountRange.value = 5000;
-            returnRate.value = 12;
-            returnRateRange.value = 12;
-            investmentPeriod.value = 10;
-            investmentPeriodRange.value = 10;
+            els.monthlyAmount.value = 5000;
+            els.monthlyAmountRange.value = 5000;
+            els.returnRate.value = 12;
+            els.returnRateRange.value = 12;
+            els.investmentPeriod.value = 10;
+            els.investmentPeriodRange.value = 10;
             document.getElementById('sipType').checked = true;
-            amountLabel.textContent = 'Monthly Investment';
-            monthlyAmountRange.max = 100000;
+            els.amountLabel.textContent = 'Monthly Investment';
+            els.monthlyAmountRange.max = 100000;
 
             updateAmountDisplay();
             updateReturnRateDisplay();
             updatePeriodDisplay();
+            lastCalc = '';
             calculateSIP();
 
             showToast('Calculator reset successfully!');
@@ -742,10 +702,10 @@
 
         // ===== COPY RESULT =====
         function copyResult() {
-            const fv = document.getElementById('futureValue').textContent;
-            const invested = document.getElementById('investedAmount').textContent;
-            const gained = document.getElementById('wealthGained').textContent;
-            const returns = document.getElementById('returnsPercent').textContent;
+            const fv = els.futureValue.textContent;
+            const invested = els.investedAmount.textContent;
+            const gained = els.wealthGained.textContent;
+            const returns = els.returnsPercent.textContent;
 
             const text = `📊 SIP Calculation Result\n\n` +
                 `🎯 Future Value: ${fv}\n` +
@@ -754,42 +714,16 @@
                 `📊 Returns: ${returns}\n\n` +
                 `Calculated on: https://calculator.aitoolcor.com/sip-calculator.html`;
 
-            navigator.clipboard.writeText(text).then(() => {
-                showToast('Result copied to clipboard!');
-            }).catch(() => {
-                showToast('Failed to copy. Please try again.');
-            });
+            copyToClipboard(text, 'Result copied to clipboard!');
         }
 
         // ===== SHARE RESULT =====
         function shareResult() {
-            const fv = document.getElementById('futureValue').textContent;
-            const gained = document.getElementById('wealthGained').textContent;
+            const fv = els.futureValue.textContent;
+            const gained = els.wealthGained.textContent;
             const text = `My SIP future value is ${fv} with ${gained} gained! Calculate yours on AI ToolCor.`;
-
-            if (navigator.share) {
-                navigator.share({
-                    title: 'SIP Calculator Result',
-                    text: text,
-                    url: 'https://calculator.aitoolcor.com/sip-calculator.html'
-                }).catch(() => {});
-            } else {
-                navigator.clipboard.writeText(text + '\n\nhttps://calculator.aitoolcor.com/sip-calculator.html');
-                showToast('Link copied! Share it anywhere.');
-            }
-        }
-
-        // ===== PRINT =====
-        function printResult() {
-            window.print();
-        }
-
-        // ===== TOAST =====
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            document.getElementById('toastMessage').textContent = message;
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2500);
+            
+            shareContent('SIP Calculator Result', text, 'https://calculator.aitoolcor.com/sip-calculator.html');
         }
 
         // ===== INITIAL CALCULATION =====

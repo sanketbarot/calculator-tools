@@ -551,7 +551,7 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>🧮 AI ToolCor <span class="gradient-text">Calculators</span></h3>
-                <p>Free online calculators for finance, health & daily use. Accurate, fast & no signup required. Part of the AI ToolCor ecosystem.</p>
+                <p>Free online calculators for finance, health & daily use. Accurate, fast & no signup required.</p>
                 <div class="footer-social">
                     <a href="https://facebook.com/aitoolcor" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://twitter.com/aitoolcor" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -568,8 +568,6 @@
                     <li><a href="gst-calculator.html">GST Calculator</a></li>
                     <li><a href="fd-calculator.html">FD Calculator</a></li>
                     <li><a href="loan-calculator.html">Loan Calculator</a></li>
-                    <li><a href="compound-interest-calculator.html">Compound Interest</a></li>
-                    <li><a href="simple-interest-calculator.html">Simple Interest</a></li>
                 </ul>
             </div>
 
@@ -581,28 +579,28 @@
                     <li><a href="age-calculator.html">Age Calculator</a></li>
                     <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
                     <li><a href="date-calculator.html">Date Calculator</a></li>
-                    <li><a href="discount-calculator.html">Discount Calculator</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
-                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
-                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
-                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 AI ToolCor. All rights reserved.</p>
+            <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
             <div class="footer-bottom-links">
-                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
-                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
-                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitemap.xml">Sitemap</a>
             </div>
         </div>
     </footer>
@@ -659,12 +657,12 @@
         });
 
         // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const searchClear = document.getElementById('searchClear');
-        const noResults = document.getElementById('noResults');
-        const allCards = document.querySelectorAll('.tool-card');
-        const allSections = document.querySelectorAll('.section[data-category]');
+         const searchInput = document.getElementById('searchInput');
+    const searchClear = document.getElementById('searchClear');
+    const noResults = document.getElementById('noResults');
+    const allSections = document.querySelectorAll('.section[data-category]');
 
+    if (searchInput) {
         searchInput.addEventListener('input', function () {
             const query = this.value.toLowerCase().trim();
 
@@ -710,6 +708,7 @@
             searchInput.dispatchEvent(new Event('input'));
             searchInput.focus();
         });
+    }
 
         // FAQ toggle
         function toggleFaq(btn) {

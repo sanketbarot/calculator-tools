@@ -430,99 +430,34 @@
         </div>
     </div>
 
-    <!-- ===== INFO SECTION ===== -->
-    <section class="info-section">
-        <div class="info-card">
-            <h2>About <span class="gradient-text">BMR & Calorie Calculator</span></h2>
-            <p>Knowing your daily calorie requirement is the first step to achieving any fitness goal — whether you want to lose weight, maintain it, or gain muscle. Our BMR calculator uses scientifically-proven formulas to give you accurate calorie recommendations along with macro breakdown for protein, carbs, and fats.</p>
-
-            <h3>📐 BMR Formulas</h3>
-            <p><strong>Mifflin-St Jeor Equation (Most Accurate):</strong></p>
-            <div class="info-formula">
-                Men: BMR = (10 × weight) + (6.25 × height) − (5 × age) + 5<br>
-                Women: BMR = (10 × weight) + (6.25 × height) − (5 × age) − 161
-            </div>
-
-            <p><strong>Harris-Benedict Equation (Original 1919):</strong></p>
-            <div class="info-formula">
-                Men: BMR = 88.362 + (13.397 × weight) + (4.799 × height) − (5.677 × age)<br>
-                Women: BMR = 447.593 + (9.247 × weight) + (3.098 × height) − (4.330 × age)
-            </div>
-
-            <p><strong>Katch-McArdle (Uses Body Fat %):</strong></p>
-            <div class="info-formula">
-                BMR = 370 + (21.6 × Lean Body Mass in kg)<br>
-                Lean Body Mass = Weight × (1 − Body Fat% / 100)
-            </div>
-
-            <h3>🎯 What is BMR?</h3>
-            <p>BMR (Basal Metabolic Rate) is the number of calories your body burns at <strong>complete rest</strong> just to maintain basic life functions — breathing, blood circulation, cell production, nutrient processing, etc. It represents about <strong>60-70%</strong> of total daily calorie expenditure.</p>
-
-            <h3>🔥 What is TDEE?</h3>
-            <p>TDEE (Total Daily Energy Expenditure) = BMR × Activity Multiplier. This is your <strong>total daily calorie need</strong> including:</p>
-            <ul>
-                <li>BMR (calories at rest)</li>
-                <li>NEAT (non-exercise activity like walking, fidgeting)</li>
-                <li>TEF (thermic effect of food digestion)</li>
-                <li>Exercise calories burned</li>
-            </ul>
-
-            <h3>🏃 Activity Multipliers</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem;">
-                <thead>
-                    <tr style="background: var(--bg-primary);">
-                        <th style="padding: 10px; text-align: left; border: 1px solid var(--border);">Activity Level</th>
-                        <th style="padding: 10px; text-align: center; border: 1px solid var(--border);">Multiplier</th>
-                        <th style="padding: 10px; text-align: left; border: 1px solid var(--border);">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Sedentary</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">1.2</td><td style="padding: 8px; border: 1px solid var(--border);">Desk job, no exercise</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Lightly Active</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">1.375</td><td style="padding: 8px; border: 1px solid var(--border);">Light exercise 1-3 days/week</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Moderately Active</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">1.55</td><td style="padding: 8px; border: 1px solid var(--border);">Moderate exercise 3-5 days/week</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Very Active</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">1.725</td><td style="padding: 8px; border: 1px solid var(--border);">Hard exercise 6-7 days/week</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border);">Extremely Active</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">1.9</td><td style="padding: 8px; border: 1px solid var(--border);">Athletes, physical job + training</td></tr>
-                </tbody>
-            </table>
-
-            <h3>🍽️ Macronutrient Distribution</h3>
-            <p>For maintenance and general health, a balanced macro split is:</p>
-            <ul>
-                <li><strong>Protein: 30%</strong> — 1g protein = 4 calories</li>
-                <li><strong>Carbs: 40%</strong> — 1g carb = 4 calories</li>
-                <li><strong>Fats: 30%</strong> — 1g fat = 9 calories</li>
-            </ul>
-
-            <p><strong>For Weight Loss:</strong> Higher protein (35-40%), moderate carbs (30-35%), moderate fats (25-30%)</p>
-            <p><strong>For Muscle Gain:</strong> High protein (30-35%), high carbs (45-50%), moderate fats (20-25%)</p>
-
-            <h3>✅ How to Use This Calculator</h3>
-            <ol>
-                <li>Select <strong>Unit System</strong> (Metric or Imperial)</li>
-                <li>Choose your <strong>Gender</strong> (different formulas for men/women)</li>
-                <li>Enter <strong>Age, Height & Weight</strong></li>
-                <li>Select your <strong>Activity Level</strong> (be honest!)</li>
-                <li>Choose <strong>Formula</strong> (Mifflin-St Jeor recommended)</li>
-                <li>View BMR, TDEE & calorie goals</li>
-            </ol>
-
-            <h3>💡 Calorie Goals Explained</h3>
-            <ul>
-                <li><strong>Lose 1 kg/week:</strong> 1000 calorie deficit per day (7700 cal = 1 kg fat)</li>
-                <li><strong>Lose 0.5 kg/week:</strong> 500 calorie deficit per day (recommended for sustainable loss)</li>
-                <li><strong>Maintain:</strong> Eat TDEE calories</li>
-                <li><strong>Gain weight:</strong> 500 calorie surplus per day (slow gain for lean muscle)</li>
-            </ul>
-
-            <h3>⚠️ Important Notes</h3>
-            <ul>
-                <li>Never eat below <strong>1200 cal/day (women)</strong> or <strong>1500 cal/day (men)</strong></li>
-                <li>BMR decreases with age (~2% per decade after 20)</li>
-                <li>Muscle burns more calories than fat at rest</li>
-                <li>Crash diets slow metabolism — go slow & steady</li>
-                <li>Consult a nutritionist for personalized plan</li>
-                <li>Track your intake for 1-2 weeks to verify accuracy</li>
-            </ul>
+    <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="bmi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-health"><i class="fas fa-weight"></i></div>
+                <span class="related-card-text">BMI Calculator</span>
+            </a>
+            <a href="age-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-birthday-cake"></i></div>
+                <span class="related-card-text">Age Calculator</span>
+            </a>
+            <a href="percentage-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
+                <span class="related-card-text">Percentage Calculator</span>
+            </a>
+            <a href="date-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-calendar-alt"></i></div>
+                <span class="related-card-text">Date Calculator</span>
+            </a>
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
         </div>
     </section>
 
@@ -625,38 +560,9 @@
         </div>
     </div>
 
-    <!-- ===== RELATED TOOLS ===== -->
-    <section class="related-tools">
-        <h2>Related <span class="gradient-text">Calculators</span></h2>
-        <div class="related-grid">
-            <a href="bmi-calculator.html" class="related-card">
-                <div class="related-card-icon bg-health"><i class="fas fa-weight"></i></div>
-                <span class="related-card-text">BMI Calculator</span>
-            </a>
-            <a href="age-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-birthday-cake"></i></div>
-                <span class="related-card-text">Age Calculator</span>
-            </a>
-            <a href="percentage-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
-                <span class="related-card-text">Percentage Calculator</span>
-            </a>
-            <a href="date-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-calendar-alt"></i></div>
-                <span class="related-card-text">Date Calculator</span>
-            </a>
-            <a href="emi-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
-                <span class="related-card-text">EMI Calculator</span>
-            </a>
-            <a href="sip-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
-                <span class="related-card-text">SIP Calculator</span>
-            </a>
-        </div>
-    </section>
+    
 
-    <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -695,11 +601,11 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
-                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
-                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
-                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -707,9 +613,10 @@
         <div class="footer-bottom">
             <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
             <div class="footer-bottom-links">
-                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
-                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
-                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitemap.xml">Sitemap</a>
             </div>
         </div>
     </footer>

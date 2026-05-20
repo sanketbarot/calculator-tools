@@ -403,91 +403,34 @@
         </div>
     </div>
 
-    <!-- ===== INFO SECTION ===== -->
-    <section class="info-section">
-        <div class="info-card">
-            <h2>About <span class="gradient-text">BMI Calculator</span></h2>
-            <p>Body Mass Index (BMI) is the most commonly used measure to assess whether you are at a healthy weight for your height. Our BMI calculator helps you determine your weight category — underweight, normal, overweight, or obese — based on WHO guidelines.</p>
-
-            <h3>📐 BMI Formula</h3>
-            <p><strong>Metric:</strong></p>
-            <div class="info-formula">
-                BMI = Weight (kg) / [Height (m)]²
-            </div>
-
-            <p><strong>Imperial:</strong></p>
-            <div class="info-formula">
-                BMI = [Weight (lb) / Height (in)²] × 703
-            </div>
-
-            <h3>📊 BMI Categories (Adults 18+)</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem;">
-                <thead>
-                    <tr style="background: var(--bg-primary);">
-                        <th style="padding: 10px; text-align: left; border: 1px solid var(--border);">Category</th>
-                        <th style="padding: 10px; text-align: center; border: 1px solid var(--border);">BMI Range</th>
-                        <th style="padding: 10px; text-align: center; border: 1px solid var(--border);">Risk</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border); color: #3b82f6; font-weight: 700;">Underweight</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Below 18.5</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Increased</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border); color: #10b981; font-weight: 700;">Normal Weight</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">18.5 – 24.9</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Low</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border); color: #f59e0b; font-weight: 700;">Overweight</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">25.0 – 29.9</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Moderate</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border); color: #ef4444; font-weight: 700;">Obese Class I</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">30.0 – 34.9</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">High</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border); color: #ef4444; font-weight: 700;">Obese Class II</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">35.0 – 39.9</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Very High</td></tr>
-                    <tr><td style="padding: 8px; border: 1px solid var(--border); color: #ef4444; font-weight: 700;">Obese Class III</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">40 & Above</td><td style="padding: 8px; text-align: center; border: 1px solid var(--border);">Extremely High</td></tr>
-                </tbody>
-            </table>
-
-            <h3>✅ How to Use This Calculator</h3>
-            <ol>
-                <li>Select <strong>Unit System</strong> — Metric (cm/kg) or Imperial (ft/lb)</li>
-                <li>Choose your <strong>Gender</strong> (Male/Female)</li>
-                <li>Enter your <strong>Age</strong> (between 2 and 120 years)</li>
-                <li>Enter your <strong>Height</strong> in cm or feet/inches</li>
-                <li>Enter your <strong>Weight</strong> in kg or pounds</li>
-                <li>Click Calculate to see your BMI, category & ideal weight range</li>
-            </ol>
-
-            <h3>💡 What Does Your BMI Mean?</h3>
-            <ul>
-                <li><strong>Below 18.5 (Underweight):</strong> May indicate poor nutrition or underlying health issues. Consider gaining weight healthily.</li>
-                <li><strong>18.5 – 24.9 (Normal):</strong> Healthy weight range. Maintain through balanced diet & exercise.</li>
-                <li><strong>25 – 29.9 (Overweight):</strong> Increased risk of heart disease, diabetes. Consider lifestyle changes.</li>
-                <li><strong>30+ (Obese):</strong> High risk of serious health conditions. Consult a doctor for weight management plan.</li>
-            </ul>
-
-            <h3>🎯 BMI for Different Populations</h3>
-            <p><strong>Asian Adults:</strong> WHO recommends lower BMI thresholds for Asians:</p>
-            <ul>
-                <li>Normal: 18.5 - 22.9</li>
-                <li>Overweight: 23 - 27.4</li>
-                <li>Obese: 27.5 and above</li>
-            </ul>
-
-            <p><strong>Children & Teens (2-19):</strong> Use BMI percentiles instead of fixed categories. Consult pediatrician.</p>
-            <p><strong>Athletes:</strong> BMI may overestimate fat for muscular individuals.</p>
-            <p><strong>Elderly:</strong> BMI may underestimate fat in older adults due to muscle loss.</p>
-
-            <h3>⚠️ Limitations of BMI</h3>
-            <ul>
-                <li>Does not distinguish between muscle and fat mass</li>
-                <li>Does not measure fat distribution (belly fat is riskier)</li>
-                <li>May not be accurate for athletes, pregnant women, or elderly</li>
-                <li>Doesn't account for bone density</li>
-                <li>Best used as a general indicator, not a diagnostic tool</li>
-            </ul>
-
-            <h3>🥗 Tips for Healthy Weight</h3>
-            <ul>
-                <li><strong>Balanced Diet:</strong> Include fruits, vegetables, whole grains, lean protein</li>
-                <li><strong>Stay Hydrated:</strong> Drink 8-10 glasses of water daily</li>
-                <li><strong>Regular Exercise:</strong> At least 150 minutes/week of moderate activity</li>
-                <li><strong>Quality Sleep:</strong> 7-9 hours per night</li>
-                <li><strong>Stress Management:</strong> Practice meditation, yoga</li>
-                <li><strong>Avoid Junk Food:</strong> Limit processed & sugary foods</li>
-                <li><strong>Regular Health Checkups:</strong> Monitor BP, sugar, cholesterol</li>
-            </ul>
+     <!-- ===== RELATED TOOLS ===== -->
+    <section class="related-tools">
+        <h2>Related <span class="gradient-text">Calculators</span></h2>
+        <div class="related-grid">
+            <a href="bmr-calculator.html" class="related-card">
+                <div class="related-card-icon bg-health"><i class="fas fa-fire-alt"></i></div>
+                <span class="related-card-text">BMR Calculator</span>
+            </a>
+            <a href="age-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-birthday-cake"></i></div>
+                <span class="related-card-text">Age Calculator</span>
+            </a>
+            <a href="percentage-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
+                <span class="related-card-text">Percentage Calculator</span>
+            </a>
+            <a href="date-calculator.html" class="related-card">
+                <div class="related-card-icon bg-daily"><i class="fas fa-calendar-alt"></i></div>
+                <span class="related-card-text">Date Calculator</span>
+            </a>
+            <a href="emi-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
+                <span class="related-card-text">EMI Calculator</span>
+            </a>
+            <a href="sip-calculator.html" class="related-card">
+                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
+                <span class="related-card-text">SIP Calculator</span>
+            </a>
         </div>
     </section>
 
@@ -580,38 +523,9 @@
         </div>
     </div>
 
-    <!-- ===== RELATED TOOLS ===== -->
-    <section class="related-tools">
-        <h2>Related <span class="gradient-text">Calculators</span></h2>
-        <div class="related-grid">
-            <a href="bmr-calculator.html" class="related-card">
-                <div class="related-card-icon bg-health"><i class="fas fa-fire-alt"></i></div>
-                <span class="related-card-text">BMR Calculator</span>
-            </a>
-            <a href="age-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-birthday-cake"></i></div>
-                <span class="related-card-text">Age Calculator</span>
-            </a>
-            <a href="percentage-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-percent"></i></div>
-                <span class="related-card-text">Percentage Calculator</span>
-            </a>
-            <a href="date-calculator.html" class="related-card">
-                <div class="related-card-icon bg-daily"><i class="fas fa-calendar-alt"></i></div>
-                <span class="related-card-text">Date Calculator</span>
-            </a>
-            <a href="emi-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-credit-card"></i></div>
-                <span class="related-card-text">EMI Calculator</span>
-            </a>
-            <a href="sip-calculator.html" class="related-card">
-                <div class="related-card-icon bg-finance"><i class="fas fa-chart-line"></i></div>
-                <span class="related-card-text">SIP Calculator</span>
-            </a>
-        </div>
-    </section>
+   
 
-    <!-- ===== FOOTER ===== -->
+   <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -650,11 +564,11 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="https://www.aitoolcor.com/" target="_blank">Main Website</a></li>
-                    <li><a href="https://www.aitoolcor.com/about.html" target="_blank">About Us</a></li>
-                    <li><a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a></li>
-                    <li><a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -662,9 +576,10 @@
         <div class="footer-bottom">
             <p>&copy; 2026 AI ToolCor. All rights reserved.</p>
             <div class="footer-bottom-links">
-                <a href="https://www.aitoolcor.com/privacy.html" target="_blank">Privacy</a>
-                <a href="https://www.aitoolcor.com/terms.html" target="_blank">Terms</a>
-                <a href="https://www.aitoolcor.com/contact.html" target="_blank">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+                <a href="sitemap.xml">Sitemap</a>
             </div>
         </div>
     </footer>

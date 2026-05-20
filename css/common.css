@@ -351,13 +351,15 @@ img {
 
 .footer-bottom-links {
     display: flex;
-    gap: 20px;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .footer-bottom-links a {
     color: var(--text-footer);
     font-size: 0.8rem;
     opacity: 0.7;
+    transition: var(--transition);
 }
 
 .footer-bottom-links a:hover {

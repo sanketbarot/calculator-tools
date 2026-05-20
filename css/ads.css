@@ -9,12 +9,27 @@
     margin: 0 auto;
     padding: 16px 24px;
     text-align: center;
-    display: none; /* Default hidden */
+    /* FIX: Don't use display:none — use visibility instead */
+    min-height: 1px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* When ad NOT loaded - shrink but keep width */
+.ad-container:not(.ad-loaded) {
+    max-height: 0;
+    padding: 0 24px;
+    opacity: 0;
+    margin: 0 auto;
+    visibility: hidden;
 }
 
 /* Show only when ad is loaded */
 .ad-container.ad-loaded {
-    display: block;
+    max-height: 500px;
+    padding: 16px 24px;
+    opacity: 1;
+    visibility: visible;
     animation: fadeInAd 0.5s ease-in;
 }
 
@@ -29,12 +44,13 @@
     border: none;
     border-radius: var(--radius-md);
     padding: 0;
-    min-height: auto;
+    min-height: 90px;
     display: block;
     color: var(--text-muted);
     font-size: 0.8rem;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 /* Show label only when ad loaded */
@@ -62,11 +78,12 @@
     display: block;
 }
 
-/* AdSense ins element */
+/* AdSense ins element - MUST have width */
 .adsbygoogle {
-    display: block;
-    min-height: 1px; /* Smallest possible */
-    overflow: hidden;
+    display: block !important;
+    width: 100% !important;
+    min-width: 250px;
+    min-height: 90px;
 }
 
 /* Ads with sufficient height (after loaded) */
@@ -99,7 +116,7 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .ad-container {
+    .ad-container.ad-loaded {
         padding: 12px 16px;
     }
 }
