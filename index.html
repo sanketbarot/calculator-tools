@@ -82,79 +82,186 @@
 
     <!-- ========== SCHEMA.ORG ========== -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://calculator.aitoolcor.com/#website",
-          "url": "https://calculator.aitoolcor.com/",
-          "name": "AI ToolCor Calculators",
-          "description": "15+ free online calculators for finance, health and daily use.",
-          "inLanguage": "en-US",
-          "publisher": { "@id": "https://calculator.aitoolcor.com/#organization" },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": { "@type": "EntryPoint", "urlTemplate": "https://calculator.aitoolcor.com/?s={search_term_string}" },
-            "query-input": "required name=search_term_string"
-          }
+      "@type": "Organization",
+      "@id": "https://calculator.aitoolcor.com/#organization",
+      "name": "AI ToolCor",
+      "url": "https://www.aitoolcor.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://calculator.aitoolcor.com/#logo",
+        "url": "https://calculator.aitoolcor.com/images/logo.png",
+        "width": 200,
+        "height": 60
+      },
+      "sameAs": [
+        "https://www.facebook.com/aitoolcor",
+        "https://www.twitter.com/aitoolcor",
+        "https://www.instagram.com/aitoolcor",
+        "https://www.youtube.com/aitoolcor"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://calculator.aitoolcor.com/#website",
+      "url": "https://calculator.aitoolcor.com/",
+      "name": "AI ToolCor Calculators",
+      "description": "15+ free online calculators for finance, health and daily use.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://calculator.aitoolcor.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://calculator.aitoolcor.com/?s={search_term_string}"
         },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://calculator.aitoolcor.com/#breadcrumb",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://calculator.aitoolcor.com/#organization",
-          "name": "AI ToolCor",
-          "url": "https://www.aitoolcor.com/",
-          "logo": { "@type": "ImageObject", "url": "https://calculator.aitoolcor.com/images/logo.png", "width": 200, "height": 60 },
-          "sameAs": [
-            "https://www.facebook.com/aitoolcor",
-            "https://www.twitter.com/aitoolcor",
-            "https://www.instagram.com/aitoolcor",
-            "https://www.youtube.com/aitoolcor"
-          ]
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://calculator.aitoolcor.com/#webpage",
-          "url": "https://calculator.aitoolcor.com/",
-          "name": "Free Online Calculators — EMI, SIP, GST, BMI, Age & More | AI ToolCor",
-          "description": "15+ free online calculators for finance, health and daily use. No signup required.",
-          "isPartOf": { "@id": "https://calculator.aitoolcor.com/#website" },
-          "about": { "@id": "https://calculator.aitoolcor.com/#organization" },
-          "inLanguage": "en-US",
-          "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://calculator.aitoolcor.com/" }
-            ]
-          }
-        },
-        {
-          "@type": "ItemList",
-          "name": "Free Online Calculators",
-          "description": "Collection of free online calculators for finance, health and daily use",
-          "url": "https://calculator.aitoolcor.com/",
-          "numberOfItems": 15,
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1,  "name": "EMI Calculator",              "url": "https://calculator.aitoolcor.com/emi-calculator.html" },
-            { "@type": "ListItem", "position": 2,  "name": "SIP Calculator",              "url": "https://calculator.aitoolcor.com/sip-calculator.html" },
-            { "@type": "ListItem", "position": 3,  "name": "GST Calculator",              "url": "https://calculator.aitoolcor.com/gst-calculator.html" },
-            { "@type": "ListItem", "position": 4,  "name": "BMI Calculator",              "url": "https://calculator.aitoolcor.com/bmi-calculator.html" },
-            { "@type": "ListItem", "position": 5,  "name": "Age Calculator",              "url": "https://calculator.aitoolcor.com/age-calculator.html" },
-            { "@type": "ListItem", "position": 6,  "name": "FD Calculator",               "url": "https://calculator.aitoolcor.com/fd-calculator.html" },
-            { "@type": "ListItem", "position": 7,  "name": "Compound Interest",           "url": "https://calculator.aitoolcor.com/compound-interest-calculator.html" },
-            { "@type": "ListItem", "position": 8,  "name": "Simple Interest",             "url": "https://calculator.aitoolcor.com/simple-interest-calculator.html" },
-            { "@type": "ListItem", "position": 9,  "name": "Loan Calculator",             "url": "https://calculator.aitoolcor.com/loan-calculator.html" },
-            { "@type": "ListItem", "position": 10, "name": "Discount Calculator",         "url": "https://calculator.aitoolcor.com/discount-calculator.html" },
-            { "@type": "ListItem", "position": 11, "name": "BMR Calorie Calculator",      "url": "https://calculator.aitoolcor.com/bmr-calculator.html" },
-            { "@type": "ListItem", "position": 12, "name": "Percentage Calculator",       "url": "https://calculator.aitoolcor.com/percentage-calculator.html" },
-            { "@type": "ListItem", "position": 13, "name": "Date Difference Calculator",  "url": "https://calculator.aitoolcor.com/date-calculator.html" },
-            { "@type": "ListItem", "position": 14, "name": "Profit Margin Calculator",    "url": "https://calculator.aitoolcor.com/profit-margin-calculator.html" },
-            { "@type": "ListItem", "position": 15, "name": "Salary Calculator",           "url": "https://calculator.aitoolcor.com/salary-calculator.html" }
-          ]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://calculator.aitoolcor.com/"
         }
       ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://calculator.aitoolcor.com/#itemlist",
+      "name": "Free Online Calculators",
+      "description": "Collection of free online calculators for finance, health and daily use",
+      "url": "https://calculator.aitoolcor.com/",
+      "numberOfItems": 15,
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "EMI Calculator",
+          "url": "https://calculator.aitoolcor.com/emi-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SIP Calculator",
+          "url": "https://calculator.aitoolcor.com/sip-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "GST Calculator",
+          "url": "https://calculator.aitoolcor.com/gst-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "BMI Calculator",
+          "url": "https://calculator.aitoolcor.com/bmi-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Age Calculator",
+          "url": "https://calculator.aitoolcor.com/age-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "FD Calculator",
+          "url": "https://calculator.aitoolcor.com/fd-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Compound Interest Calculator",
+          "url": "https://calculator.aitoolcor.com/compound-interest-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Simple Interest Calculator",
+          "url": "https://calculator.aitoolcor.com/simple-interest-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Loan Calculator",
+          "url": "https://calculator.aitoolcor.com/loan-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Discount Calculator",
+          "url": "https://calculator.aitoolcor.com/discount-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "BMR Calorie Calculator",
+          "url": "https://calculator.aitoolcor.com/bmr-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Percentage Calculator",
+          "url": "https://calculator.aitoolcor.com/percentage-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Date Difference Calculator",
+          "url": "https://calculator.aitoolcor.com/date-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Profit Margin Calculator",
+          "url": "https://calculator.aitoolcor.com/profit-margin-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "Salary Calculator",
+          "url": "https://calculator.aitoolcor.com/salary-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://calculator.aitoolcor.com/#webpage",
+      "url": "https://calculator.aitoolcor.com/",
+      "name": "Free Online Calculators — EMI, SIP, GST, BMI, Age & More | AI ToolCor",
+      "description": "15+ free online calculators for finance, health and daily use. No signup required.",
+      "isPartOf": {
+        "@id": "https://calculator.aitoolcor.com/#website"
+      },
+      "about": {
+        "@id": "https://calculator.aitoolcor.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://calculator.aitoolcor.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "breadcrumb": {
+        "@id": "https://calculator.aitoolcor.com/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://calculator.aitoolcor.com/#itemlist"
+      }
     }
-    </script>
+  ]
+}
+</script>
 </head>
 
 <body>

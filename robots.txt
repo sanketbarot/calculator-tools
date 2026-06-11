@@ -1,60 +1,53 @@
 # ============================================
-# AI ToolCor Calculators - Robots.txt
-# Subdomain: calculator.aitoolcor.com
-# Last Updated: 2026-01-15
+# AI ToolCor Calculators — robots.txt
+# Site: https://calculator.aitoolcor.com
+# Last Updated: 2026-06-11
 # ============================================
 
-# ===== DEFAULT: ALLOW ALL =====
+
+# =============================================
+# 1. DEFAULT: ALL BOTS — ALLOW EVERYTHING
+# =============================================
 User-agent: *
 Allow: /
 
-# Block sensitive/unnecessary directories
-Disallow: /css/
-Disallow: /js/
-Disallow: /images/temp/
+# Block only truly private/non-existent paths
 Disallow: /admin/
 Disallow: /private/
-Disallow: /.well-known/
-Disallow: /*.json$
-Disallow: /*?*
+Disallow: /images/temp/
 
-# Allow important file types
-Allow: /*.html$
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.webp$
-Allow: /*.ico$
-Allow: /*.woff$
-Allow: /*.woff2$
 
-# ===== GOOGLE BOTS (IMPORTANT) =====
+# =============================================
+# 2. GOOGLE BOTS — MAXIMUM ACCESS
+# =============================================
+
+# Main crawler — NO crawl delay
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
+# NOTE: Do NOT add Crawl-delay for Googlebot
+# Google ignores it and it can cause issues
 
+# Image indexing
 User-agent: Googlebot-Image
 Allow: /
 
-User-agent: Googlebot-Mobile
-Allow: /
-
-# Google AdSense bot - MUST ALLOW (for ads)
+# AdSense ad quality check — MUST ALLOW
 User-agent: Mediapartners-Google
 Allow: /
 
-# Google AdsBot - MUST ALLOW (for ad quality)
+# AdSense ad quality — MUST ALLOW
 User-agent: AdsBot-Google
 Allow: /
 
+# Mobile ad quality — MUST ALLOW  
 User-agent: AdsBot-Google-Mobile
 Allow: /
 
-# ===== OTHER SEARCH ENGINES =====
+
+# =============================================
+# 3. OTHER SEARCH ENGINES
+# =============================================
+
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
@@ -71,48 +64,92 @@ User-agent: Baiduspider
 Allow: /
 Crawl-delay: 2
 
-User-agent: Yandex
+User-agent: Yandexbot
 Allow: /
 Crawl-delay: 2
 
 User-agent: Applebot
 Allow: /
 
-# ===== BLOCK AI SCRAPERS (Optional - Remove if you want AI to index) =====
+
+# =============================================
+# 4. SOCIAL MEDIA PREVIEW BOTS — ALLOW
+# (OG tags, WhatsApp previews, Twitter cards)
+# =============================================
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
+
+# =============================================
+# 5. AI TRAINING BOTS — BLOCKED
+# (Does not affect Google Search indexing)
+# =============================================
+
+# OpenAI
 User-agent: GPTBot
 Disallow: /
 
 User-agent: ChatGPT-User
 Disallow: /
 
-User-agent: CCBot
-Disallow: /
-
+# Anthropic Claude
 User-agent: anthropic-ai
 Disallow: /
 
 User-agent: Claude-Web
 Disallow: /
 
+# Google AI (Gemini training — separate from Googlebot)
 User-agent: Google-Extended
 Disallow: /
 
+# Perplexity AI
 User-agent: PerplexityBot
 Disallow: /
 
+# Common Crawl (used by many AI companies)
+User-agent: CCBot
+Disallow: /
+
+# ByteDance AI
 User-agent: Bytespider
 Disallow: /
 
-User-agent: Omgilibot
-Disallow: /
-
+# Facebook AI training (different from facebookexternalhit)
 User-agent: FacebookBot
 Disallow: /
 
 User-agent: ImagesiftBot
 Disallow: /
 
-# ===== BLOCK BAD/SPAM BOTS =====
+User-agent: Omgilibot
+Disallow: /
+
+
+# =============================================
+# 6. SEO TOOL BOTS — BLOCKED
+# (Saves bandwidth, not needed for indexing)
+# =============================================
+
 User-agent: AhrefsBot
 Disallow: /
 
@@ -143,30 +180,9 @@ Disallow: /
 User-agent: SerpstatBot
 Disallow: /
 
-# ===== SOCIAL MEDIA BOTS (Allow for sharing previews) =====
-User-agent: facebookexternalhit
-Allow: /
 
-User-agent: Facebot
-Allow: /
+# =============================================
+# SITEMAP
+# =============================================
 
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-User-agent: TelegramBot
-Allow: /
-
-User-agent: Pinterest
-Allow: /
-
-# ===== SITEMAP LOCATION =====
 Sitemap: https://calculator.aitoolcor.com/sitemap.xml
-
-# ===== HOST PREFERENCE =====
-Host: https://calculator.aitoolcor.com

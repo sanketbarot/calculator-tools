@@ -1,145 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <!-- ========== HOMEPAGE ========== -->
-    <url>
-        <loc>https://calculator.aitoolcor.com/</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://calculator.aitoolcor.com/images/og-calculator.jpg</image:loc>
-            <image:title>AI ToolCor Calculators - Free Online Tools</image:title>
-            <image:caption>15+ free online calculators for finance, health and daily use</image:caption>
-        </image:image>
-    </url>
+  <!-- ==========================================
+       AI ToolCor Calculators — sitemap.xml
+       Site: https://calculator.aitoolcor.com
+       Total URLs: 19
+       Last Updated: 2026-06-11
+  =========================================== -->
 
-    <!-- ========== FINANCE CALCULATORS ========== -->
-    <url>
-        <loc>https://calculator.aitoolcor.com/emi-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/sip-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/gst-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/fd-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/compound-interest-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/simple-interest-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/loan-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/discount-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
 
-    <!-- ========== HEALTH CALCULATORS ========== -->
-    <url>
-        <loc>https://calculator.aitoolcor.com/bmi-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/bmr-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <!-- ==========================================
+       HOMEPAGE — Priority 1.0
+  =========================================== -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-homepage.png</image:loc>
+      <image:title>AI ToolCor — Free Online Calculators</image:title>
+      <image:caption>15+ free online calculators for finance, health and daily use. No signup required.</image:caption>
+    </image:image>
+  </url>
 
-    <!-- ========== DAILY USE CALCULATORS ========== -->
-    <url>
-        <loc>https://calculator.aitoolcor.com/age-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/percentage-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/date-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
 
-    <!-- ========== BUSINESS CALCULATORS ========== -->
-    <url>
-        <loc>https://calculator.aitoolcor.com/profit-margin-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/salary-calculator.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <!-- ==========================================
+       FINANCE CALCULATORS — Priority 0.9
+  =========================================== -->
 
-    <!-- ========== LEGAL & INFO PAGES ========== -->
-    <url>
-        <loc>https://calculator.aitoolcor.com/about.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/contact.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/privacy.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://calculator.aitoolcor.com/terms.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
+  <!-- EMI Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/emi-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-emi-calculator.png</image:loc>
+      <image:title>EMI Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate your monthly loan EMI instantly with our free EMI calculator.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- SIP Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/sip-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-sip-calculator.png</image:loc>
+      <image:title>SIP Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate your SIP mutual fund returns with our free SIP calculator.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GST Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/gst-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-gst-calculator.png</image:loc>
+      <image:title>GST Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate GST amount and total price instantly with our free GST calculator.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- FD Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/fd-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-fd-calculator.png</image:loc>
+      <image:title>FD Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate fixed deposit maturity amount and interest with our free FD calculator.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Loan Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/loan-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-loan-calculator.png</image:loc>
+      <image:title>Loan Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate loan repayments, total interest and amortization schedule free.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Compound Interest Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/compound-interest-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-compound-interest-calculator.png</image:loc>
+      <image:title>Compound Interest Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate compound interest and investment growth with our free calculator.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Simple Interest Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/simple-interest-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-simple-interest-calculator.png</image:loc>
+      <image:title>Simple Interest Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate simple interest instantly with principal, rate and time.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Discount Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/discount-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-discount-calculator.png</image:loc>
+      <image:title>Discount Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate discounted price and savings amount instantly for free.</image:caption>
+    </image:image>
+  </url>
+
+
+  <!-- ==========================================
+       HEALTH CALCULATORS — Priority 0.9 / 0.8
+  =========================================== -->
+
+  <!-- BMI Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/bmi-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-bmi-calculator.png</image:loc>
+      <image:title>BMI Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate your Body Mass Index and check healthy weight range for free.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- BMR Calorie Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/bmr-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-bmr-calculator.png</image:loc>
+      <image:title>BMR Calorie Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate your Basal Metabolic Rate and daily calorie needs for free.</image:caption>
+    </image:image>
+  </url>
+
+
+  <!-- ==========================================
+       DAILY USE CALCULATORS — Priority 0.9 / 0.8
+  =========================================== -->
+
+  <!-- Age Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/age-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-age-calculator.png</image:loc>
+      <image:title>Age Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate your exact age in years, months and days instantly for free.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Percentage Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/percentage-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-percentage-calculator.png</image:loc>
+      <image:title>Percentage Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate percentages, percentage change and percentage of total for free.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Date Difference Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/date-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-date-calculator.png</image:loc>
+      <image:title>Date Difference Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate the difference between two dates in days, months and years.</image:caption>
+    </image:image>
+  </url>
+
+
+  <!-- ==========================================
+       BUSINESS CALCULATORS — Priority 0.8
+  =========================================== -->
+
+  <!-- Profit Margin Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/profit-margin-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-profit-margin-calculator.png</image:loc>
+      <image:title>Profit Margin Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate gross profit margin, net margin and markup percentage for free.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Salary Calculator -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/salary-calculator.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://calculator.aitoolcor.com/images/og-salary-calculator.png</image:loc>
+      <image:title>Salary Calculator — AI ToolCor</image:title>
+      <image:caption>Calculate take-home salary, tax deductions and net pay for free.</image:caption>
+    </image:image>
+  </url>
+
+
+  <!-- ==========================================
+       LEGAL & INFO PAGES — Priority 0.5 / 0.6
+  =========================================== -->
+
+  <!-- About -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/about.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/contact.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/privacy.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://calculator.aitoolcor.com/terms.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
 
 </urlset>
